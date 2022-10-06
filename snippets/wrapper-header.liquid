@@ -1,0 +1,7 @@
+{% if settings.header_layout == '01' %}
+	{% section 'announcement-bar' %}
+	{% section 'header' %}
+{% elsif settings.header_layout == '02' %}
+	{% section 'announcement-bar' %}
+	{% section 'header-02' %}
+{%- endif -%}

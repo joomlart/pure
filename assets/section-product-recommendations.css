@@ -1,0 +1,33 @@
+.product-recommendations {
+    display: block;
+}
+
+.product-recommendations:not(.product-recommendations--loaded) {
+    padding: 0;
+    margin: 0;
+}
+
+.product-recommendations__heading {
+    margin: 0;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+
+.product-recommendations__heading span {
+    background: rgba(var(--color-base-background-1));
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.product-recommendations__heading:after {
+    background-color: rgba(var(--color-foreground), 0.08);
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 12px;
+    width: 100%;
+}

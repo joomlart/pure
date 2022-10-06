@@ -1,0 +1,101 @@
+{
+  "sections": {
+    "b196a01e-f1bc-4e66-a068-4a8605559b96": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>FAQs<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-0",
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-1"
+      ],
+      "settings": {
+        "class_suffix": "faqs-page",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "“Will your template be fully compatible with Shopify?”",
+            "icon": "none",
+            "row_content": "<p>Yes it will be<\/p>",
+            "page": ""
+          }
+        },
+        "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "“What is included in the theme package?”",
+            "icon": "none",
+            "row_content": "<p>Please make sure that you follow below steps:<br\/><\/p><p>1)<\/p><p>2)<\/p><p>3)<\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "“Do you guys offer a refund or exchange?”",
+            "icon": "none",
+            "row_content": "<p>To save your time and reach our support quickly, please follow below steps:<br\/>\t<br\/><br\/>\t<\/p><p>Create a staff account for us (with Themes permission and Settings permission) <a href=\"http:\/\/docs.shopify.com\/manual\/settings\/account\/staff-members\">http:\/\/docs.shopify.com\/manual\/settings\/account\/staff-members<\/a><br\/>\tCapture screenshot or video for the issue you get.<br\/>\t<br\/>\tSpecify which template and version you are using.<br\/>\t<br\/>\tDescribe clearly how to reproduce the issue.<br\/>\t<br\/>\tSend all information (staff account, screenshot, video, template name and version, description of the issues, link) to <br\/>\t<a href=\"mailto:email@domain.com\">email@domain.com<\/a><\/p>",
+            "page": ""
+          }
+        },
+        "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "“Would assistance be available to upload the template if needed?”",
+            "icon": "none",
+            "row_content": "<p>Yes, we will assist you to install the template if needed<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-0",
+        "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-1",
+        "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-2",
+        "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-3"
+      ],
+      "settings": {
+        "class_suffix": "faqs-page",
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "section",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    }
+  },
+  "order": [
+    "b196a01e-f1bc-4e66-a068-4a8605559b96",
+    "be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d"
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "sections": {
+    "61f849a9-f600-4591-8f82-0e40cc947bc5": {
+      "type": "breadcrumb",
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "suffix-class": "about-us-title"
+      }
+    },
+    "e1b16e84-d0de-4e41-832c-19f193d45304": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14995394134089__e1b16e84-d0de-4e41-832c-19f193d45304-1665024988449975a7-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>With more than 136 stores spanning 43 states and growing, Trex is a nationally recognized active wear manufacturer and retailer. We’re passionate about active lifestyles – and it goes way beyond apparel.<\/p><p><\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--14995394134089__e1b16e84-d0de-4e41-832c-19f193d45304-1665024988449975a7-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Suspendisse mollis vitae nibh ut tristique. Vivamus a mi scelerisque risus tempor fermentum at a tortor. Ut bibendum nisi tristique dolor tempus, sed cursus sapien malesuada. Cras ornare leo nec hendrerit aliquam. Sed ut aliquam purus, in consectetur justo. Proin consequat dapibus est id sagittis. Vestibulum vitae facilisis turpis, in commodo lacus. Nunc pharetra lorem in quam semper, et lacinia purus posuere.<\/p><p><\/p>"
+          }
+        },
+        "fdebaa4e-e6c4-4a72-b3e7-9ae77aa1f48a": {
+          "type": "signature",
+          "settings": {
+            "img-signature": "shopify:\/\/shop_images\/img.png"
+          }
+        },
+        "3c967c88-06f1-4c30-a5cc-d6237a1e7d02": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Pokey McKinze<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "62a1492a-852e-4161-bb9c-2d1120782da5": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Founder of Trex.Store<\/p><p><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14995394134089__e1b16e84-d0de-4e41-832c-19f193d45304-1665024988449975a7-0",
+        "template--14995394134089__e1b16e84-d0de-4e41-832c-19f193d45304-1665024988449975a7-1",
+        "fdebaa4e-e6c4-4a72-b3e7-9ae77aa1f48a",
+        "3c967c88-06f1-4c30-a5cc-d6237a1e7d02",
+        "62a1492a-852e-4161-bb9c-2d1120782da5"
+      ],
+      "settings": {
+        "class_suffix": "about-us",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "36d9fbf9-6b92-4f05-94d4-fd26f60cbb1d": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--14995394134089__36d9fbf9-6b92-4f05-94d4-fd26f60cbb1d-1665028966e9fd8022-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_1.png",
+            "title": "",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--14995394134089__36d9fbf9-6b92-4f05-94d4-fd26f60cbb1d-1665028966e9fd8022-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_2.png",
+            "title": "",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14995394134089__36d9fbf9-6b92-4f05-94d4-fd26f60cbb1d-1665028966e9fd8022-0",
+        "template--14995394134089__36d9fbf9-6b92-4f05-94d4-fd26f60cbb1d-1665028966e9fd8022-1"
+      ],
+      "settings": {
+        "title": "",
+        "sub-title": "",
+        "mod_class": "about-us",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "c2226033-ccef-431c-a8c4-0d86cf576b7b": {
+      "type": "multicolumn",
+      "disabled": true,
+      "blocks": {
+        "template--14995394134089__c2226033-ccef-431c-a8c4-0d86cf576b7b-1665028966e9fd8022-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_3.png",
+            "title": "Jane Cooper",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Master Chef<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--14995394134089__c2226033-ccef-431c-a8c4-0d86cf576b7b-1665028966e9fd8022-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_3.png",
+            "title": "Jane Cooper",
+            "icon": "none",
+            "icon_position": "center",
+            "text": "<p>Master Chef<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--14995394134089__c2226033-ccef-431c-a8c4-0d86cf576b7b-1665028966e9fd8022-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/img_3.png",
+            "title": "Jane Cooper",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Master Chef<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14995394134089__c2226033-ccef-431c-a8c4-0d86cf576b7b-1665028966e9fd8022-0",
+        "template--14995394134089__c2226033-ccef-431c-a8c4-0d86cf576b7b-1665028966e9fd8022-1",
+        "template--14995394134089__c2226033-ccef-431c-a8c4-0d86cf576b7b-1665028966e9fd8022-2"
+      ],
+      "settings": {
+        "title": "Founders",
+        "sub-title": "Cursus elit, iaculis platea integer nisl sapien egestas. Itae donec ornare iaculis mauris nec ultrices ullamcorper tempus dignissim. Purus odio blandit sem.",
+        "mod_class": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    }
+  },
+  "order": [
+    "61f849a9-f600-4591-8f82-0e40cc947bc5",
+    "main",
+    "e1b16e84-d0de-4e41-832c-19f193d45304",
+    "36d9fbf9-6b92-4f05-94d4-fd26f60cbb1d",
+    "c2226033-ccef-431c-a8c4-0d86cf576b7b"
+  ]
+}
