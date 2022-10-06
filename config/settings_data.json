@@ -1,7 +1,7 @@
 {
   "current": {
     "header_layout": "01",
-    "footer_layout": "02",
+    "footer_layout": "01",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#212121",
     "gradient_accent_1": "",
@@ -144,7 +144,7 @@
           "logo_text": "PURE",
           "logo_font": "helvetica_n4",
           "logo_width": 100,
-          "logo_position": "middle-left",
+          "logo_position": "top-left",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
           "show_line_separator": true,
@@ -168,7 +168,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Other Pages",
-              "menu": "others-page"
+              "menu": ""
             }
           },
           "footer-0": {
@@ -216,7 +216,6 @@
         "type": "header-02",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/atoms-logo_ab356fac-ace1-43d8-8c8a-369c6f83533b.png",
           "logo_text": "Atoms",
           "logo_font": "helvetica_n4",
           "logo_width": 100,
