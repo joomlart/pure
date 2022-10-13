@@ -16,7 +16,7 @@ class NewsletterPopup extends HTMLElement {
               document.body.classList.add('show-newsletter-image');
           }, this.timeToShow + 700)
       } else {
-          // this.deleteCookie('newsletter-popup');
+           this.deleteCookie('newsletter-popup');
       }
       
       document.body.addEventListener('click', this.onBodyClickEvent.bind(this));
