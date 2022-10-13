@@ -1130,6 +1130,98 @@
     ]
   },
   {
+    "name": "t:settings_schema.newsletter_popup.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.newsletter_popup.settings.header__1.content"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_newsletter_popup",
+        "label": "t:settings_schema.newsletter_popup.settings.general.label__1",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "newsletter_popup_expire",
+        "label": "t:settings_schema.newsletter_popup.settings.general.label__3",
+        "max": 30,
+        "min": 1,
+        "step": 1,
+        "unit": "t:settings_schema.newsletter_popup.settings.general.unit__1",
+        "default": 1
+      },
+      {
+        "type": "range",
+        "id": "newsletter_popup_delay",
+        "label": "t:settings_schema.newsletter_popup.settings.general.label__4",
+        "max": 60,
+        "min": 5,
+        "step": 1,
+        "unit": "t:settings_schema.newsletter_popup.settings.general.unit__2",
+        "default": 5
+      },
+      {
+        "type": "checkbox",
+        "id": "show_newsletter_popup_image",
+        "label": "t:settings_schema.newsletter_popup.settings.general.label__9",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "newsletter_popup_image",
+        "label": "t:settings_schema.newsletter_popup.settings.general.label__5"
+      },
+      {
+        "type": "url",
+        "id": "popup_newsletter_link_image",
+        "label": "t:settings_schema.newsletter_popup.settings.general.label__10"
+      },
+      {
+        "type": "text",
+        "id": "newsletter_popup_title",
+        "label": "t:settings_schema.newsletter_popup.settings.general.label__6"
+      },
+      {
+        "type": "textarea",
+        "id": "newsletter_popup_desc",
+        "label": "t:settings_schema.newsletter_popup.settings.general.label__7"
+      },
+      {
+        "type": "textarea",
+        "id": "newsletter_popup_note",
+        "label": "t:settings_schema.newsletter_popup.settings.general.label__8"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.newsletter_popup.settings.general.label__11"
+      },
+      {
+        "type": "select",
+        "id": "select_button_submit",
+        "label": "t:settings_schema.newsletter_popup.settings.general.label__12",
+        "options": [
+          {
+            "value": "default",
+            "label": "t:settings_schema.newsletter_popup.settings.general.label__13"
+          },
+          {
+            "value": "custom",
+            "label": "t:settings_schema.newsletter_popup.settings.general.label__14"
+          }
+        ],
+        "default": "default"
+      },
+      {
+        "type": "url",
+        "id": "button_newsletter_link",
+        "label": "t:settings_schema.newsletter_popup.settings.general.label__15",
+        "info": "t:settings_schema.newsletter_popup.settings.general.info_2"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.search_input.name",
     "settings": [
       {
