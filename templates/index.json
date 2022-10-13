@@ -3,13 +3,6 @@
     "e1688549-5d28-4c4e-a691-9af670aa9a41": {
       "type": "featured-product",
       "blocks": {
-        "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-0": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-1": {
           "type": "title",
           "settings": {
@@ -53,7 +46,6 @@
         }
       },
       "block_order": [
-        "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-0",
         "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-1",
         "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-2",
         "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-3",
@@ -63,7 +55,7 @@
         "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-7"
       ],
       "settings": {
-        "product": "",
+        "product": "elf-cosmetic-prismatic-highlighting-duo",
         "color_scheme": "background-1",
         "secondary_background": false,
         "hide_variants": false,
