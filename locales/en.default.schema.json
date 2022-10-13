@@ -348,6 +348,35 @@
           "label__2": "Footer 02"
         }
       }
+    },
+    "newsletter_popup": {
+      "name": "Newsletter Popup",
+      "settings": {
+        "header__1": {
+          "content": "General"
+        },
+        "general": {
+          "label__1": "Show Newsletter Popup?",
+          "label__2": "Style",
+          "label__3": "Show Again After (Days)",
+          "label__4": "Delay Time (Seconds)",
+          "label__5": "Image",
+          "label__6": "Title",
+          "label__7": "Description",
+          "label__8": "Note",
+          "label__9": "Show Newsletter Popup Image?",
+          "label__10": "Newsletter Popup Image Link",
+          "label__11": "Newsletter Button",
+          "label__12": "Select Button",
+          "label__13": "Default",
+          "label__14": "Custom Link",
+          "label__15": "Button Link",
+          "unit__1": "day",
+          "unit__2": "s",
+          "info": "Only Desktop",
+          "info_2": "(Use for 'Custom Link')"
+        }
+      }
     }
   },
   "sections": {
