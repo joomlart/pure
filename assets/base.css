@@ -882,6 +882,87 @@ summary::-webkit-details-marker {
     }
 }
 
+/* START: Background Overlay */
+    .background-overlay {
+        position: fixed;
+        background-color: rgba(35, 35, 35, 0.8);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+        display: block !important;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity var(--duration-long) ease;
+    }
+
+    body:not(.safari).show_effect_close .background-overlay{
+        cursor: none;
+    }
+
+    body:not(.safari).show_effect_close .background-overlay:hover {
+        cursor: none;
+    }
+
+    .background-overlay.hold {
+        opacity: 1;
+    }
+
+    body:not(.safari) .background-cursor-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-transform: translateY(calc(var(--translate-y, 0) * 1px - 50%)) translateX(calc(var(--translate-x, 0) * 1px - 50%));
+        -moz-transform: translateY(calc(var(--translate-y, 0) * 1px - 50%)) translateX(calc(var(--translate-x, 0) * 1px - 50%));
+        -ms-transform: translateY(calc(var(--translate-y, 0) * 1px - 50%)) translateX(calc(var(--translate-x, 0) * 1px - 50%));
+        -o-transform: translateY(calc(var(--translate-y, 0) * 1px - 50%)) translateX(calc(var(--translate-x, 0) * 1px - 50%));
+        transform: translateY(calc(var(--translate-y, 0) * 1px - 50%)) translateX(calc(var(--translate-x, 0) * 1px - 50%));
+        transition: transform 70ms ease;
+        -webkit-transition: transform 70ms ease;
+    }
+ 
+    body:not(.safari) .background-cursor-wrapper_outer {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    body:not(.safari) .background-cursor-wrapper_inner {
+        width: 25px;
+        height: 25px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body:not(.safari) .background-cursor-wrapper_outer,
+    body:not(.safari) .background-cursor-wrapper_inner {
+        transform: scale(0.1);
+        opacity: 0;
+        transition: transform 350ms ease-in-out, opacity 350ms 150ms ease;
+    }
+
+    body:not(.safari) .background-cursor-wrapper.enlarge-cursor .background-cursor-wrapper_outer,
+    body:not(.safari) .background-cursor-wrapper.enlarge-cursor .background-cursor-wrapper_inner {
+        transform: scale(1);
+        opacity: 1;
+        transition-delay: 0ms;
+    }
+
+    body:not(.safari) .background-cursor-wrapper .background-cursor-wrapper_inner svg {
+        width: 15px;
+        height: 15px;
+        stroke: #232323;
+    }
+/* END: Background Overlay */
+
 
 /* base-focus */
 
