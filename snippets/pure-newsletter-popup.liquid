@@ -6,8 +6,8 @@
               {% if settings.popup_newsletter_link_image != blank %}
                   <a href="{{ settings.popup_newsletter_link_image }}" target="_blank">
               {% endif %}
-                  <img srcset="{{ image | image_url: 'master' }} 1x, {{ image | image_url: 'master', scale: 2 }} 2x"
-                  src="{{ image | image_url: 'master' }}"
+                  <img 
+                  src="{{ image | image_url: width: '1500' }}"
                   loading="lazy"
                   width="auto"
                   height="auto"
