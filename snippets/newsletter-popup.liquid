@@ -8,7 +8,7 @@
               {% endif %}
 
               <img 
-              src="{{ image | image_url: width: 1000 }}"
+              src="{{ image | image_url: width: 1000, crop: 'center' }}"
               loading="lazy"
               width="auto"
               height="auto"
