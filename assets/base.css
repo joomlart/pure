@@ -966,6 +966,27 @@ summary::-webkit-details-marker {
 
 /* base-focus */
 
+/*  
+  Pop Up
+*/
+
+.popup {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: auto;
+  z-index: 101;
+  width: 100%;
+  max-width: calc(100% - 30px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  box-shadow: 0 6px 27px #0003;
+  transition: opacity .3s,transform .35s ease,visibility .35s ease;
+  transform: translate3d(calc(-50% - 10px),-50%,0);
+}
+
 
 /*
   Focus ring - default (with offset)
