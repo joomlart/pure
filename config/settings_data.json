@@ -100,7 +100,7 @@
     "newsletter_popup_title": "",
     "newsletter_popup_desc": "",
     "newsletter_popup_note": "",
-    "select_button_submit": "custom",
+    "select_button_submit": "default",
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
