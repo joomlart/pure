@@ -1543,7 +1543,7 @@
       }
     },
     "main-blog": {
-      "name": "Blog posts",
+      "name": "Main Blog",
       "settings": {
         "header": {
           "content": "Blog post card"
