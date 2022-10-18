@@ -17,6 +17,7 @@
   }
 {%- endstyle -%}
 
+<div>
 {%- paginate blog.articles by 6 -%}
   {%- render 'breadcrumb'- %}
   <div class="main-blog page-width section-{{ section.id }}-padding">
@@ -89,4 +90,5 @@
   </div>
   {% comment %} End {% endcomment %}
 {%- endpaginate -%}
+</div>
 
