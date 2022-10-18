@@ -18,7 +18,8 @@
 {%- endstyle -%}
 
 <div data-section-id="{{ section.id }}" data-section-type="blog-layout-default" id="BlogSection-{{ section.id }}" data-section="{{ section.id }}" class="main-blog-block  page-width blog-layout-default>
-    <!-- Breacrumb Mobile -->
+
+  <div class="header-page">
     {%- if show_breadcrumb -%}
       <h1>djdfndkf ds</h1>
       <div class="hide-on-desktop">
@@ -26,24 +27,20 @@
       </div>
     {%- endif -%}
 
-    <!-- Start Sidebar Mobile -->
     {%- if show_sidebar -%}
       <div class="header-with-sidebar">
     {% endif %}
 
-      <!-- Title Page -->
       {%- if show_page_title -%}
         <h1 class="page-header text-{{ page_title_alignment }}">
           {{ blog.title | escape }}
         </h1>
       {%- endif -%}
 
-      <!-- Description -->
       {% if section.settings.description != "" %}
         <p class="description">{{ section.settings.description | escape }}</p>
       {% endif %}
 
-      <!-- Sidebar Toogle -->
       {%- if show_sidebar and section.blocks.size > 0 -%}
         <div class="sidebar-toogle" data-sidebar>
           {% render 'icon-sidebar' %}
@@ -51,41 +48,41 @@
       {%- endif -%}
       
     {% if show_sidebar %}
-    </div>
+      </div>
     {% endif %}
-    <!-- End Sidebar Mobile -->
 
-    <!-- Breacrumb Desktop -->
     {%- if show_breadcrumb -%}
       <div class="hide-on-mobile">
         {% render 'breadcrumb', alignment: breadcrumb_alignment %}
       </div>
-    {%- endif -%}
+    {%- endif -%} 
+  </div>
 
-  <div class="halo-blog-content halo-grid-content">
+  {% comment %} Start  Content {% endcomment %}
+  <div class="blog-content grid-content">
     {%- if show_sidebar and section.blocks.size > 0 -%}
       {{ 'component-main-sidebar.css' | asset_url | stylesheet_tag }}
-      <div class="page-sidebar page-sidebar-{{ sidebar_position }} page-sidebar--vertical sidebar--{{ section.settings.sidebar_layout }}{% if enable_sticky %} has-sticky{% endif %}" id="halo-sidebar">
-          <a href="javascript:void(0)" class="halo-sidebar-close" data-close-sidebar role="button">
-              <span class="visually-hidden">{{ 'general.common.close' | t }}</span>
-              {% render 'icon-close' %}
-          </a>
-          <div class="halo-sidebar-header text-left">
-              <span class="title">
-                  {{ 'sections.sidebar.title' | t }}
-              </span>
-          </div>
-          <div class="halo-sidebar-wrapper custom-scrollbar">
-              {% render 'sidebar',
-                  section: section,
-                  show_collapse: show_collapse,
-                  sidebar_collapse: sidebar_collapse_default
-              %}
-          </div>
+      <div class="page-sidebar page-sidebar-{{ sidebar_position }} page-sidebar--vertical sidebar--{{ section.settings.sidebar_layout }}{% if enable_sticky %} has-sticky{% endif %}" id="sidebar">
+        <a href="javascript:void(0)" class="sidebar-close" data-close-sidebar role="button">
+          <span class="visually-hidden">Close</span>
+          {% render 'icon-close' %}
+        </a>
+        <div class="sidebar-header text-left">
+            <span class="title">
+                Title
+            </span>
+        </div>
+        <div class="sidebar-wrapper custom-scrollbar">
+          {% render 'sidebar',
+            section: section,
+            show_collapse: show_collapse,
+            sidebar_collapse: sidebar_collapse_default
+          %}
+        </div>
       </div>
     {%- endif -%}
+
     {%- paginate blog.articles by 6 -%}
-    {%- render 'breadcrumb'- %}
     <div class="main-blog">
       <div class="wrap-inner {% if section.settings.sidebar == "right" %}grid has-sidebar sidebar-right{% endif %} {% if section.settings.sidebar == "left" %}grid has-sidebar sidebar-left{% endif %}">
         {%- if blog.articles_count > 0 -%}
@@ -148,7 +145,9 @@
         {%- render 'pagination', paginate: paginate -%}
       {%- endif -%}
     </div>
+    {%- endpaginate -%}
   </div>
-{%- endpaginate -%}
+  {% comment %} End Content {% endcomment %}
+
 </div>
 
