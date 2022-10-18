@@ -17,6 +17,17 @@
   }
 {%- endstyle -%}
 
+{%- liquid
+  assign show_breadcrumb = section.settings.show_breadcrumb
+  assign show_sidebar = section.settings.show_sidebar
+  if show_sidebar
+      assign show_collapse = section.settings.show_collapse
+      assign sidebar_position = section.settings.sidebar_position
+      assign sidebar_collapse_default = section.settings.sidebar_collapse_default
+      assign enable_sticky = section.settings.enable_sticky
+  endif
+-%}
+
 <div data-section-id="{{ section.id }}" data-section-type="blog-layout-default" id="BlogSection-{{ section.id }}" data-section="{{ section.id }}" class="main-blog-block page-width blog-layout-default">
 
   <div class="header-page">
@@ -31,21 +42,19 @@
       <div class="header-with-sidebar">
     {% endif %}
 
-      {%- if show_page_title -%}
-        <h1 class="page-header text-{{ page_title_alignment }}">
-          {{ blog.title | escape }}
-        </h1>
-      {%- endif -%}
+    <h1 class="page-header text-{{ page_title_alignment }}">
+      {{ blog.title | escape }}
+    </h1>
 
-      {% if section.settings.description != "" %}
-        <p class="description">{{ section.settings.description | escape }}</p>
-      {% endif %}
+    {% if section.settings.description != "" %}
+      <p class="description">{{ section.settings.description | escape }}</p>
+    {% endif %}
 
-      {%- if show_sidebar and section.blocks.size > 0 -%}
-        <div class="sidebar-toogle" data-sidebar>
-          {% render 'icon-sidebar' %}
-        </div>
-      {%- endif -%}
+    {%- if show_sidebar and section.blocks.size > 0 -%}
+      <div class="sidebar-toogle" data-sidebar>
+        {% render 'icon-sidebar' %}
+      </div>
+    {%- endif -%}
       
     {% if show_sidebar %}
       </div>
