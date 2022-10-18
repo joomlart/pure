@@ -2,6 +2,19 @@
   "sections": {
     "main": {
       "type": "main-blog",
+      "blocks": {
+        "db9ecf03-2a58-4f91-a68d-5ef5234ba3b2": {
+          "type": "recent_post",
+          "settings": {
+            "show_block": true,
+            "heading": "Recent Post",
+            "number": 3
+          }
+        }
+      },
+      "block_order": [
+        "db9ecf03-2a58-4f91-a68d-5ef5234ba3b2"
+      ],
       "settings": {
         "layout": "grid",
         "description": "",
