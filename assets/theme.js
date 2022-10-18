@@ -5,7 +5,7 @@
       event.stopPropagation();
       var element = document.getElementByClassName("body");
       element.classList.add("open-mobile-sidebar");
-    console.log("Sr")
+      console.log("Sr");
   });
   // $doc.on('click', '[data-sidebar]', (event) => {
   //     event.preventDefault();
