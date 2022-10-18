@@ -29,12 +29,12 @@
       <div class="overflow">
           <div class="popup-header">
               {%- if settings.newsletter_popup_title != blank -%}
-                  <h5 class="newsletter-popup-title text-center">
+                  <h5 class="newsletter-popup-title">
                       {{ settings.newsletter_popup_title | escape }}
                   </h5>
               {%- endif -%}
               {%- if settings.newsletter_popup_desc != blank -%}
-                  <span class="popup-desc text-center">
+                  <span class="popup-desc">
                       {{ settings.newsletter_popup_desc | escape }}
                   </span>
               {%- endif -%}

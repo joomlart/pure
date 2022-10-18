@@ -1008,6 +1008,16 @@ summary::-webkit-details-marker {
   fill: #fff;
 }
 
+.popup-desc {
+  display: block;
+  font-size: var(--font-body-size);
+  font-weight: var(--font-heading-weight);
+  line-height: var(--body-line-height);
+  letter-spacing: var(--body-letter-spacing);
+  padding: 2px 0 20px;
+  color: var(--color-text);
+  text-align: center;
+}
 
 /*
   Focus ring - default (with offset)
