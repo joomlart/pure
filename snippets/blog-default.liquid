@@ -49,7 +49,7 @@
     {%- endif -%}
 
   <div class="halo-blog-content halo-grid-content">
-    {% comment %} {%- if show_sidebar and section.blocks.size > 0 -%}
+    {%- if show_sidebar and section.blocks.size > 0 -%}
       {{ 'component-main-sidebar.css' | asset_url | stylesheet_tag }}
       <div class="page-sidebar page-sidebar-{{ sidebar_position }} page-sidebar--vertical sidebar--{{ section.settings.sidebar_layout }}{% if enable_sticky %} has-sticky{% endif %}" id="halo-sidebar">
           <a href="javascript:void(0)" class="halo-sidebar-close" data-close-sidebar role="button">
@@ -69,7 +69,7 @@
               %}
           </div>
       </div>
-    {%- endif -%} {% endcomment %}
+    {%- endif -%}
     {%- paginate blog.articles by 6 -%}
     {%- render 'breadcrumb'- %}
     <div class="main-blog">
