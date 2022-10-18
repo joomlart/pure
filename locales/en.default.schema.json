@@ -436,6 +436,15 @@
         }
       }
     },
+    "general": {
+      "name": "General",
+      "settings": {
+        "breadcrumb": {
+          "title": "Breadcrumb",
+          "label__1": "Show Breadcrumb"
+        }
+      }
+    },
     "announcement-bar": {
       "name": "Announcement bar",
       "blocks": {
