@@ -17,78 +17,124 @@
   }
 {%- endstyle -%}
 
-<div>
-{%- paginate blog.articles by 6 -%}
-  {%- render 'breadcrumb'- %}
-  <div class="main-blog page-width section-{{ section.id }}-padding">
-    <h1 class="page--title h1">{{ blog.title | escape }}</h1>
-
-    {% if section.settings.description != "" %}
-      <p class="description">{{ section.settings.description | escape }}</p>
-    {% endif %}
-
-    <div class="wrap-inner {% if section.settings.sidebar == "right" %}grid has-sidebar sidebar-right{% endif %} {% if section.settings.sidebar == "left" %}grid has-sidebar sidebar-left{% endif %}">
-      {%- if blog.articles_count > 0 -%}
-        <div class="list-blogs">
-          <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
-            {%- for article in blog.articles -%}
-              <div class="blog-articles__article article">
-                {%- render 'article-card',
-                  article: article,
-                  media_height: section.settings.image_height,
-                  media_aspect_ratio: article.image.aspect_ratio,
-                  show_image: section.settings.show_image,
-                  show_date: section.settings.show_date,
-                  show_author: section.settings.show_author,
-                  show_excerpt: true 
-                -%}
-              </div>
-            {%- endfor -%}
-          </div>
-        </div>
-      {% else %}
-        <div class="item-placeholder">
-          <div class="placeholder media media--landscape">
-            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-          </div>
-          <div class="blog-placeholder__content">
-            <h2>
-              {{ 'sections.featured_blog.onboarding_title' | t }}
-            </h2>
-            <p class="rte-width">
-              {{ 'sections.featured_blog.onboarding_content' | t }}
-            </p>
-          </div>
-        </div>
-      {% endif %}
-      {%- if section.settings.sidebar != "full" -%}
-        <div class="sidebar">
-          <div class="scroll-sidebar">
-          {%- liquid
-            if section.settings.blog_show_lastest_post
-              render 'latest-blog-posts'
-            endif
-          -%}
-
-          {%- liquid
-            if section.settings.blog_show_tags
-            render 'tags'
-            endif
-          -%}
-
-          {%- liquid
-            if section.settings.blog_categories
-            render 'blog-categories'
-            endif
-          -%}
-        </div>
-      {% endif %}
+<div data-section-id="{{ section.id }}" data-section-type="blog-layout-default" id="BlogSection-{{ section.id }}" data-section="{{ section.id }}" class="main-blog-block  page-width blog-layout-default>
+  {%- if show_breadcrumb -%}
+    <div class="hide-on-desktop">
+      {% render 'breadcrumb', alignment: breadcrumb_alignment %}
     </div>
-    {%- if paginate.pages > 1 -%}
-      {%- render 'pagination', paginate: paginate -%}
     {%- endif -%}
+    {%- if show_sidebar -%}
+      <div class="header-with-sidebar">
+    {% endif %}
+      {%- if show_page_title -%}
+        <h1 class="page-header text-{{ page_title_alignment }}">
+          {{ blog.title | escape }}
+        </h1>
+      {%- endif -%}
+      {% if section.settings.description != "" %}
+        <p class="description">{{ section.settings.description | escape }}</p>
+      {% endif %}
+      {%- if show_sidebar and section.blocks.size > 0 -%}
+        <div class="sidebar-toogle" data-sidebar>
+          {% render 'icon-sidebar' %}
+        </div>
+      {%- endif -%}
+    {% if show_sidebar %}
+      </div>
+    {% endif %}
+    {%- if show_breadcrumb -%}
+      <div class="hide-on-mobile">
+        {% render 'breadcrumb', alignment: breadcrumb_alignment %}
+      </div>
+    {%- endif -%}
+
+  <div class="halo-blog-content halo-grid-content">
+    {% comment %} {%- if show_sidebar and section.blocks.size > 0 -%}
+      {{ 'component-main-sidebar.css' | asset_url | stylesheet_tag }}
+      <div class="page-sidebar page-sidebar-{{ sidebar_position }} page-sidebar--vertical sidebar--{{ section.settings.sidebar_layout }}{% if enable_sticky %} has-sticky{% endif %}" id="halo-sidebar">
+          <a href="javascript:void(0)" class="halo-sidebar-close" data-close-sidebar role="button">
+              <span class="visually-hidden">{{ 'general.common.close' | t }}</span>
+              {% render 'icon-close' %}
+          </a>
+          <div class="halo-sidebar-header text-left">
+              <span class="title">
+                  {{ 'sections.sidebar.title' | t }}
+              </span>
+          </div>
+          <div class="halo-sidebar-wrapper custom-scrollbar">
+              {% render 'sidebar',
+                  section: section,
+                  show_collapse: show_collapse,
+                  sidebar_collapse: sidebar_collapse_default
+              %}
+          </div>
+      </div>
+    {%- endif -%} {% endcomment %}
+    {%- paginate blog.articles by 6 -%}
+    {%- render 'breadcrumb'- %}
+    <div class="main-blog">
+      <div class="wrap-inner {% if section.settings.sidebar == "right" %}grid has-sidebar sidebar-right{% endif %} {% if section.settings.sidebar == "left" %}grid has-sidebar sidebar-left{% endif %}">
+        {%- if blog.articles_count > 0 -%}
+          <div class="list-blogs">
+            <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+              {%- for article in blog.articles -%}
+                <div class="blog-articles__article article">
+                  {%- render 'article-card',
+                    article: article,
+                    media_height: section.settings.image_height,
+                    media_aspect_ratio: article.image.aspect_ratio,
+                    show_image: section.settings.show_image,
+                    show_date: section.settings.show_date,
+                    show_author: section.settings.show_author,
+                    show_excerpt: true 
+                  -%}
+                </div>
+              {%- endfor -%}
+            </div>
+          </div>
+        {% else %}
+          <div class="item-placeholder">
+            <div class="placeholder media media--landscape">
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            </div>
+            <div class="blog-placeholder__content">
+              <h2>
+                {{ 'sections.featured_blog.onboarding_title' | t }}
+              </h2>
+              <p class="rte-width">
+                {{ 'sections.featured_blog.onboarding_content' | t }}
+              </p>
+            </div>
+          </div>
+        {% endif %}
+        {%- if section.settings.sidebar != "full" -%}
+          <div class="sidebar">
+            <div class="scroll-sidebar">
+            {%- liquid
+              if section.settings.blog_show_lastest_post
+                render 'latest-blog-posts'
+              endif
+            -%}
+
+            {%- liquid
+              if section.settings.blog_show_tags
+              render 'tags'
+              endif
+            -%}
+
+            {%- liquid
+              if section.settings.blog_categories
+              render 'blog-categories'
+              endif
+            -%}
+          </div>
+        {% endif %}
+      </div>
+      {%- if paginate.pages > 1 -%}
+        {%- render 'pagination', paginate: paginate -%}
+      {%- endif -%}
+    </div>
   </div>
-  {% comment %} End {% endcomment %}
 {%- endpaginate -%}
 </div>
 
