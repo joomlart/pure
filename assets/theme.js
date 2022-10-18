@@ -1,5 +1,6 @@
 (() => {
-  document.getElementById("data-sidebar").addEventListener("click", function(){
+  let toogleSidebar = document.getElementById("data-sidebar")
+  toogleSidebar.addEventListener("click", function(){
       event.preventDefault();
       event.stopPropagation();
       var element = document.getElementByClass("body");
