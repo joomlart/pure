@@ -3,7 +3,7 @@
   toogleSidebar.addEventListener("click", function(){
       event.preventDefault();
       event.stopPropagation();
-      var element = document.getElementByClass("body");
+      var element = document.getElementByClassName("body");
       element.classList.add("open-mobile-sidebar");
     console.log("Sr")
   });
