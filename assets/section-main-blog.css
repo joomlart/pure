@@ -43,6 +43,13 @@
   margin: 0;
 }
 
+@media screen and (min-width: 990px) {
+  .header-with-sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  } 
+}
 
 /*=== Layout Grid 
 ========================*/
