@@ -18,30 +18,43 @@
 {%- endstyle -%}
 
 <div data-section-id="{{ section.id }}" data-section-type="blog-layout-default" id="BlogSection-{{ section.id }}" data-section="{{ section.id }}" class="main-blog-block  page-width blog-layout-default>
-  {%- if show_breadcrumb -%}
-    <div class="hide-on-desktop">
-      {% render 'breadcrumb', alignment: breadcrumb_alignment %}
-    </div>
+    <!-- Breacrumb Mobile -->
+    {%- if show_breadcrumb -%}
+      <div class="hide-on-desktop">
+        {% render 'breadcrumb', alignment: breadcrumb_alignment %}
+      </div>
     {%- endif -%}
+
+    <!-- Start Sidebar Mobile -->
     {%- if show_sidebar -%}
       <div class="header-with-sidebar">
     {% endif %}
+
+      <!-- Title Page -->
       {%- if show_page_title -%}
         <h1 class="page-header text-{{ page_title_alignment }}">
           {{ blog.title | escape }}
         </h1>
       {%- endif -%}
+
+      <!-- Description -->
       {% if section.settings.description != "" %}
         <p class="description">{{ section.settings.description | escape }}</p>
       {% endif %}
+
+      <!-- Sidebar Toogle -->
       {%- if show_sidebar and section.blocks.size > 0 -%}
         <div class="sidebar-toogle" data-sidebar>
           {% render 'icon-sidebar' %}
         </div>
       {%- endif -%}
+      
     {% if show_sidebar %}
-      </div>
+    </div>
     {% endif %}
+    <!-- End Sidebar Mobile -->
+
+    <!-- Breacrumb Desktop -->
     {%- if show_breadcrumb -%}
       <div class="hide-on-mobile">
         {% render 'breadcrumb', alignment: breadcrumb_alignment %}
