@@ -1263,6 +1263,10 @@ summary::-webkit-details-marker {
     margin-bottom: 0;
 }
 
+.grid:first-child {
+    margin-top: 0;
+}
+
 .grid__item {
     width: calc(25% - var(--grid-mobile-horizontal-spacing) * 3 / 4);
     max-width: calc(50% - var(--grid-mobile-horizontal-spacing) / 2);
