@@ -1,6 +1,9 @@
 
+{%- liquid
+  assign show = block.settings.show_block
+-%}
+{%- if show -%} 
 <div class="list-tag">
-  {% if section.settings.blog_show_tags %}
     <h3 class="mod-title">Tags</h3>
     <ul>
       {% if blog.all_tags.size >= 1 %}
@@ -13,5 +16,5 @@
         <li><a class="not-found">Not Tag Found</a></li>
       {% endif %}
     </ul>
-  {% endif %}
 </div>
+{%- endif -%} 
