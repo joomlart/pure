@@ -159,6 +159,32 @@
     ]
   },
   {
+    "name": "t:settings_schema.general.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.general.settings.header__1.content"
+      },
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "t:settings_schema.general.settings.favicon.label",
+        "info": "t:settings_schema.general.settings.favicon.info"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.general.settings.header__2.content"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_backtotop",
+        "label": "t:settings_schema.general.settings.backtotop.label",
+        "default": true,
+        "info": "t:settings_schema.general.settings.backtotop.info"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.typography.name",
     "settings": [
       {
@@ -1275,17 +1301,6 @@
         "default": false,
         "label": "t:settings_schema.search_input.settings.predictive_search_show_price.label",
         "info": "t:settings_schema.search_input.settings.predictive_search_show_price.info"
-      }
-    ]
-  },
-  {
-    "name": "t:settings_schema.favicon.name",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "favicon",
-        "label": "t:settings_schema.favicon.settings.favicon.label",
-        "info": "t:settings_schema.favicon.settings.favicon.info"
       }
     ]
   },

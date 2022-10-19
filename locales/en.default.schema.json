@@ -262,15 +262,6 @@
         }
       }
     },
-    "favicon": {
-      "name": "Favicon",
-      "settings": {
-        "favicon": {
-          "label": "Favicon image",
-          "info": "Will be scaled down to 32 x 32px"
-        }
-      }
-    },
     "currency_format": {
       "name": "Currency format",
       "settings": {
@@ -383,6 +374,25 @@
           "unit__2": "s",
           "info": "Only Desktop",
           "info_2": "(Use for 'Custom Link')"
+        }
+      }
+    },
+    "general": {
+      "name": "General",
+      "settings": {
+        "header__1": {
+          "content": "Favicon"
+        },
+        "header__2": {
+          "content": "Back to top"
+        },
+        "backtotop": {
+          "label": "Back to top?",
+          "info": "A back to top button"
+        },
+        "favicon": {
+          "label": "Favicon image",
+          "info": "Will be scaled down to 32 x 32px"
         }
       }
     }

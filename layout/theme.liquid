@@ -241,7 +241,9 @@
       <li id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</li>
     </ul>
 
+    {% if settings.show_backtotop %}
     {% render 'back-to-the-top' %}
+    {%- endif -%}
 
     {% render 'pure-popup' %}
 
