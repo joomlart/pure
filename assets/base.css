@@ -233,7 +233,7 @@ html.no-js .no-js-hidden {
 }
 
 .wrapper {
-    border: 1px solid rgb(var(--color_border));
+    border: 1px solid rgb(var(--color-border));
 }
 
 .wrapper.page-width {
@@ -314,7 +314,7 @@ html.no-js .no-js-hidden {
 }
 
 .section {
-    border-top:  1px solid rgb(var(--color_border));
+    border-top:  1px solid rgb(var(--color-border));
 }
 
 .section + .section {
@@ -2501,7 +2501,7 @@ input[type='checkbox'] {
 
 #shopify-section-announcement-bar {
     z-index: 4;
-    border-bottom: 1px solid rgb(var(--color_border));
+    border-bottom: 1px solid rgb(var(--color-border));
 }
 
 .announcement-bar {
