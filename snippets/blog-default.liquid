@@ -91,13 +91,8 @@
           </div>
         {% endif %}
         
-        {%- if show_sidebar-%}
+        {%- if show_sidebar -%}
           <div class="page-sidebar page-sidebar-{{ sidebar_position }} page-sidebar--vertical sidebar--{{ section.settings.sidebar_layout }}{% if enable_sticky %} has-sticky{% endif %}" id="sidebar">
-            <div class="sidebar-header text-left">
-                <span class="title">
-                    Title
-                </span>
-            </div>
             <div class="sidebar-wrapper custom-scrollbar">
               {% render 'main-sidebar',
                 section: section,
@@ -107,7 +102,7 @@
             </div>
           </div>
         {%- endif -%}
-        
+
       {%- if paginate.pages > 1 -%}
         {%- render 'pagination', paginate: paginate -%}
       {%- endif -%}

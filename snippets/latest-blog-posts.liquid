@@ -1,18 +1,12 @@
-
-{% comment %} 
-Edit the 2 values right below: what's your blog handle and how many articles do you want to show?
-{% endcomment %}
-
-{% assign how_many_articles_to_show = 4 %}
+{%- liquid 
+  assign how_many_articles_to_show = 4
+  assign title = block.settings.heading
+-%}
 
 <!-- START OF LATEST BLOG POSTS -->
 <div class="lastest-posts">
-  {% if section.settings.blog_show_lastest_post %}
-    <h3 class="mod-title">Recent Posts</h3>
-  {% endif %}
-
+  <h3 class="mod-title">{{ title }}</h3>
   <div class="latest-blog-posts-list">
-
       {%- if blog.articles.size >= 1 -%}
         {% for article in blog.articles limit: how_many_articles_to_show %}
           <div class="post-item">
