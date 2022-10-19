@@ -232,10 +232,27 @@ html.no-js .no-js-hidden {
     display: none !important;
 }
 
+.wrapper {
+    border: 1px solid rgb(var(--color_border));
+}
+
+.wrapper.page-width {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .page-width {
     max-width: var(--page-width);
     margin: 0 auto;
     padding: 0 1.5rem;
+}
+
+.page-width .page-width,
+.page-width .page-width--narrow,
+.page-width .page-width-desktop {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .page-width--narrow {
@@ -296,12 +313,16 @@ html.no-js .no-js-hidden {
     object-fit: contain;
 }
 
-.section+.section {
+.section {
+    border-top:  1px solid rgb(var(--color_border));
+}
+
+.section + .section {
     margin-top: var(--spacing-sections-mobile);
 }
 
 @media screen and (min-width: 750px) {
-    .section+.section {
+    .section + .section {
         margin-top: var(--spacing-sections-desktop);
     }
 }
@@ -2480,6 +2501,7 @@ input[type='checkbox'] {
 
 #shopify-section-announcement-bar {
     z-index: 4;
+    border-bottom: 1px solid rgb(var(--color_border));
 }
 
 .announcement-bar {

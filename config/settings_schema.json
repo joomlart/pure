@@ -155,6 +155,16 @@
         "id": "gradient_background_2",
         "type": "color_background",
         "label": "t:settings_schema.colors.settings.gradient_background_2.label"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.colors.settings.header__3.content"
+      },
+      {
+        "id": "color_border",
+        "type": "color",
+        "default": "#212121",
+        "label": "t:settings_schema.colors.settings.color_border.label"
       }
     ]
   },

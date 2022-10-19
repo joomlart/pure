@@ -76,6 +76,7 @@
         --gradient-base-background-2: {% if settings.gradient_background_2 != blank %}{{ settings.gradient_background_2 }}{% else %}{{ settings.colors_background_2 }}{% endif %};
         --gradient-base-accent-1: {% if settings.gradient_accent_1 != blank %}{{ settings.gradient_accent_1 }}{% else %}{{ settings.colors_accent_1 }}{% endif %};
         --gradient-base-accent-2: {% if settings.gradient_accent_2 != blank %}{{ settings.gradient_accent_2 }}{% else %}{{ settings.colors_accent_2 }}{% endif %};
+        --color_border: {{ settings.color_border.red }}, {{ settings.color_border.green }}, {{ settings.color_border.blue }};
 
         --media-padding: {{ settings.media_padding }}px;
         --media-border-opacity: {{ settings.media_border_opacity | divided_by: 100.0 }};
@@ -228,6 +229,8 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
+    <div class="wrapper page-width">
+
     {% render 'wrapper-header' %}
     
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
@@ -235,6 +238,8 @@
     </main>
 
     {% render 'wrapper-footer' %}
+
+    </div>
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>

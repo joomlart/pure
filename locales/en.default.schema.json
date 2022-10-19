@@ -116,6 +116,9 @@
         "header__2": {
           "content": "Secondary colors"
         },
+        "header__3": {
+          "content": "Border colors"
+        },
         "colors_text": {
           "label": "Text",
           "info": "Used as foreground color on background colors."
@@ -135,6 +138,9 @@
         },
         "gradient_background_2": {
           "label": "Background 2 gradient"
+        },
+        "color_border": {
+          "label": "Border Color"
         }
       }
     },
