@@ -29,7 +29,7 @@
         "template--14433849245742__6da8ff78-5fad-4ca5-ac2f-25ad57f7a6ac-1666148117bb39641b-0"
       ],
       "settings": {
-        "layout": "full_bleed",
+        "layout": "grid",
         "slide_height": "adapt_image",
         "slider_visual": "counter",
         "auto_rotate": false,
