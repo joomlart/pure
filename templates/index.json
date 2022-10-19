@@ -293,10 +293,11 @@
         "9512014a-53d5-4656-a79d-ae19b7f615c1": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "image": "shopify:\/\/shop_images\/client-6.png",
+            "title": "",
             "icon": "none",
             "icon_position": "left",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "",
             "link_label": "",
             "link": ""
           }
