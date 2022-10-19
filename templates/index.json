@@ -1,71 +1,67 @@
 {
   "sections": {
-    "e1688549-5d28-4c4e-a691-9af670aa9a41": {
-      "type": "featured-product",
+    "6da8ff78-5fad-4ca5-ac2f-25ad57f7a6ac": {
+      "type": "slideshow",
       "blocks": {
-        "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-1": {
-          "type": "title",
+        "template--14433849245742__6da8ff78-5fad-4ca5-ac2f-25ad57f7a6ac-1666148117bb39641b-0": {
+          "type": "slide",
           "settings": {
-            "heading_size": "h1"
+            "heading": "Image slide",
+            "heading_size": "h3",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "link_style": "solid",
+            "box_align": "middle-center",
+            "button_label2": "",
+            "link2": "",
+            "link_style2": "solid",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
           }
         },
-        "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-2": {
-          "type": "text",
+        "template--14433849245742__6da8ff78-5fad-4ca5-ac2f-25ad57f7a6ac-1666148117bb39641b-1": {
+          "type": "slide",
           "settings": {
-            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-3": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-4": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-5": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-6": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-7": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
+            "heading": "Image slide",
+            "heading_size": "h3",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "link_style": "solid",
+            "box_align": "middle-center",
+            "button_label2": "",
+            "link2": "",
+            "link_style2": "solid",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
-        "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-1",
-        "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-2",
-        "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-3",
-        "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-4",
-        "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-5",
-        "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-6",
-        "template--14433849245742__e1688549-5d28-4c4e-a691-9af670aa9a41-1665073708bd903f8a-7"
+        "template--14433849245742__6da8ff78-5fad-4ca5-ac2f-25ad57f7a6ac-1666148117bb39641b-0",
+        "template--14433849245742__6da8ff78-5fad-4ca5-ac2f-25ad57f7a6ac-1666148117bb39641b-1"
       ],
       "settings": {
-        "product": "elf-cosmetic-prismatic-highlighting-duo",
-        "color_scheme": "background-1",
-        "secondary_background": false,
-        "hide_variants": false,
-        "enable_video_looping": false,
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand",
         "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
-    "e1688549-5d28-4c4e-a691-9af670aa9a41"
+    "6da8ff78-5fad-4ca5-ac2f-25ad57f7a6ac"
   ]
 }
