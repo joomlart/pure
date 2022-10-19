@@ -22,7 +22,8 @@
           "type": "recent-tags",
           "settings": {
             "show_block": true,
-            "heading": "Blog Tag"
+            "heading": "Blog Tags",
+            "number": 4
           }
         }
       },
