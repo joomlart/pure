@@ -6,9 +6,9 @@
         "db9ecf03-2a58-4f91-a68d-5ef5234ba3b2": {
           "type": "recent_post",
           "settings": {
-            "show_block": true,
-            "heading": "Recent Post",
-            "number": 3
+            "show_block": false,
+            "heading": "Recent Blog",
+            "number": 1
           }
         },
         "ab5e87e8-dcfa-4989-b80b-391c1f9f7fe9": {
