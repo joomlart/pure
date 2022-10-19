@@ -1,5 +1,5 @@
 {%- liquid 
-  assign how_many_articles_to_show = 4
+  assign how_many_articles_to_show = block.settings.number
   assign title = block.settings.heading
   assign show = block.settings.show_block
 -%}
