@@ -265,12 +265,49 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "bd494f52-6be2-4618-a982-2deb6a6c6394": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/client-4.png",
+            "title": "",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "31c5399d-62be-4b5a-885e-53bd274e348d": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "9512014a-53d5-4656-a79d-ae19b7f615c1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "template--14433849245742__7be3e2ec-f40a-48d0-998d-e7fea6e3cd05-1666161172bd468042-0",
         "template--14433849245742__7be3e2ec-f40a-48d0-998d-e7fea6e3cd05-1666161172bd468042-1",
-        "template--14433849245742__7be3e2ec-f40a-48d0-998d-e7fea6e3cd05-1666161172bd468042-2"
+        "template--14433849245742__7be3e2ec-f40a-48d0-998d-e7fea6e3cd05-1666161172bd468042-2",
+        "bd494f52-6be2-4618-a982-2deb6a6c6394",
+        "31c5399d-62be-4b5a-885e-53bd274e348d",
+        "9512014a-53d5-4656-a79d-ae19b7f615c1"
       ],
       "settings": {
         "title": "Multicolumn",
