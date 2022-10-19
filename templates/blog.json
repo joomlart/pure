@@ -6,8 +6,8 @@
         "db9ecf03-2a58-4f91-a68d-5ef5234ba3b2": {
           "type": "recent_post",
           "settings": {
-            "show_block": false,
-            "heading": "Recent Blog",
+            "show_block": true,
+            "heading": "Recent Articles",
             "number": 1
           }
         },
