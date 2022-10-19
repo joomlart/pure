@@ -1,13 +1,16 @@
 
 {%- liquid
   assign show = block.settings.show_block
+  assign title = block.settings.heading
+  assign how_many_tag_to_show = block.settings.number
+  
 -%}
 {%- if show -%} 
 <div class="list-tag">
-    <h3 class="mod-title">Tags</h3>
+    <h3 class="mod-title">{{ title }}}</h3>
     <ul>
       {% if blog.all_tags.size >= 1 %}
-        {%- for tag in blog.all_tags -%}
+        {%- for tag in blog.all_tags limit: how_many_tag_to_show -%}
           <li>
             <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>{% unless forloop.last %} {% endunless %}
           </li>
