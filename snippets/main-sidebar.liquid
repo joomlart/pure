@@ -47,10 +47,16 @@
         %}
     {%- endif -%} {% endcomment %}
     {%- if block.type == 'recent_post' -%}
-    {% render 'latest-blog-posts',
-        block: block,
-        show_collapse: show_collapse,
-        sidebar_collapse: sidebar_collapse
-    %}
+      {% render 'latest-blog-posts',
+          block: block,
+          show_collapse: show_collapse,
+          sidebar_collapse: sidebar_collapse
+      %}
+    {%- elsif block.type == 'category' -%}
+        {% render 'category',
+            block: block,
+            show_collapse: show_collapse,
+            sidebar_collapse: sidebar_collapse
+        %}
     {% endif %}
 {%- endfor -%}

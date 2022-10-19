@@ -1,7 +1,7 @@
 {{ 'component-article-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
-{{ 'component-sidebar.css' | asset_url | stylesheet_tag }}
+{{ 'component-main-sidebar.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -31,13 +31,11 @@
 <div data-section-id="{{ section.id }}" data-section-type="blog-layout-default" id="BlogSection-{{ section.id }}" data-section="{{ section.id }}" class="main-blog-block page-width blog-layout-default">
 
   <div class="header-page">
-    {%- if show_breadcrumb -%}
-      <div class="hide-on-desktop">
-        {% render 'breadcrumb', alignment: breadcrumb_alignment %}
-      </div>
-    {%- endif -%}
+    {% if show_breadcrumb %}
+      {% render 'breadcrumb' %}
+    {% endif %}
 
-    {%- if show_sidebar -%}
+    {% if show_sidebar %}
       <div class="header-with-sidebar">
     {% endif %}
 
@@ -48,49 +46,14 @@
     {% if section.settings.description != "" %}
       <p class="description">{{ section.settings.description | escape }}</p>
     {% endif %}
-
-    {%- if show_sidebar and section.blocks.size > 0 -%}
-      <div class="sidebar-toogle" id="data-sidebar">
-        {% render 'icon-sidebar' %}
-      </div>
-    {%- endif -%}
       
     {% if show_sidebar %}
       </div>
     {% endif %} 
-
-    {%- if show_breadcrumb -%}
-      <div class="hide-on-mobile">
-        {% render 'breadcrumb', alignment: breadcrumb_alignment %}
-      </div>
-    {%- endif -%} 
-    
   </div>
 
   {% comment %} Start  Content {% endcomment %}
   <div class="blog-content grid-content">
-    {%- if show_sidebar and section.blocks.size > 0 -%}
-      {{ 'component-main-sidebar.css' | asset_url | stylesheet_tag }}
-      <div class="page-sidebar page-sidebar-{{ sidebar_position }} page-sidebar--vertical sidebar--{{ section.settings.sidebar_layout }}{% if enable_sticky %} has-sticky{% endif %}" id="sidebar">
-        <a href="javascript:void(0)" class="sidebar-close" data-close-sidebar role="button">
-          <span class="visually-hidden">Close</span>
-<!--           {% render 'icon-close' %} -->
-        </a>
-        <div class="sidebar-header text-left">
-            <span class="title">
-                Title
-            </span>
-        </div>
-        <div class="sidebar-wrapper custom-scrollbar">
-          {% render 'sidebar',
-            section: section,
-            show_collapse: show_collapse,
-            sidebar_collapse: sidebar_collapse_default
-          %}
-        </div>
-      </div>
-    {%- endif -%}
-
     {%- paginate blog.articles by 6 -%}
     <div class="main-blog">
       <div class="wrap-inner {% if section.settings.sidebar == "right" %}grid has-sidebar sidebar-right{% endif %} {% if section.settings.sidebar == "left" %}grid has-sidebar sidebar-left{% endif %}">
@@ -127,29 +90,19 @@
             </div>
           </div>
         {% endif %}
-        {%- if section.settings.sidebar != "full" -%}
-          <div class="sidebar">
-            <div class="scroll-sidebar">
-            {%- liquid
-              if section.settings.blog_show_lastest_post
-                render 'latest-blog-posts'
-              endif
-            -%}
-
-            {%- liquid
-              if section.settings.blog_show_tags
-              render 'tags'
-              endif
-            -%}
-
-            {%- liquid
-              if section.settings.blog_categories
-              render 'blog-categories'
-              endif
-            -%}
+        
+        {%- if show_sidebar -%}
+          <div class="page-sidebar page-sidebar-{{ sidebar_position }} page-sidebar--vertical sidebar--{{ section.settings.sidebar_layout }}{% if enable_sticky %} has-sticky{% endif %}" id="sidebar">
+            <div class="sidebar-wrapper custom-scrollbar">
+              {% render 'main-sidebar',
+                section: section,
+                show_collapse: show_collapse,
+                sidebar_collapse: sidebar_collapse_default
+              %}
+            </div>
           </div>
-        {% endif %}
-      </div>
+        {%- endif -%}
+
       {%- if paginate.pages > 1 -%}
         {%- render 'pagination', paginate: paginate -%}
       {%- endif -%}
