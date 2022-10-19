@@ -17,11 +17,19 @@
             "heading": "Recent Articles",
             "number": 3
           }
+        },
+        "489f6b45-7d0d-43e3-9ad0-f17269c5bca1": {
+          "type": "recent-tags",
+          "settings": {
+            "show_block": true,
+            "heading": "Blog Tag"
+          }
         }
       },
       "block_order": [
         "ab5e87e8-dcfa-4989-b80b-391c1f9f7fe9",
-        "db9ecf03-2a58-4f91-a68d-5ef5234ba3b2"
+        "db9ecf03-2a58-4f91-a68d-5ef5234ba3b2",
+        "489f6b45-7d0d-43e3-9ad0-f17269c5bca1"
       ],
       "settings": {
         "show_breadcrumb": true,
