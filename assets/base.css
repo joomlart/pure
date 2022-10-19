@@ -2619,6 +2619,11 @@ input[type='checkbox'] {
     justify-content: space-between;
 }
 
+.page-width .page-width.header {
+    padding-left: var(--grid-desktop-horizontal-spacing);
+    padding-right: var(--grid-desktop-horizontal-spacing);
+}
+
 @media screen and (min-width: 990px) {
     .header--top-left,
     .header--middle-left:not(.header--has-menu) {
