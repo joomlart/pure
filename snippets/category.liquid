@@ -3,8 +3,10 @@
 {%- liquid 
   assign categories = section.settings.category | split: ',' 
   assign title = block.settings.heading
+  assign show = block.settings.show_block
 -%}
 
+{%- if show -%}
 <div class="blog-categories">
   {% if categories %}
     <h3 class="mod-title">{{ title }}</h3>
@@ -21,3 +23,4 @@
     {%- endfor %}
   {% endif %}
 </div>
+{%- endif -%}}
