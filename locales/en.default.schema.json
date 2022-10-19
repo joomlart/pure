@@ -1661,12 +1661,7 @@
             },
             "general": {
               "label__1": "Show Categories?",
-              "label__2": "Heading",
-              "label__3": "Type",
-              "label__4": "Choose Menu",
-              "options__1": "Show 1 Level",
-              "options__2": "Show All Levels",
-              "options__3": "Show All Collections"
+              "label__2": "Heading"
             }
           }
         },

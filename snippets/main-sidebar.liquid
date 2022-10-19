@@ -52,8 +52,8 @@
           show_collapse: show_collapse,
           sidebar_collapse: sidebar_collapse
       %}
-    {%- elsif block.type == 'blog-categories' -%}
-        {% render 'halo-side-all-categories',
+    {%- elsif block.type == 'category' -%}
+        {% render 'category',
             block: block,
             show_collapse: show_collapse,
             sidebar_collapse: sidebar_collapse
