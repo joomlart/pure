@@ -3,6 +3,13 @@
     "main": {
       "type": "main-blog",
       "blocks": {
+        "ab5e87e8-dcfa-4989-b80b-391c1f9f7fe9": {
+          "type": "category",
+          "settings": {
+            "show_block": true,
+            "heading": "Categories"
+          }
+        },
         "db9ecf03-2a58-4f91-a68d-5ef5234ba3b2": {
           "type": "recent_post",
           "settings": {
@@ -10,18 +17,11 @@
             "heading": "Recent Articles",
             "number": 3
           }
-        },
-        "ab5e87e8-dcfa-4989-b80b-391c1f9f7fe9": {
-          "type": "category",
-          "settings": {
-            "show_block": true,
-            "heading": "Categories"
-          }
         }
       },
       "block_order": [
-        "db9ecf03-2a58-4f91-a68d-5ef5234ba3b2",
-        "ab5e87e8-dcfa-4989-b80b-391c1f9f7fe9"
+        "ab5e87e8-dcfa-4989-b80b-391c1f9f7fe9",
+        "db9ecf03-2a58-4f91-a68d-5ef5234ba3b2"
       ],
       "settings": {
         "show_breadcrumb": true,
