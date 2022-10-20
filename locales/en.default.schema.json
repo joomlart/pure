@@ -1492,6 +1492,9 @@
             },
             "button_link": {
               "label": "Button link"
+            },
+            "button_style_secondary": {
+              "label": "Use outline button style"
             }
           }
         }
