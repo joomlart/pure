@@ -115,6 +115,10 @@
   border-right: 0;
 }
 
+.blog-articles__article:first-child .card {
+  flex-direction: row;
+}
+
 .blog-articles__article:not(:first-child) {
   border-bottom: 0;
 }
