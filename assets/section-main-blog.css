@@ -52,7 +52,7 @@
   }
 }
 
-/*=== Layout Collapse 
+/*=== Layout List 
 ========================*/
 
 .blog-articles--collage .article {
@@ -79,6 +79,8 @@
     text-align: left;
   }
 }
+
+/* Placeholder */
 
 .main-blog .item-placeholder {
   max-width: 33.3%;
