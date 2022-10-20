@@ -108,8 +108,6 @@
 .collection__title .inner .title {
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 500;
-  text-transform: uppercase;
 }
 
 .collection__title .inner .h4 {
@@ -118,7 +116,7 @@
 
 .collection__title .inner {
   border-bottom: 1px solid rgb(var(--color-border));
-  padding: 1.6rem 0;
+  padding: var(--grid-desktop-vertical-spacing) var(--grid-desktop-horizontal-spacing);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
