@@ -1492,9 +1492,6 @@
             },
             "button_link": {
               "label": "Button link"
-            },
-            "button_style_secondary": {
-              "label": "Use outline button style"
             }
           }
         }
@@ -1589,12 +1586,12 @@
           "content": "Change excerpts by editing your blog posts. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "layout": {
-          "label": "Card Layout",
+          "label": "Desktop layout",
           "options__1": {
-            "label": "Vertical"
+            "label": "Grid"
           },
           "options__2": {
-            "label": "Horizontal"
+            "label": "List"
           },
           "info": "Posts are stacked on mobile."
         },
