@@ -76,8 +76,8 @@
         "template--14433849245742__7485359a-b730-48ca-bdb1-922ef886db3e-1666161172a23f6711-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
+            "heading": "Up to 30% OFF Selected Brands",
+            "heading_size": "h0"
           }
         },
         "template--14433849245742__7485359a-b730-48ca-bdb1-922ef886db3e-1666161172a23f6711-1": {
@@ -90,7 +90,7 @@
         "template--14433849245742__7485359a-b730-48ca-bdb1-922ef886db3e-1666161172a23f6711-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Sale Products",
             "button_link": "shopify:\/\/collections"
           }
         }
@@ -150,8 +150,8 @@
         "template--14433849245742__d77f3772-c4db-4b4b-9b0c-2633476d6f8c-1666161172a23f6711-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
+            "heading": "Sustainable, Everyday Beauty",
+            "heading_size": "h0"
           }
         },
         "template--14433849245742__d77f3772-c4db-4b4b-9b0c-2633476d6f8c-1666161172a23f6711-1": {
@@ -164,7 +164,7 @@
         "template--14433849245742__d77f3772-c4db-4b4b-9b0c-2633476d6f8c-1666161172a23f6711-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Check it Out",
             "button_link": "shopify:\/\/collections"
           }
         }
