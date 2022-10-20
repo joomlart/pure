@@ -92,3 +92,10 @@
 .main-blog .has-sidebar .item-placeholder {
   max-width: 50%;
 }
+
+
+/* Blog Default Layout*/
+
+.blog-articles__article:first-child {
+  grid-column: 1/3;
+}

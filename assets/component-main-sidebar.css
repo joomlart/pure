@@ -158,6 +158,15 @@
 .blog-categories li .icon-svg {
   width: 1.2rem;
   height: auto;
+  visibility: hidden;
+  display: none;
+  transition: all 1s ease-in-out;
+}
+
+.blog-categories li:hover .icon-svg {
+  visibility: visible;
+  display: block;
+  color: var(--color-base-accent-3);
 }
 
 .blog-categories li a {
@@ -168,6 +177,8 @@
 .blog-categories li a:hover {
   color: var(--color-base-accent-3);
 }
+
+
 
 
 /* Sidebar Article */
