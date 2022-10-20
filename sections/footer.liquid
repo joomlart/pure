@@ -51,7 +51,7 @@
                 assign footer_grid_class = 'grid--3-col-tablet'
               endif
             -%}
-            <div class="footer__blocks-wrapper grid grid--1-col grid--2-col-tablet">
+            <div class="footer__blocks-wrapper grid grid-no-gutter grid--1-col grid--2-col-tablet">
               <div class="grid__item grid grid--2-col-tablet-down {{ footer_grid_class }}">
               {%- for block in section.blocks -%}
                 <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
