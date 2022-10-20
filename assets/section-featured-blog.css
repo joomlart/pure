@@ -40,25 +40,22 @@
 }
 
 .blogs__title .inner {
-  border-top: 2px solid rgba(var(--color-base-accent-1));
-  border-bottom: 1px solid rgba(var(--color-foreground),var(--text-boxes-border-opacity));
-  padding: 1.6rem 0;
+  border-bottom: 1px solid rgb(var(--color-border));
+  padding: var(--grid-desktop-vertical-spacing) var(--grid-desktop-horizontal-spacing);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .blogs__title .inner .blog__title {
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 500;
-  text-transform: uppercase;
 }
 
 .blogs__title .inner .h4 {
