@@ -35,13 +35,14 @@
       "settings": {
         "show_breadcrumb": true,
         "layout": "grid",
-        "description": "",
+        "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
         "show_image": true,
         "image_height": "medium",
         "show_date": true,
         "show_author": true,
         "show_sidebar": true,
         "sidebar": "right",
+        "enable_sticky": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
