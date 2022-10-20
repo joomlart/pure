@@ -42,7 +42,7 @@
         "show_author": false,
         "show_sidebar": true,
         "sidebar": "left",
-        "enable_sticky": false,
+        "enable_sticky": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
