@@ -1,10 +1,5 @@
 {
   "sections": {
-    "166382168102e080c5": {
-      "type": "breadcrumb",
-      "settings": {
-      }
-    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -41,7 +36,6 @@
     }
   },
   "order": [
-    "166382168102e080c5",
     "banner",
     "product-grid"
   ]
