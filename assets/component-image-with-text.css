@@ -4,11 +4,17 @@
 
 .image-with-text .grid__item {
   position: relative;
+  border-right: 1px solid rgb(var(--color-border));
 }
 
 @media screen and (min-width: 750px) {
   .image-with-text__grid--reverse {
     flex-direction: row-reverse;
+  }
+
+  .image-with-text__grid--reverse .grid__item {
+    border-left: 1px solid rgb(var(--color-border));
+    border-right: 0;
   }
 }
 

@@ -113,6 +113,10 @@
   }
 }
 
+.blog .title-wrapper {
+  margin-bottom: 0;
+}
+
 .blog .title-wrapper-with-link .inner .blog__title {
   margin-top: 0;
   margin-bottom: 0;
