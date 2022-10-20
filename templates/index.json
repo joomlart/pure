@@ -44,7 +44,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Featured collection",
-        "heading_size": "h4",
+        "heading_size": "h3",
         "description": "",
         "show_description": false,
         "description_style": "body",
