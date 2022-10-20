@@ -168,3 +168,13 @@
 .blog__view-all a:hover span.icon-wrap svg {
   width: 1.6rem;
 }
+
+@media screen and (min-width: 990px) {
+  .blog__posts.grid-no-gutter > .grid__item {
+      padding: 48px;
+  }
+
+  .blog__posts.grid-no-gutter > .grid__item + .grid__item {
+    border-left: 1px solid rgb(var(--color-border));
+  }
+}

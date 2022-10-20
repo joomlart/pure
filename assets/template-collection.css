@@ -254,3 +254,13 @@
     padding-right: 0;
   }
 }
+
+@media screen and (min-width: 990px) {
+  .product-grid.grid-no-gutter > .grid__item {
+      padding: 48px;
+  }
+
+  .product-grid.grid-no-gutter > .grid__item + .grid__item {
+    border-left: 1px solid rgb(var(--color-border));
+  }
+}
