@@ -1260,8 +1260,8 @@ summary::-webkit-details-marker {
 }
 
 .grid-no-gutter {
-    --grid-mobile-horizontal-spacing:  0;
-    --grid-mobile-vertical-spacing:  0;
+    --grid-mobile-horizontal-spacing:  0px;
+    --grid-mobile-vertical-spacing:  0px;
 }
 
 @media screen and (min-width: 750px) {
@@ -1519,6 +1519,13 @@ summary::-webkit-details-marker {
     }
     .grid--1-col-tablet-down.grid--peek .grid__item {
         width: calc(100% - var(--grid-desktop-horizontal-spacing) - 3rem);
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .grid-no-gutter > .grid__item {
+        padding-left: 48px;
+        padding-right: 48px;
     }
 }
 
