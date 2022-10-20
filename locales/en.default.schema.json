@@ -1586,12 +1586,12 @@
           "content": "Change excerpts by editing your blog posts. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
         "layout": {
-          "label": "Desktop layout",
+          "label": "Card Layout",
           "options__1": {
-            "label": "Grid"
+            "label": "Vertical"
           },
           "options__2": {
-            "label": "Collage"
+            "label": "Horizontal"
           },
           "info": "Posts are stacked on mobile."
         },
