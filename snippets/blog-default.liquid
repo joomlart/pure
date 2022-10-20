@@ -31,7 +31,6 @@
 <div data-section-id="{{ section.id }}" data-section-type="blog-layout-default" id="BlogSection-{{ section.id }}" data-section="{{ section.id }}" class="main-blog-block page-width blog-layout-default">
 
   <div class="header-page">
-    <div class="header-left">
     {% if show_breadcrumb %}
       {% render 'breadcrumb' %}
     {% endif %}
@@ -51,10 +50,6 @@
     {% if show_sidebar %}
       </div>
     {% endif %}
-    </div> 
-    <div class="header-right">
-      
-    </div>
   </div>
 
   <div class="blog-content grid-content">
@@ -63,7 +58,7 @@
       <div class="wrap-inner {% if section.settings.sidebar == "right" %}grid has-sidebar sidebar-right{% endif %} {% if section.settings.sidebar == "left" %}grid has-sidebar sidebar-left{% endif %}">
         {%- if blog.articles_count > 0 -%}
           <div class="list-blogs">
-            <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+            <div class="blog-articles grid-no-gutter {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
               {%- for article in blog.articles -%}
                 <div class="blog-articles__article article">
                   {%- render 'article-card',

@@ -92,15 +92,7 @@
 
 
 /* Blog Default Layout*/
-
-.blog-articles__article:first-child {
-  grid-column: 1/3;
-}
-
-
 .header-page {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
   padding: var(--grid-desktop-horizontal-spacing);
   border-bottom: 1px solid var(--color-border);
 }
@@ -108,3 +100,23 @@
 .header-page .header-right {
   border-left: 1px solid var(--color-border);
 }
+
+.blog-articles__article:first-child {
+  grid-column: 1/3;
+}
+
+.blog-articles__article {
+  border-bottom: 1px solid rgb(var(--color-border));
+  border-right: 1px solid rgb(var(--color-border));
+  padding: 4.8rem;
+}
+
+
+.blog-articles__article:first-child {
+  border-top: 1px solid rgb(var(--color-border));
+}
+
+.blog-articles__article:nth-child(2n+1) {
+  border-right: 0;
+}
+
