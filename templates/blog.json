@@ -41,7 +41,7 @@
         "show_date": true,
         "show_author": false,
         "show_sidebar": true,
-        "sidebar": "right",
+        "sidebar": "left",
         "enable_sticky": true,
         "padding_top": 36,
         "padding_bottom": 36
