@@ -91,7 +91,8 @@
           "type": "button",
           "settings": {
             "button_label": "Sale Products",
-            "button_link": "shopify:\/\/collections"
+            "button_link": "shopify:\/\/collections",
+            "button_style_secondary": true
           }
         }
       },
@@ -165,7 +166,8 @@
           "type": "button",
           "settings": {
             "button_label": "Check it Out",
-            "button_link": "shopify:\/\/collections"
+            "button_link": "shopify:\/\/collections",
+            "button_style_secondary": true
           }
         }
       },
