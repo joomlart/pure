@@ -52,7 +52,6 @@
     {% endif %} 
   </div>
 
-  {% comment %} Start  Content {% endcomment %}
   <div class="blog-content grid-content">
     {%- paginate blog.articles by 6 -%}
     <div class="main-blog">
@@ -92,8 +91,8 @@
         {% endif %}
         
         {%- if show_sidebar -%}
-          <div class="page-sidebar page-sidebar-{{ sidebar_position }} page-sidebar--vertical sidebar--{{ section.settings.sidebar_layout }}{% if enable_sticky %} has-sticky{% endif %}" id="sidebar">
-            <div class="sidebar-wrapper custom-scrollbar">
+          <div class="page-sidebar page-sidebar-{{ sidebar_position }} page-sidebar--vertical sidebar--{{ section.settings.sidebar_layout }} sidebar">
+            <div class="sidebar-wrapper {% if enable_sticky %}scroll-sidebar{% endif %}">
               {% render 'main-sidebar',
                 section: section,
                 show_collapse: show_collapse,
@@ -110,5 +109,4 @@
     {%- endpaginate -%}
   </div>
   </div>
-  {% comment %} End Content {% endcomment %}
 </div>

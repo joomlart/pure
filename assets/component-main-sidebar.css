@@ -93,7 +93,7 @@
   color: var(--gradient-base-background-1);
 }
 
-/* Lastest Blog */
+/* Recent Blog */
 
 .latest-blog-posts-list img {
   object-fit: cover;
@@ -146,7 +146,7 @@
   padding: var(--grid-desktop-horizontal-spacing);
 }
 
-/* Bog Categories */
+/* Blog Category */
 
 .blog-categories li {
   align-items: center;
