@@ -35,20 +35,12 @@
       {% render 'breadcrumb' %}
     {% endif %}
 
-    {% if show_sidebar %}
-      <div class="header-with-sidebar">
-    {% endif %}
-
     <h1 class="page--title">
       {{ blog.title | escape }}
     </h1>
 
     {% if section.settings.description != "" %}
       <p class="description">{{ section.settings.description | escape }}</p>
-    {% endif %}
-      
-    {% if show_sidebar %}
-      </div>
     {% endif %}
   </div>
 
