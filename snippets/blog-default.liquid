@@ -31,6 +31,7 @@
 <div data-section-id="{{ section.id }}" data-section-type="blog-layout-default" id="BlogSection-{{ section.id }}" data-section="{{ section.id }}" class="main-blog-block page-width blog-layout-default">
 
   <div class="header-page">
+    <div class="header-left">
     {% if show_breadcrumb %}
       {% render 'breadcrumb' %}
     {% endif %}
@@ -49,7 +50,11 @@
       
     {% if show_sidebar %}
       </div>
-    {% endif %} 
+    {% endif %}
+    </div> 
+    <div class="header-right">
+      
+    </div>
   </div>
 
   <div class="blog-content grid-content">
@@ -91,7 +96,7 @@
         {% endif %}
         
         {%- if show_sidebar -%}
-          <div class="page-sidebar page-sidebar-{{ sidebar_position }} page-sidebar--vertical sidebar--{{ section.settings.sidebar_layout }} sidebar">
+          <div class="page-sidebar page-sidebar-{{ sidebar_position }} page-sidebar--vertical sidebar--{{ section.settings.sidebar_layout }} sidebar" >
             <div class="sidebar-wrapper {% if enable_sticky %}scroll-sidebar{% endif %}">
               {% render 'main-sidebar',
                 section: section,

@@ -8,10 +8,8 @@
 
 .has-sidebar {
   display: grid;
-}
-
-.sidebar .scroll-sidebar > div {
-  margin-bottom: 2rem;
+  column-gap: 0;
+  row-gap: 0;
 }
 
 .blog-articles--collage {
@@ -33,13 +31,17 @@
 
 }
 
-.sidebar {
-  padding: var(--grid-desktop-vertical-spacing) 0 0;
+.sidebar .sidebar-wrapper > div {
+  padding: var(--grid-desktop-horizontal-spacing);
+  border-top: 1px solid rgb(var(--color-border));
+}
+
+.sidebar .sidebar-wrapper > div:last-child {
+  border-bottom: 1px solid rgb(var(--color-border));
 }
 
 @media screen and (min-width: 990px) {
   .sidebar {
-    padding: 0 0 0 var(--grid-desktop-vertical-spacing);
   }
 }
 
