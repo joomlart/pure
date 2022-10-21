@@ -71,6 +71,7 @@
 
 #triggerToggle {
   transition: all .4s ease-in-out;
+  cursor: pointer;
 }
 
 #triggerToggle:focus {
