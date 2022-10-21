@@ -70,19 +70,19 @@
   margin-right: 0;
 }
 
-#triggerToggle {
+.click-slide-down {
   transition: all .5s ease-in-out;
   cursor: pointer;
   background: transparent;
   border: 0;
 }
 
-#triggerToggle:focus {
+.click-slide-down:focus {
   transform: rotate(180deg);
   transform-origin: center;
 }
 
-#triggerToggle svg {
+.click-slide-down svg {
   width: 2rem;
   height: 2rem;
 }
