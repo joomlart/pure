@@ -57,11 +57,11 @@ let slideDown = (target, duration=500) => {
   }, duration);
 }
  let slideToggle = (target, duration = 500) => {
-  if (window.getComputedStyle(target).display === 'none') {
-    if(isClicked.classList.contains('click-slide-up')) {
-      isClicked.classList.remove('click-slide-up')
-    }
-    isClicked.classList.add("click-slide-down");
+  // if (window.getComputedStyle(target).display === 'none') {
+  //   if(isClicked.classList.contains('click-slide-up')) {
+  //     isClicked.classList.remove('click-slide-up')
+  //   }
+  //   isClicked.classList.add("click-slide-down");
     return slideDown(target, duration);
   } else {
     if(isClicked.classList.contains('click-slide-down')) {
