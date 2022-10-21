@@ -296,7 +296,7 @@
       "settings": {
         "title": "",
         "sub-title": "",
-        "mod_class": "",
+        "mod_class": "border-around",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
