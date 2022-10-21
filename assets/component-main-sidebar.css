@@ -69,12 +69,14 @@
   margin-right: 0;
 }
 
-#triggerToggle svg {
+#triggerToggle {
   transition: all .4s ease-in-out;
   cursor: pointer;
+  background: transparent;
+  border: 0;
 }
 
-#triggerToggle:focus svg {
+#triggerToggle:focus {
   transform: rotate(180deg);
 }
 /* Modlue Title */
