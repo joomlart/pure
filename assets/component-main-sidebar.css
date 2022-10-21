@@ -69,7 +69,7 @@
   margin-right: 0;
 }
 
-#triggerToggle {
+#triggerToggle svg {
   transition: all .4s ease-in-out;
   cursor: pointer;
 }
