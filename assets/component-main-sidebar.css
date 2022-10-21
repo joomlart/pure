@@ -81,12 +81,18 @@
   height: 2rem;
 }
 
-.click-slide-up {
+.click-slide-up,
+.click-slide-down {
   transition: all .5s ease-in-out;
 }
 
 .click-slide-up:focus {
   transform: rotate(180deg);
+  transform-origin: center;
+}
+
+.click-slide-down:focus {
+  transform: rotate(-180deg);
   transform-origin: center;
 }
 
