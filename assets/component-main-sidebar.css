@@ -74,7 +74,7 @@
   cursor: pointer;
 }
 
-#triggerToggle:focus {
+#triggerToggle:focus svg {
   transform: rotate(180deg);
 }
 /* Modlue Title */
