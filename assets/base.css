@@ -2552,8 +2552,8 @@ input[type='checkbox'] {
 .announcement-bar__message {
     padding: 1.6rem 0;
     margin: 0;
-    text-transform: uppercase;
     color: var(--color-base-text);
+    font-size: 1.4rem;
 }
 
 .announcement-bar-item {
@@ -2662,6 +2662,7 @@ input[type='checkbox'] {
 
 .header > .header__heading {
     order:  2;
+    text-align: center;
 }
 
 .header > .header__heading-link {
