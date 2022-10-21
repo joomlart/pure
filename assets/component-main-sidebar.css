@@ -70,21 +70,21 @@
   margin-right: 0;
 }
 
-.click-slide-down {
+#triggerToggle {
   transition: all .5s ease-in-out;
   cursor: pointer;
   background: transparent;
   border: 0;
 }
 
-.click-slide-down:focus {
-  transform: rotate(180deg);
-  transform-origin: center;
-}
-
-.click-slide-down svg {
+#triggerToggle svg {
   width: 2rem;
   height: 2rem;
+}
+
+#click-slide-down:focus {
+  transform: rotate(180deg);
+  transform-origin: center;
 }
 /* Modlue Title */
 
