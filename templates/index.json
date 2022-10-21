@@ -103,7 +103,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/banner-1.jpg",
-        "height": "large",
+        "height": "square",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "bottom",
@@ -178,7 +178,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/banner-2.jpg",
-        "height": "adapt",
+        "height": "square",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "bottom",
