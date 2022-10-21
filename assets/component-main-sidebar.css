@@ -75,7 +75,7 @@
 }
 
 #triggerToggle:focus {
-  transform: rotateX(360deg);
+  transform: rotate(90deg);
 }
 /* Modlue Title */
 
