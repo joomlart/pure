@@ -56,7 +56,8 @@
 /*=== Layout List 
 ========================*/
 
-.blog-articles--collage .article {
+.blog-articles--collage .article:first-child .article-card {
+  flex-direction: column;
 }
 
 .blog-articles--collage .article .card .card__content {
