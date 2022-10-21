@@ -8,7 +8,9 @@
 <div class="lastest-posts">
   <div class="mod-header">
     <h3 class="mod-title">{{ title }}</h3>
+    {% if show_collapse %}
     <span id="triggerToggle" title="Toggle slide-up and slide-down states for the target" class="icon-svg">{% render 'icon-chevron-up' %}</span>
+    {% endif %}
   </div>
   <div class="latest-blog-posts-list" id="target">
       {%- if blog.articles.size >= 1 -%}
