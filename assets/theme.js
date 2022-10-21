@@ -57,6 +57,7 @@ let slideDown = (target, duration=500) => {
   }, duration);
 }
  let slideToggle = (target, duration = 500) => {
+   isClicked.classList.add("isClicked");
   if (window.getComputedStyle(target).display === 'none') {
     return slideDown(target, duration);
   } else {
@@ -67,6 +68,7 @@ let slideDown = (target, duration=500) => {
 /////
 let speedAnimation = 400;
 let targetId = document.getElementById("target");
+let isClicked = document.getElementById("triggerToggle");
 
 let slideBtnClick = (id, sl) => document.getElementById(id).addEventListener('click', () => sl(targetId, speedAnimation));
 
