@@ -320,6 +320,15 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "04016c39-2ee7-482c-8d28-21418823ca24": {
+      "type": "ja-marquee",
+      "settings": {
+        "marquee_text": "<p>FREE SHIPPING OVER $60 \/ 30-DAYS FREE RETURN POLICY \/ 100% SECURE PAYMENTS \/ FREE SHIPPING OVER $60 \/ 30-DAYS FREE RETURN POLICY \/ 100% SECURE PAYMENTS \/ FREE SHIPPING OVER $60 \/ 30-DAYS FREE RETURN POLICY \/ 100% SECURE PAYMENTS<\/p>",
+        "color_scheme": "background-2",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -330,6 +339,7 @@
     "dbc66c8e-f043-4eef-a9f3-0ef21d8f8c1e",
     "d77f3772-c4db-4b4b-9b0c-2633476d6f8c",
     "77ecfc52-fd66-4e60-8baf-ad5fe0e516af",
-    "7be3e2ec-f40a-48d0-998d-e7fea6e3cd05"
+    "7be3e2ec-f40a-48d0-998d-e7fea6e3cd05",
+    "04016c39-2ee7-482c-8d28-21418823ca24"
   ]
 }
