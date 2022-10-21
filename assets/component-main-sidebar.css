@@ -3,7 +3,7 @@
 
 .scroll-sidebar {
   position: sticky;
-  top: 3rem;
+  top: 0;
 }
 
 .has-sidebar {
@@ -59,6 +59,15 @@
   grid-column: 2/4
 }
 
+/* Module Header */
+.mod-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mod-header span {
+  margin-right: 0;
+}
 /* Modlue Title */
 
 .mod-title{
