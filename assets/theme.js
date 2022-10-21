@@ -60,16 +60,14 @@ let slideDown = (target, duration=500) => {
   if (window.getComputedStyle(target).display === 'none') {
     if(isClicked.classList.contains('click-slide-up')) {
       isClicked.classList.remove('click-slide-up')
-    }else {
-      isClicked.classList.add("click-slide-down");
     }
+    isClicked.classList.add("click-slide-down");
     return slideDown(target, duration);
   } else {
     if(isClicked.classList.contains('click-slide-down')) {
       isClicked.classList.remove('click-slide-down')
-    }else {
-      isClicked.classList.add("click-slide-up");
     }
+    isClicked.classList.add("click-slide-up");
     return slideUp(target, duration);
   }
 }
