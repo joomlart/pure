@@ -58,10 +58,18 @@ let slideDown = (target, duration=500) => {
 }
  let slideToggle = (target, duration = 500) => {
   if (window.getComputedStyle(target).display === 'none') {
-    isClicked.classList.add("click-slide-down");
+    if(isClicked.classList.contains('click-slide-up')) {
+      isClicked.classList.remove('click-slide-up')
+    }else {
+      isClicked.classList.add("click-slide-down");
+    }
     return slideDown(target, duration);
   } else {
-    isClicked.classList.add("click-slide-up");
+    if(isClicked.classList.contains('click-slide-down')) {
+      isClicked.classList.remove('click-slide-down')
+    }else {
+      isClicked.classList.add("click-slide-up");
+    }
     return slideUp(target, duration);
   }
 }
