@@ -61,6 +61,7 @@ let slideDown = (target, duration=500) => {
   if (window.getComputedStyle(target).display === 'none') {
     return slideDown(target, duration);
   } else {
+    isClicked.classList.remove("click-slide-down");
     isClicked.classList.add("click-slide-up");
     return slideUp(target, duration);
   }
