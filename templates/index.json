@@ -43,7 +43,7 @@
     "7d74d942-5181-422a-b09c-d4100be846c8": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured collection",
+        "title": "Best Sellers",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -118,7 +118,7 @@
     "dbc66c8e-f043-4eef-a9f3-0ef21d8f8c1e": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured collection",
+        "title": "New Arrivals",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
