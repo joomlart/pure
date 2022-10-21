@@ -68,6 +68,14 @@
 .mod-header span {
   margin-right: 0;
 }
+
+#triggerToggle {
+  transition: all .4s ease-in-out;
+}
+
+#triggerToggle:focus {
+  transform: rotateX(360deg);
+}
 /* Modlue Title */
 
 .mod-title{
