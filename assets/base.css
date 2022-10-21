@@ -2660,13 +2660,17 @@ input[type='checkbox'] {
     line-height: 0;
 }
 
-.header>.header__heading-link {
+.header > .header__heading {
+    order:  2;
+}
+
+.header > .header__heading-link {
     line-height: 0;
 }
 
 @media screen and (min-width: 750px) {
-    .header>.header__heading,
-    .header>.header__heading-link {
+    .header > .header__heading,
+    .header > .header__heading-link {
         width: 20%;
     }
 }
@@ -2729,6 +2733,7 @@ input[type='checkbox'] {
     display: flex;
     grid-area: icons;
     justify-self: end;
+    order:  3;
 }
 
 @media screen and (min-width: 750px) {
@@ -2978,6 +2983,10 @@ details[open]>.header__submenu {
 .header--top-center .header__inline-menu,
 .header--top-center .header__heading-link {
     margin-left: 0;
+}
+
+.header:not(.header--middle-left) .header__inline-menu {
+    order:  1;
 }
 
 @media screen and (min-width: 990px) {
