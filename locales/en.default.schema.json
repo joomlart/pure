@@ -1357,6 +1357,9 @@
           "options__3": {
             "label": "Large"
           },
+          "options__4": {
+            "label": "Square"
+          },
           "label": "Image height"
         },
         "desktop_image_width": {
