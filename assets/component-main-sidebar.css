@@ -78,6 +78,7 @@
 
 #triggerToggle:focus {
   transform: rotate(180deg);
+  transform-origin: center;
 }
 
 #triggerToggle svg {
