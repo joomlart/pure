@@ -71,7 +71,7 @@
 }
 
 #triggerToggle {
-  transition: all .4s ease-in-out;
+  transition: all .8s ease-in-out;
   cursor: pointer;
   background: transparent;
   border: 0;
