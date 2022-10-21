@@ -82,7 +82,7 @@
   height: 2rem;
 }
 
-#click-slide-down:focus {
+.click-slide-down:focus {
   transform: rotate(180deg);
   transform-origin: center;
 }
