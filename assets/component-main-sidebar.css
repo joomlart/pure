@@ -92,7 +92,7 @@
 }
 
 .click-slide-down:focus {
-  transform: rotate(-180deg);
+  transform: rotate(0deg);
   transform-origin: center;
 }
 
