@@ -23,13 +23,13 @@
   {%- endstyle -%}
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
   <script>
-    window.wishlist = {
-      show: {{ settings.show_wishlist }},
-      add: '{{ 'wishlist.general.add' | t }}',
-      added: '{{ 'wishlist.general.added' | t }}',
-      empty: '{{ 'wishlist.general.empty' | t }}'
-  };
-</script>
+      window.wishlist = {
+        show: {{ settings.show_wishlist }},
+        add: '{{ 'wishlist.general.add' | t }}',
+        added: '{{ 'wishlist.general.added' | t }}',
+        empty: '{{ 'wishlist.general.empty' | t }}'
+    };
+  </script>
 
   {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
   {%- if first_3d_model -%}
