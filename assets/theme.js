@@ -96,11 +96,11 @@ let rotateIcon = document.querySelector('.blog-categories .btn-slide-down');
 let rotateIcon2 = document.querySelector('.lastest-posts .btn-slide-down');
 let rotateIcon3 = document.querySelector('.list-tag .btn-slide-down');
 
-let slideBtnClick = (id, sl) => document.getElementById(id).addEventListener('click', () => sl(targetId, speedAnimation));
-let slideBtnClick2 = (id, sl) => document.getElementById(id).addEventListener('click', () => sl(targetId2, speedAnimation));
-let slideBtnClick3 = (id, sl) => document.getElementById(id).addEventListener('click', () => sl(targetId3, speedAnimation));
+// let slideBtnClick = (id, sl) => document.getElementById(id).addEventListener('click', () => sl(targetId, speedAnimation));
+// let slideBtnClick2 = (id, sl) => document.getElementById(id).addEventListener('click', () => sl(targetId2, speedAnimation));
+// let slideBtnClick3 = (id, sl) => document.getElementById(id).addEventListener('click', () => sl(targetId3, speedAnimation));
 
-slideBtnClick('toggle-category', slideToggle);
-slideBtnClick2('toggle-recent-post', slideToggle2);
-slideBtnClick3('toggle-tags', slideToggle3);
+// slideBtnClick('toggle-category', slideToggle);
+// slideBtnClick2('toggle-recent-post', slideToggle2);
+// slideBtnClick3('toggle-tags', slideToggle3);
 
