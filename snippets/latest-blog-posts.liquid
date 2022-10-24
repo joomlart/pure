@@ -6,8 +6,13 @@
 
 {%- if show -%}
 <div class="lastest-posts">
-  <h3 class="mod-title">{{ title }}</h3>
-  <div class="latest-blog-posts-list">
+  <div class="mod-header">
+    <h3 class="mod-title">{{ title }}</h3>
+    {% if show_collapse %}
+    <button id="triggerToggle" title="Toggle slide-up and slide-down states for the target">{% render 'icon-chevron-up' %}</button>
+    {% endif %}
+  </div>
+  <div class="latest-blog-posts-list" id="target">
       {%- if blog.articles.size >= 1 -%}
         {% for article in blog.articles limit: how_many_articles_to_show %}
           <div class="post-item">

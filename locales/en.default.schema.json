@@ -40,9 +40,6 @@
                         "label": "Right"
                     },
                     "label": "Text alignment"
-                },
-                "show_wishlist": {
-                    "label": "Show Wishlist"
                 }
             }
         },

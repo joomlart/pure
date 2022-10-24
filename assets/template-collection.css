@@ -84,25 +84,12 @@
   }
 }
 
+.collection__view-all {
+  padding: var(--grid-desktop-vertical-spacing);
+}
+
 .collection__view-all a {
-  display: flex;
-  align-items: center;
-}
 
-.collection__view-all a:not(.link) {
-  margin-top: 1rem;
-}
-
-.collection__view-all a span:first-child{
-  float: left;
-}
-
-.collection__view-all a span.icon-wrap {
-  margin-left: .8rem
-}
-
-.collection__view-all a:hover span.icon-wrap svg {
-  width: 1.6rem;
 }
 
 .collection__title .inner .title {
@@ -246,6 +233,14 @@
 
 .collection-product-list .card--media .card__inner .card__content {
   padding: 0.8rem;
+}
+
+.product-grid.grid--gapless {
+  margin-bottom: 0;
+}
+
+.product-grid.grid--gapless + .product-grid.grid--gapless {
+  border-top: 1px solid rgb(var(--color-border));
 }
 
 @media screen and (max-width: 749px) {

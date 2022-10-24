@@ -168,7 +168,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Other Pages",
-              "menu": ""
+              "menu": "other-pages"
             }
           },
           "footer-0": {
@@ -195,7 +195,7 @@
           "payment_enable": true,
           "margin_top": 0,
           "padding_top": 0,
-          "padding_bottom": 24
+          "padding_bottom": 0
         }
       },
       "main-password-header": {
