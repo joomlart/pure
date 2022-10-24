@@ -2966,10 +2966,10 @@ details[open]>.header__icon--menu .icon-hamburger {
     transform: translateY(-1.5rem);
 }
 
-details[open]>.header__submenu {
+details[open] > .header__submenu {
     animation: animateMenuOpen var(--duration-default) ease;
     animation-fill-mode: forwards;
-    z-index: 1;
+    z-index: 3;
 }
 
 @media (prefers-reduced-motion) {

@@ -117,6 +117,20 @@
   padding-bottom: 133.33%;
 }
 
+/* Unset Image */
+.article-card__image--unset .ratio::before {
+  display: none;
+}
+
+.article-card__image--unset .card__media,
+.article-card__image--unset .media,
+.article-card__image--unset .card__media .media img {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+
 /* check for flexbox gap in older Safari versions */
 @supports not (inset: 10px) {
   .articles-wrapper.grid {
