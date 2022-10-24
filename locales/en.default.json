@@ -54,6 +54,14 @@
       "previous_slide": "Slide left"
     }
   },
+  "wishlist": {
+    "general": {
+      "wishlist": "Wish Lists",
+      "add": "Add to wishlist",
+      "added": "Add to wishlist",
+      "empty": "No product is added to your wishlist"
+    }
+  },
   "newsletter": {
     "label": "Your email",
     "success": "Thanks for subscribing!",

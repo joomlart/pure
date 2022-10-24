@@ -22,6 +22,14 @@
     }
   {%- endstyle -%}
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  <script>
+      window.wishlist = {
+        show: {{ settings.show_wishlist }},
+        add: '{{ 'wishlist.general.add' | t }}',
+        added: '{{ 'wishlist.general.added' | t }}',
+        empty: '{{ 'wishlist.general.empty' | t }}'
+    };
+  </script>
 
   {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
   {%- if first_3d_model -%}
@@ -279,7 +287,17 @@
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
-
+        {%- if settings.show_wishlist -%}
+          <a href="{{ pages['wish-list'].url }}">go to page</a>
+          <div class="productView-wishlist clearfix">
+              <a data-wishlist href="#" data-wishlist-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
+                  <span class="visually-hidden">
+                      {{ 'wishlist.general.add' | t }}
+                  </span>
+                  {{ 'wishlist.general.add' | t }}
+              </a>
+          </div>
+      {%- endif -%}
         {%- for block in section.blocks -%}
           {%- case block.type -%}
           {%- when '@app' -%}
