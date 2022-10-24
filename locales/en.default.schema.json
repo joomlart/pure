@@ -1579,7 +1579,10 @@
     "main-blog": {
       "name": "Main Blog",
       "settings": {
-        "header": {
+        "header__1": {
+          "content": "Blog post card"
+        },
+        "header__2": {
           "content": "Blog post card"
         },
         "show_image": {
