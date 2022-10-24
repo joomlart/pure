@@ -9,7 +9,13 @@
 {%- if show -%}
 <div class="blog-categories">
   {% if categories %}
-    <h3 class="mod-title">{{ title }}</h3>
+    <div class="mod-header">
+      <h3 class="mod-title">{{ title }}</h3>
+      {% if show_collapse %}
+      <button id="toggle-category" title="Toggle slide-up and slide-down states for the target" class="btn-arrow btn-slide-down" name="button-category">{% render 'icon-chevron-up' %}</button>
+      {% endif %}
+    </div>
+    <ul id="target">
     {% for link in linklists.main-menu.links -%}
       {% assign title_link = link.title | downcase %}
       {% if title_link == "news" %}
@@ -21,6 +27,7 @@
         {% endfor %}
       {% endif %}
     {%- endfor %}
+    </ul>
   {% endif %}
 </div>
 {%- endif -%}

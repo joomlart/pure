@@ -70,38 +70,37 @@
   margin-right: 0;
 }
 
-#triggerToggle {
+.btn-arrow {
   cursor: pointer;
   background: transparent;
   border: 0;
 }
 
-#triggerToggle svg {
+.btn-arrow svg {
   width: 2rem;
   height: 2rem;
 }
 
-.click-slide-up,
-.click-slide-down {
+.btn-slide-up,
+.btn-slide-down {
   transition: all .5s ease-in-out;
 }
 
-.click-slide-up:focus {
+/* Default */
+.cate-btn-slide-up,
+.recent-btn-slide-up,
+.tags-btn-slide-up {
   transform: rotate(180deg);
   transform-origin: center;
 }
 
-.click-slide-down:focus {
-  transform: rotate(0deg);
-  transform-origin: center;
-}
 
 /* Modlue Title */
 
 .mod-title{
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 0 0 1.6rem 0;
+  margin: 0;
   text-transform: uppercase;
   padding: 0;
   letter-spacing: 0.04rem;

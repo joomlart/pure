@@ -56,18 +56,32 @@ let slideDown = (target, duration=500) => {
     target.style.removeProperty('transition-property');
   }, duration);
 }
- let slideToggle = (target, duration = 500) => {
-   if (window.getComputedStyle(target).display === 'none') {
-    if(isClicked.classList.contains('click-slide-up')) {
-      isClicked.classList.remove('click-slide-up')
-    }
-     isClicked.classList.add("click-slide-down");
+let slideToggle = (target, duration = 500) => {
+rotateIcon.classList.add("cate-btn-slide-up");
+if (window.getComputedStyle(target).display === 'none') {
+  rotateIcon.classList.remove("cate-btn-slide-up");
+  return slideDown(target, duration);
+} else {
+  return slideUp(target, duration);
+}
+}
+
+let slideToggle2 = (target, duration = 500) => {
+  rotateIcon2.classList.add("recent-btn-slide-up");
+  if (window.getComputedStyle(target).display === 'none') {
+    rotateIcon2.classList.remove("recent-btn-slide-up");
     return slideDown(target, duration);
   } else {
-    if(isClicked.classList.contains('click-slide-down')) {
-      isClicked.classList.remove('click-slide-down')
-    }
-    isClicked.classList.add("click-slide-up");
+    return slideUp(target, duration);
+  }
+}
+
+let slideToggle3 = (target, duration = 500) => {
+  rotateIcon3.classList.add("tags-btn-slide-up");
+  if (window.getComputedStyle(target).display === 'none') {
+    rotateIcon3.classList.remove("tags-btn-slide-up");
+    return slideDown(target, duration);
+  } else {
     return slideUp(target, duration);
   }
 }
@@ -75,9 +89,18 @@ let slideDown = (target, duration=500) => {
 /////
 let speedAnimation = 400;
 let targetId = document.getElementById("target");
-let isClicked = document.getElementById("triggerToggle");
+let targetId2 = document.getElementById("target2");
+let targetId3 = document.getElementById("target3");
+
+let rotateIcon = document.querySelector('.blog-categories .btn-slide-down');
+let rotateIcon2 = document.querySelector('.lastest-posts .btn-slide-down');
+let rotateIcon3 = document.querySelector('.list-tag .btn-slide-down');
 
 let slideBtnClick = (id, sl) => document.getElementById(id).addEventListener('click', () => sl(targetId, speedAnimation));
+let slideBtnClick2 = (id, sl) => document.getElementById(id).addEventListener('click', () => sl(targetId2, speedAnimation));
+let slideBtnClick3 = (id, sl) => document.getElementById(id).addEventListener('click', () => sl(targetId3, speedAnimation));
 
-slideBtnClick('triggerToggle', slideToggle);
+slideBtnClick('toggle-category', slideToggle);
+slideBtnClick2('toggle-recent-post', slideToggle2);
+slideBtnClick3('toggle-tags', slideToggle3);
 
