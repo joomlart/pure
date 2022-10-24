@@ -56,7 +56,7 @@ slideshow-component .slideshow.banner {
 
 @media screen and (min-width: 750px) {
   slideshow-component .slideshow.banner {
-    --font-heading-scale: 2.133;
+    --font-heading-scale: 2;
   }
   
   .slideshow--placeholder.banner--adapt_image {
