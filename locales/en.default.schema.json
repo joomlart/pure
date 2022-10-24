@@ -8,9 +8,6 @@
                 "header__shadow": {
                     "content": "Shadow"
                 },
-                "header__other": {
-                    "label": "Other"
-                },
                 "blur": {
                     "label": "Blur"
                 },
@@ -60,6 +57,9 @@
                         "label": "Card"
                     },
                     "label": "Style"
+                },
+                "header__other": {
+                    "label": "Other"
                 },
                 "show_wishlist": {
                     "label": "Show Wishlist"

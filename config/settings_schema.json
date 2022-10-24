@@ -684,7 +684,7 @@
             },
             {
                 "type": "header",
-                "content": "t:settings_schema.global.settings.header__other.content"
+                "content": "t:settings_schema.cards.settings.header__other.content"
             },
             {
                 "type": "checkbox",
