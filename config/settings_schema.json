@@ -689,7 +689,7 @@
             {
                 "type": "checkbox",
                 "id": "show_wishlist",
-                "label": "t:settings_schema.global.settings.show_wishlist.label",
+                "label": "t:settings_schema.cards.settings.show_wishlist.label",
                 "default": true
             }
         ]
