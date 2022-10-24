@@ -1,27 +1,18 @@
 (function ($) {
   var $doc = $(document);
 
-  $doc.ready(() => {
-    $doc.ajaxStart(() => {
-      jaShopify.isAjaxLoading = true;
-    });
-
-    $doc.ajaxStop(() => {
-      jaShopify.isAjaxLoading = false;
-    });
-
-    jaShopify.ready();
-  });
-
   window.onload = function () {
     jaShopify.init();
   }
   var jaShopify = {
-    isAjaxLoading: false,
+
+    init: function () {
+      this.initWishlist();
+    },
 
     initWishlist: function () {
       if (window.wishlist.show) {
-        jashopify.setLocalStorageProductForWishlist();
+        jaShopify.setLocalStorageProductForWishlist();
 
         $doc.on('click', '[data-wishlist]', (event) => {
           event.preventDefault();
@@ -42,7 +33,7 @@
               .text(window.wishlist.added);
 
             if (wishlistContainer.length > 0) {
-              jashopify.setProductForWishlistPage(handle);
+              jaShopify.setProductForWishlistPage(handle);
             }
 
             wishlistList.push(handle);
@@ -60,13 +51,13 @@
 
             wishlistList.splice(index, 1);
             localStorage.setItem('wishlistItem', JSON.stringify(wishlistList));
-            jashopify.wishlistPagination();
+            jaShopify.wishlistPagination();
 
             if (wishlistContainer.length > 0) {
               wishlistList = localStorage.getItem('wishlistItem') ? JSON.parse(localStorage.getItem('wishlistItem')) : [];
 
               if (wishlistList.length > 0) {
-                jashopify.updateShareWishlistViaMail();
+                jaShopify.updateShareWishlistViaMail();
               } else {
                 $('[data-wishlist-container]')
                   .addClass('is-empty')
@@ -86,7 +77,7 @@
             }
           }
           $('[data-wishlist-count]').text(wishlistList.length);
-          jashopify.setProductForWishlist(handle);
+          jaShopify.setProductForWishlist(handle);
         });
       }
     },
@@ -96,13 +87,13 @@
       var wlpaggingContainer = $('#wishlist-paginate');
       let paggingTpl
 
-      if (window.pagination.style === 1) {
-        paggingTpl = '<li class="pagination-arrow prev disabled style-1"><a href="#" class="pagination__item pagination__item--prev pagination__item-arrow link motion-reduce"><svg class="icon thin-arrow" viewBox="0 0 50 50"><path d="M 11.957031 13.988281 C 11.699219 14.003906 11.457031 14.117188 11.28125 14.308594 L 1.015625 25 L 11.28125 35.691406 C 11.527344 35.953125 11.894531 36.0625 12.242188 35.976563 C 12.589844 35.890625 12.867188 35.625 12.964844 35.28125 C 13.066406 34.933594 12.972656 34.5625 12.71875 34.308594 L 4.746094 26 L 48 26 C 48.359375 26.003906 48.695313 25.816406 48.878906 25.503906 C 49.058594 25.191406 49.058594 24.808594 48.878906 24.496094 C 48.695313 24.183594 48.359375 23.996094 48 24 L 4.746094 24 L 12.71875 15.691406 C 13.011719 15.398438 13.09375 14.957031 12.921875 14.582031 C 12.753906 14.203125 12.371094 13.96875 11.957031 13.988281 Z"></path></svg></span></a></li>';
-      } else if (window.pagination.style === 2) {
-        paggingTpl = '<li class="pagination-arrow prev disabled style-2"><a href="#" class="pagination__item pagination__item--prev pagination__item-arrow link motion-reduce"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"></svg></span></a></li>';
-      } else {
-        paggingTpl = '<li class="pagination-arrow prev disabled style-3"><a href="#" class="pagination__item pagination__item--prev pagination__item-arrow link motion-reduce"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"></svg><span class="arrow-text">' + window.pagination.prev + '</span></a></li>';
-      }
+      // if (window.pagination.style === 1) {
+      //   paggingTpl = '<li class="pagination-arrow prev disabled style-1"><a href="#" class="pagination__item pagination__item--prev pagination__item-arrow link motion-reduce"><svg class="icon thin-arrow" viewBox="0 0 50 50"><path d="M 11.957031 13.988281 C 11.699219 14.003906 11.457031 14.117188 11.28125 14.308594 L 1.015625 25 L 11.28125 35.691406 C 11.527344 35.953125 11.894531 36.0625 12.242188 35.976563 C 12.589844 35.890625 12.867188 35.625 12.964844 35.28125 C 13.066406 34.933594 12.972656 34.5625 12.71875 34.308594 L 4.746094 26 L 48 26 C 48.359375 26.003906 48.695313 25.816406 48.878906 25.503906 C 49.058594 25.191406 49.058594 24.808594 48.878906 24.496094 C 48.695313 24.183594 48.359375 23.996094 48 24 L 4.746094 24 L 12.71875 15.691406 C 13.011719 15.398438 13.09375 14.957031 12.921875 14.582031 C 12.753906 14.203125 12.371094 13.96875 11.957031 13.988281 Z"></path></svg></span></a></li>';
+      // } else if (window.pagination.style === 2) {
+      //   paggingTpl = '<li class="pagination-arrow prev disabled style-2"><a href="#" class="pagination__item pagination__item--prev pagination__item-arrow link motion-reduce"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"></svg></span></a></li>';
+      // } else {
+      // }
+      paggingTpl = '<li class="pagination-arrow prev disabled style-3"><a href="#" class="pagination__item pagination__item--prev pagination__item-arrow link motion-reduce"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"></svg><span class="arrow-text">Prev</span></a></li>';
 
       let wishlistItemDisplay = $('[data-wishlist-items-display]');
       wishlistItemDisplay.removeClass('is-loaded')
@@ -122,13 +113,13 @@
           else paggingTpl += '<li class="pagination-num"><a class="pagination__item link" data-page="' + pageNum + '" href="' + pageNum + '" title="' + pageNum + '">' + pageNum + '</a></li>'
         }
 
-        if (window.pagination.style === 1) {
-          paggingTpl += '<li class="pagination-arrow next style-1"><a href="#" class="pagination__item pagination__item--next pagination__item-arrow link"><svg class="icon thin-arrow" viewBox="0 0 50 50"><path d="M 11.957031 13.988281 C 11.699219 14.003906 11.457031 14.117188 11.28125 14.308594 L 1.015625 25 L 11.28125 35.691406 C 11.527344 35.953125 11.894531 36.0625 12.242188 35.976563 C 12.589844 35.890625 12.867188 35.625 12.964844 35.28125 C 13.066406 34.933594 12.972656 34.5625 12.71875 34.308594 L 4.746094 26 L 48 26 C 48.359375 26.003906 48.695313 25.816406 48.878906 25.503906 C 49.058594 25.191406 49.058594 24.808594 48.878906 24.496094 C 48.695313 24.183594 48.359375 23.996094 48 24 L 4.746094 24 L 12.71875 15.691406 C 13.011719 15.398438 13.09375 14.957031 12.921875 14.582031 C 12.753906 14.203125 12.371094 13.96875 11.957031 13.988281 Z"></path></svg></span></a></li>';
-        } else if (window.pagination.style === 2) {
-          paggingTpl += '<li class="pagination-arrow next style-2"><a href="#" class="pagination__item pagination__item--next pagination__item-arrow link"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"></svg></span></a></li>';
-        } else {
-          paggingTpl += '<li class="pagination-arrow next style-3"><a href="#" class="pagination__item pagination__item--next pagination__item-arrow link"><span class="arrow-text">' + window.pagination.next + '</span><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"></svg></span></a></li>';
-        }
+        // if (window.pagination.style === 1) {
+        //   paggingTpl += '<li class="pagination-arrow next style-1"><a href="#" class="pagination__item pagination__item--next pagination__item-arrow link"><svg class="icon thin-arrow" viewBox="0 0 50 50"><path d="M 11.957031 13.988281 C 11.699219 14.003906 11.457031 14.117188 11.28125 14.308594 L 1.015625 25 L 11.28125 35.691406 C 11.527344 35.953125 11.894531 36.0625 12.242188 35.976563 C 12.589844 35.890625 12.867188 35.625 12.964844 35.28125 C 13.066406 34.933594 12.972656 34.5625 12.71875 34.308594 L 4.746094 26 L 48 26 C 48.359375 26.003906 48.695313 25.816406 48.878906 25.503906 C 49.058594 25.191406 49.058594 24.808594 48.878906 24.496094 C 48.695313 24.183594 48.359375 23.996094 48 24 L 4.746094 24 L 12.71875 15.691406 C 13.011719 15.398438 13.09375 14.957031 12.921875 14.582031 C 12.753906 14.203125 12.371094 13.96875 11.957031 13.988281 Z"></path></svg></span></a></li>';
+        // } else if (window.pagination.style === 2) {
+        //   paggingTpl += '<li class="pagination-arrow next style-2"><a href="#" class="pagination__item pagination__item--next pagination__item-arrow link"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"></svg></span></a></li>';
+        // } else {
+        // }
+        paggingTpl += '<li class="pagination-arrow next style-3"><a href="#" class="pagination__item pagination__item--next pagination__item-arrow link"><span class="arrow-text">Next</span><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"></svg></span></a></li>';
 
         wlpaggingContainer.append(paggingTpl);
         wishlistItemDisplay.children().each(function (idx, elm) {
@@ -193,7 +184,7 @@
         if (wishlistList.length > 0) {
           wishlistList = JSON.parse(localStorage.getItem('wishlistItem'));
           wishlistList.forEach((handle, index) => {
-            jashopify.setProductForWishlistPage(handle, index);
+            jaShopify.setProductForWishlistPage(handle, index);
           });
         } else {
           $('[data-wishlist-container]')
@@ -211,7 +202,7 @@
 
           $('[data-wishlist-footer]').hide();
         }
-        jashopify.wishlistPagination()
+        jaShopify.wishlistPagination()
       } else {
         alert('Sorry! No web storage support..');
       }
@@ -255,10 +246,10 @@
         productHTML += '</div>';
 
         wishlistContainer.find('.wishlist-items-display').append(productHTML);
-        jashopify.updateShareWishlistViaMail();
+        jaShopify.updateShareWishlistViaMail();
 
         if (index == wishlistContainer.find('[data-wishlist-added]').length - 1) {
-          jashopify.updateShareWishlistViaMail();
+          jaShopify.updateShareWishlistViaMail();
         }
       });
     },
@@ -311,7 +302,7 @@
         wishlistList = JSON.parse(localStorage.getItem('wishlistItem'));
 
         wishlistList.forEach((handle) => {
-          jashopify.setProductForWishlist(handle);
+          jaShopify.setProductForWishlist(handle);
         });
       }
       $('[data-wishlist-count]').text(wishlistList.length);
