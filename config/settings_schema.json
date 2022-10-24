@@ -697,6 +697,16 @@
         "unit": "px",
         "label": "t:settings_schema.global.settings.blur.label",
         "default": 0
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.cards.settings.header__other.content"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_wishlist",
+        "label": "t:settings_schema.cards.settings.show_wishlist.label",
+        "default": true
       }
     ]
   },
