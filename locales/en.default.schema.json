@@ -1580,10 +1580,10 @@
       "name": "Main Blog",
       "settings": {
         "header__1": {
-          "content": "Blog post card"
+          "content": "General"
         },
         "header__2": {
-          "content": "Blog post card"
+          "content": "Content"
         },
         "show_image": {
           "label": "Show featured image"
