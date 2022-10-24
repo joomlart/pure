@@ -56,14 +56,8 @@
   },
   "newsletter": {
     "label": "Your email",
-    "placeholder": "enter your email address",
-    "placeholder_2": "Your Email Address",
     "success": "Thanks for subscribing!",
-    "error": "This email has been registered!",
-    "button_label": "Submit",
-    "button_label_2": "Sign Me Up",
-    "start_now": "Start Now",
-    "dont_miss_out_this_sale": "don't miss out this sale"
+    "button_label": "Submit"
   },
   "accessibility": {
     "skip_to_text": "Skip to content",

@@ -1,4 +1,4 @@
-<newsletter-popup class="popup newsletter-popup {% if settings.show_newsletter_popup_image %} customPopup-banner custom-scrollbar{% endif %}" data-newsletter-popup data-delay="{{ settings.newsletter_popup_delay | times:1000 }}" data-expire="{{ settings.newsletter_popup_expire }}" id="newsletter-popup">
+<newsletter-popup class="popup newsletter-popup {% if settings.show_newsletter_popup_image %} customPopup-banner custom-scrollbar{% endif %}" data-newsletter-popup data-delay="{{ settings.newsletter_popup_delay | times: 1000 }}" data-expire="{{ settings.newsletter_popup_expire }}" id="newsletter-popup">
   {%- if settings.show_newsletter_popup_image -%}
       <div class="popup-banner">
           {%- if settings.newsletter_popup_image != "" -%}
@@ -18,7 +18,7 @@
                   </a>
               {% endif %}                  
           {%- else -%}
-              {{ 'newsletter.png' | asset_url | img_tag: 'The Soap Store' }}
+              {{ 'newsletter.png' | asset_url | image_tag: 'The Soap Store' }}
           {%- endif -%}
       </div>
   {%- endif -%}
@@ -62,7 +62,6 @@
                                   {% elsif form.posted_successfully? %}
                                       aria-describedby="ContactFooter-success"
                                   {% endif %}
-                                  placeholder="{% if settings.select_button_submit == 'default' %}{{ 'newsletter.placeholder' | t }}{% else %}{{ 'newsletter.dont_miss_out_this_sale' | t }}{% endif %}"
                               >
                               <label class="field__label hiddenLabels" for="NewsletterForm--Popup">
                                   {{ 'newsletter.label' | t }}
@@ -103,7 +102,7 @@
                                           var newsletterMessagePopup = (function(){
                                               var popup = document.getElementById('newsletter-message-popup'),
                                               message = popup.getElementsByClassName('newsletter-message')[0],
-                                              messageText = "{{ 'newsletter.error' | t }}"
+                                              messageText = "This email has been registered!"
 
                                               document.body.classList.add('newsletter-message-show');
 
@@ -131,8 +130,6 @@
                               <button type="submit" class="button button--primary newsletter-form__button" name="commit" id="Subscribe">
                                   {{ 'newsletter.button_label' | t }}
                               </button>
-                          {% else %}
-                              <a class="button button--primary newsletter-form__button" href="{{ settings.button_newsletter_link }}" target="_blank">{{ 'newsletter.start_now' | t }}</a>
                           {% endif %}
                       </div>
                   {%- endform -%}
