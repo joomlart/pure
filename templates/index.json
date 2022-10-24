@@ -13,7 +13,7 @@
             "button_label": "Shop all Products",
             "link": "shopify:\/\/collections",
             "link_style": "outline",
-            "box_align": "middle-center",
+            "box_align": "bottom-center",
             "button_label2": "",
             "link2": "",
             "link_style2": "outline",
