@@ -36,6 +36,12 @@ elsif blog_layout == "05"
       "default": true
     },
     {
+      "type": "text",
+      "id": "description",
+      "label": "Description Masthead",
+      "info": "Add description below Masthead"
+    },
+    {
       "type": "header",
       "content": "t:sections.main-blog.settings.header__2.content"
     },
@@ -57,10 +63,13 @@ elsif blog_layout == "05"
       "info": "t:sections.main-blog.settings.layout.info"
     },
     {
-      "type": "text",
-      "id": "description",
-      "label": "Description Masthead",
-      "info": "Add description below Masthead"
+    "type": "range",
+    "id": "number",
+    "label": "t:sections.main-blog.settings.number_article.label",
+    "min": 3,
+    "max": 10,
+    "step": 1,
+    "default": 3
     },
     {
       "type": "checkbox",
