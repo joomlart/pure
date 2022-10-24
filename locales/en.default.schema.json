@@ -3628,6 +3628,19 @@
               "direction_4": {
                 "label": "Down"
               }
+            },
+            "behavior": {
+              "label": "Behavior",
+              "info": "Sets how the text is scrolled within the marquee.",
+              "behavior_1": {
+                "label": "Scroll"
+              },
+              "behavior_2": {
+                "label": "Slide"
+              },
+              "behavior_3": {
+                "label": "Alternate"
+              }
             }
           },
           "presets": {

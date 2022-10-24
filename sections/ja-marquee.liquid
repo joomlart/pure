@@ -13,7 +13,7 @@
 {%- endstyle -%}
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="section-{{ section.id }}-padding">
-    <marquee direction="{{ section.settings.direction }}" >{{ section.settings.marquee_text }}</marquee>
+    <marquee behavior="{{ section.settings.behavior }}" direction="{{ section.settings.direction }}" >{{ section.settings.marquee_text }}</marquee>
   </div>
 </div>
 
@@ -53,6 +53,27 @@
       ],
       "default": "left",
       "label": "t:sections.ja-marquee.settings.direction.label"
+    },
+    {
+      "type": "select",
+      "id": "behavior",
+      "info": "t:sections.ja-marquee.settings.behavior.info",
+      "options": [
+        {
+          "value": "scroll",
+          "label": "t:sections.ja-marquee.settings.behavior.behavior_1.label"
+        },
+        {
+          "value": "slide",
+          "label": "t:sections.ja-marquee.settings.behavior.behavior_2.label"
+        },
+        {
+          "value": "alternate",
+          "label": "t:sections.ja-marquee.settings.behavior.behavior_3.label"
+        }
+      ],
+      "default": "scroll",
+      "label": "t:sections.ja-marquee.settings.behavior.label"
     },
     {
       "type": "select",
