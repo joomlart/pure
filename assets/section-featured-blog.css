@@ -152,11 +152,7 @@
   text-decoration: none;
 }
 
-.blog__posts .card-wrapper .card--media .ratio::before {
-  padding-bottom: 66.66%;
-}
-
-.blog__view-all a span:first-child{
+.blog__view-all a span:first-child {
   float: left;
 }
 
