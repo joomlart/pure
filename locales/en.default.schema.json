@@ -3605,6 +3605,34 @@
             "preset": {
                 "name": "Custom section"
             }
+        },
+        "ja-marquee": {
+          "name": "Marquee",
+          "settings": {
+            "marquee_text": {
+              "label": "Text",
+              "info": "Element is used to insert a scrolling area of text."
+            },
+            "direction": {
+              "label": "Direction",
+              "info": "Sets the direction of the scrolling within the marquee.",
+              "direction_1": {
+                "label": "Left"
+              },
+              "direction_2": {
+                "label": "Right"
+              },
+              "direction_3": {
+                "label": "Up"
+              },
+              "direction_4": {
+                "label": "Down"
+              }
+            }
+          },
+          "presets": {
+            "name": "Marquee"
+          }
         }
     }
 }
