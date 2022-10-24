@@ -1594,6 +1594,9 @@
         "show_author": {
           "label": "Show author"
         },
+        "number_article": {
+          "label": "Maximum Articles Per Page"
+        },
         "paragraph": {
           "content": "Change excerpts by editing your blog posts. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
         },
