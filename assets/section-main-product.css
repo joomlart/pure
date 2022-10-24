@@ -21,6 +21,12 @@
     padding-bottom: 0;
 }
 
+@media screen and (max-width: 749px) {
+    .page-width.ja-mainproduct {
+        padding: var(--grid-mobile-vertical-spacing) var(--grid-mobile-horizontal-spacing);
+    }
+}
+
 @media screen and (min-width: 750px) {
     .product--thumbnail .product__media-gallery,
     .product--thumbnail_slider .product__media-gallery,
@@ -42,11 +48,37 @@
     .product__media-container .slider-buttons {
         display: none;
     }
+    .page-width.ja-mainproduct {
+        position: relative;
+        padding: 24px;
+    }
+    .product__info-wrapper {
+        padding-left: calc(var(--grid-desktop-vertical-spacing) / 2);
+    }
+    .product__media-wrapper {
+        padding-right: calc(var(--grid-desktop-vertical-spacing) / 2);
+    }
+    .page-width.ja-mainproduct:before {
+        background: #212121;
+        content: "";
+        height: 100%;
+        left: 50%;
+        position: absolute;
+        top: 0;
+        width: 1px;
+    }
 }
 
 @media screen and (min-width: 990px) {
+    .page-width.ja-mainproduct {
+        padding-left: var(--grid-desktop-horizontal-spacing);
+        padding-right: var(--grid-desktop-horizontal-spacing);
+    }
     .product__info-wrapper {
-        padding-left: calc(var(--grid-desktop-vertical-spacing) * 2);
+        padding-left: calc(var(--grid-desktop-vertical-spacing));
+    }
+    .product__media-wrapper {
+        padding-right: calc(var(--grid-desktop-vertical-spacing));
     }
     .product--large:not(.product--no-media) .product__media-wrapper {
         max-width: 65%;
@@ -516,9 +548,6 @@ a.product__text {
 }
 
 @media screen and (min-width: 750px) {
-    .product__info-container {
-        max-width: 60rem;
-    }
     .product__info-container .price--on-sale .price-item--regular {
         font-size: 1.6rem;
     }
@@ -762,7 +791,7 @@ a.product__text {
         width: calc(100%);
     }
     .product__media-thumbnail_slider .product__media-icon.motion-reduce {
-        left: 20px;
+        left: 6px;
         top: 6px;
     }
     .product__media-thumbnail_slider .flickity-prev-next-button.next {
