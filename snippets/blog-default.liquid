@@ -29,6 +29,10 @@
 
   assign layout_article = section.settings.layout
   assign number_article_per_page = section.settings.number_article
+  assign show_image = section.settings.show_image
+  assign show_author = section.settings.show_author
+  assign show_date = section.settings.show_date
+  assign show_excerpt = section.settings.show_excerpt
 -%}
 
 <div data-section-id="{{ section.id }}" data-section-type="blog-layout-default" id="BlogSection-{{ section.id }}" data-section="{{ section.id }}" class="main-blog-block page-width blog-layout-default">
@@ -59,10 +63,10 @@
                   article: article,
                   media_height: section.settings.image_height,
                   media_aspect_ratio: article.image.aspect_ratio,
-                  show_image: section.settings.show_image,
-                  show_date: section.settings.show_date,
-                  show_author: section.settings.show_author,
-                  show_excerpt: true 
+                  show_image: show_image,
+                  show_date: show_date,
+                  show_author: show_author,
+                  show_excerpt: show_excerpt 
                 -%}
               </div>
             {%- endfor -%}
