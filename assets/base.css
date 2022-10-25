@@ -1318,6 +1318,12 @@ ul.grid {
     .collection>.product-grid {
         border-left: 1px solid rgb(var(--color-border));
     }
+    .product-grid:empty {
+        display: none;
+    }
+    .product-grid .grid__item {
+        padding: 2.4rem;
+    }
     .product-grid>.grid__item+.grid__item {
         border-left: 1px solid rgb(var(--color-border));
     }
@@ -1357,6 +1363,9 @@ ul.grid {
     .product-list-mode .grid__item .card__content {
         max-width: 69%;
         width: 69%;
+    }
+    .product-grid .grid__item {
+        padding: 4.8rem;
     }
 }
 
@@ -1439,19 +1448,19 @@ ul.grid {
 @media screen and (min-width: 990px) {
     .grid--6-col-desktop>.grid__item {
         width: calc(16.66% - var(--grid-desktop-horizontal-spacing) * 5 / 6);
-        max-width: calc(16.66% - var(--grid-desktop-horizontal-spacing) * 5 / 6);
+        /* max-width: calc(16.66% - var(--grid-desktop-horizontal-spacing) * 5 / 6); */
     }
     .grid--5-col-desktop>.grid__item {
         width: calc(20% - var(--grid-desktop-horizontal-spacing) * 4 / 5);
-        max-width: calc(20% - var(--grid-desktop-horizontal-spacing) * 4 / 5);
+        /* max-width: calc(20% - var(--grid-desktop-horizontal-spacing) * 4 / 5); */
     }
     .grid--4-col-desktop>.grid__item {
         width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
-        max-width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
+        /* max-width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4); */
     }
     .grid--3-col-desktop>.grid__item {
         width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
-        max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
+        /* max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3); */
     }
     .grid--2-col-desktop>.grid__item {
         width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
