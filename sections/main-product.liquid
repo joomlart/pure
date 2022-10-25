@@ -604,6 +604,16 @@
                 <span class="visually-hidden">{{ product.metafields.reviews.rating_count }} {{ "accessibility.total_reviews" | t }}</span>
               </p>
             {%- endif -%}
+            {%- when 'wishlist' -%}
+              {%- if settings.show_wishlist -%}
+                <div class="productView-wishlist clearfix">
+                  <a data-wishlist href="#" data-wishlist-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
+                    <span class="wishlist-text">
+                        {{ 'wishlist.general.add' | t }}
+                    </span>
+                  </a>
+                </div>
+              {%- endif -%}
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -1173,6 +1183,20 @@
         {
           "type": "paragraph",
           "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
+        }
+      ]
+    },
+    {
+      "type": "wishlist",
+      "name": "t:sections.main-product.blocks.wishlist.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_wishlist",
+          "default": true,
+          "label": "t:sections.main-product.blocks.wishlist.settings.show_wishlist.label",
+          "info": "t:sections.main-product.blocks.wishlist.settings.show_wishlist.info"
         }
       ]
     }

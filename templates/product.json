@@ -32,6 +32,12 @@
           "settings": {
           }
         },
+        "c4b1c220-ac8e-4321-aa26-b8f6742759d7": {
+          "type": "wishlist",
+          "settings": {
+            "show_wishlist": true
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -107,6 +113,7 @@
         "6c4a7f7f-6a5e-4f46-99c0-1deeed649816",
         "caption",
         "price",
+        "c4b1c220-ac8e-4321-aa26-b8f6742759d7",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
@@ -119,8 +126,8 @@
       ],
       "settings": {
         "enable_sticky_info": false,
-        "gallery_layout": "thumbnail_slider",
-        "media_size": "small",
+        "gallery_layout": "stacked_full",
+        "media_size": "medium",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
@@ -145,12 +152,6 @@
         "padding_bottom": 0
       }
     },
-    "166133172235095e06": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
-    },
     "09f69824-9360-4746-94be-83ecf523eb48": {
       "type": "image-with-text",
       "blocks": {
@@ -173,7 +174,7 @@
           "settings": {
             "button_label": "Check it Out",
             "button_link": "shopify:\/\/collections",
-            "button_style_secondary": false
+            "button_style_secondary": true
           }
         }
       },
@@ -200,7 +201,6 @@
   "order": [
     "main",
     "product-recommendations",
-    "166133172235095e06",
     "09f69824-9360-4746-94be-83ecf523eb48"
   ]
 }
