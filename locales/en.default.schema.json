@@ -1579,8 +1579,11 @@
     "main-blog": {
       "name": "Main Blog",
       "settings": {
-        "header": {
-          "content": "Blog post card"
+        "header__1": {
+          "content": "General"
+        },
+        "header__2": {
+          "content": "Content"
         },
         "show_image": {
           "label": "Show featured image"
@@ -1590,6 +1593,9 @@
         },
         "show_author": {
           "label": "Show author"
+        },
+        "number_article": {
+          "label": "Maximum Articles Per Page"
         },
         "paragraph": {
           "content": "Change excerpts by editing your blog posts. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
