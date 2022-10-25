@@ -145,12 +145,6 @@
         "padding_bottom": 0
       }
     },
-    "166133172235095e06": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
-    },
     "09f69824-9360-4746-94be-83ecf523eb48": {
       "type": "image-with-text",
       "blocks": {
@@ -200,7 +194,6 @@
   "order": [
     "main",
     "product-recommendations",
-    "166133172235095e06",
     "09f69824-9360-4746-94be-83ecf523eb48"
   ]
 }
