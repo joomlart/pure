@@ -19,6 +19,7 @@
 
 {%- liquid
   assign show_breadcrumb = section.settings.show_breadcrumb
+  assign alignment = section.settings.alignment_title
   assign show_sidebar = section.settings.show_sidebar
   if show_sidebar
       assign show_collapse = section.settings.show_collapse
@@ -37,7 +38,7 @@
 
 <div data-section-id="{{ section.id }}" data-section-type="blog-layout-default" id="BlogSection-{{ section.id }}" data-section="{{ section.id }}" class="main-blog-block page-width blog-layout-default">
 
-  <div class="header-page">
+  <div class="header-page {% if alignment != blank %}{{ alignment }}{% endif %}">
     {% if show_breadcrumb %}
       {% render 'breadcrumb' %}
     {% endif %}
@@ -47,7 +48,7 @@
     </h1>
 
     {% if section.settings.description != "" %}
-      <p class="description">{{ section.settings.description | escape }}</p>
+      <p class="description {% if alignment == "center" %} center {% endif %} {% if alignment == "right" %} right {% endif %}">{{ section.settings.description | escape }}</p>
     {% endif %}
   </div>
 
