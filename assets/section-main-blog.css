@@ -19,6 +19,14 @@
   line-height: calc(1 + 0.7/var(--font-body-scale) );
 }
 
+.description.center {
+  margin: 0 auto;
+}
+
+.description.right {
+  margin-left: auto;
+}
+
 @media screen and (max-width: 990px) {
   .description {
     font-size: calc(var(--font-heading-scale) * 1.6rem);
