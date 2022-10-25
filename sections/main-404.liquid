@@ -30,19 +30,24 @@
 
 
 </style>
+{%- liquid
+  assign image = section.settings.image_404
+-%}
 
 <div class="template-404 page-width page-margin center">
-  <img
-    src="{{ section.settings.image_404 | image_url: width: 400 }}"
+  {% if image != blank %}
+    <img
+    src="{{ image | image_url: width: 400 }}"
     class="image-404"
     loading="lazy"
     width="auto"
     height="auto"
-  >
-  <h1 class="code-message">
+    >
+  {% else %}
+    <h1 class="code-message">
     {{ 'templates.404.title' | t }}
-  </h1>
-
+    </h1>
+  {% endif %}
   <a href="{{ routes.all_products_collection_url }}" class="button redirect-home">
     {{ 'general.continue_shopping' | t }}
   </a>
