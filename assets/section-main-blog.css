@@ -173,4 +173,11 @@
 .blog-layout-default .blog-articles__article:nth-child(4n) {
 }
 
+/* Pagination */
+
+.main-blog .sidebar-right .pagination-wrapper {
+  border-left: 0;
+  border-right: 1px solid rgb(var(--color-border))
+}
+
 
