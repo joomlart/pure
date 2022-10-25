@@ -784,7 +784,7 @@ a.product__text {
         background-color: rgba(var(--color-foreground), 0.2);
     }
     .product__media-list .product__media-item {
-        width: calc(100% - 3rem - var(--grid-mobile-horizontal-spacing));
+        width: calc(100% - 3rem);
     }
     .product__media-thumbnail_slider .product__media-item {
         width: calc(100%);
