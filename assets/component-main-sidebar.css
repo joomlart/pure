@@ -210,7 +210,7 @@
 }
 
 .blog-categories li:hover {
-  transform: translateX(20px);
+  transform: translateX(10px);
 }
 
 .blog-categories li a {
