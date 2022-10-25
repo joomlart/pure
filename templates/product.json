@@ -119,8 +119,8 @@
       ],
       "settings": {
         "enable_sticky_info": false,
-        "gallery_layout": "thumbnail_slider",
-        "media_size": "small",
+        "gallery_layout": "stacked_full",
+        "media_size": "medium",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
