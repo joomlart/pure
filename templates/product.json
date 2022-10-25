@@ -32,6 +32,12 @@
           "settings": {
           }
         },
+        "c4b1c220-ac8e-4321-aa26-b8f6742759d7": {
+          "type": "wishlist",
+          "settings": {
+            "show_wishlist": true
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -107,6 +113,7 @@
         "6c4a7f7f-6a5e-4f46-99c0-1deeed649816",
         "caption",
         "price",
+        "c4b1c220-ac8e-4321-aa26-b8f6742759d7",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
