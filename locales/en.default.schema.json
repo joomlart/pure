@@ -1576,8 +1576,8 @@
     "main-blog": {
       "name": "Main Blog",
       "settings": {
-        "header": {
-          "content": "Blog post card"
+        "header__1": {
+          "content": "Blog Card"
         },
         "show_image": {
           "label": "Show featured image"
