@@ -1641,11 +1641,11 @@
           "content": "Sidebar"
         },
         "general": {
-          "label__1": "Show Sidebar?",
-          "label__2": "Show Collapsible Block?",
+          "label__1": "Show Sidebar",
+          "label__2": "Show Collapsible Block",
           "label__3": "Type",
           "label__4": "Collapsible",
-          "label__5": "Enable Sticky?",
+          "label__5": "Enable Sticky",
           "options__1": "Vertical",
           "options__2": "Horizontal",
           "options__3": "Expanded By Default",
