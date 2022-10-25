@@ -39,7 +39,7 @@
         "layout": "collage",
         "number_article": 4,
         "show_image": true,
-        "image_height": "adapt",
+        "image_height": "medium",
         "show_date": true,
         "show_author": true,
         "show_excerpt": true,
