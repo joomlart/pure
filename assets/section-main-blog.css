@@ -141,7 +141,7 @@
 
 @media screen and (min-width: 1200px) {
   .blog-layout-default .blog-articles__article:nth-child(4n) {
-    border-right: 0;
+    border-right: 0 !important;
 /*     border-bottom: 0; */
   }
   .blog-layout-default .blog-articles__article:not(:first-child) {
