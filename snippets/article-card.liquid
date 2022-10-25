@@ -101,7 +101,7 @@
           {%- endif -%}
         </div>
       </div>
-      <div class="card__content">
+      <div class="card__content {% if alignment_content == "center" %} center {% endif %} {% if alignment_content == "right" %} right {% endif %}">
         <div class="card__information">
           <div class="article-card__info">
             {%- if show_date -%}
