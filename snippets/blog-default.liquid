@@ -48,7 +48,7 @@
     </h1>
 
     {% if section.settings.description != "" %}
-      <p class="description">{{ section.settings.description | escape }}</p>
+      <p class="description {% if alignment == "center" %} center {% endif %} {% if alignment == "right" %} right {% endif %}">{{ section.settings.description | escape }}</p>
     {% endif %}
   </div>
 
