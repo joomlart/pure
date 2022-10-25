@@ -34,6 +34,7 @@
   assign show_author = section.settings.show_author
   assign show_date = section.settings.show_date
   assign show_excerpt = section.settings.show_excerpt
+  assign alignment_content = section.settings.alignment_content
 -%}
 
 <div data-section-id="{{ section.id }}" data-section-type="blog-layout-default" id="BlogSection-{{ section.id }}" data-section="{{ section.id }}" class="main-blog-block page-width blog-layout-default">
@@ -67,7 +68,8 @@
                   show_image: show_image,
                   show_date: show_date,
                   show_author: show_author,
-                  show_excerpt: show_excerpt 
+                  show_excerpt: show_excerpt,
+                  alignment_content: alignment_content
                 -%}
               </div>
             {%- endfor -%}
