@@ -393,6 +393,9 @@
           "content": "Favicon"
         },
         "header__2": {
+          "content": "Back To Top"
+        },
+        "header__3": {
           "content": "Wishlist"
         },
         "backtotop": {
