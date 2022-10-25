@@ -245,6 +245,10 @@
     border-left: 1px solid rgb(var(--color-border));
 }
 
+.product-grid.grid--gapless>.grid__item .card-wrapper {
+  padding: 0;
+}
+
 @media screen and (max-width: 989px) {
     .grid--2-col-tablet-down.product-grid.grid--gapless>.grid__item:nth-child(3) {
         border-left: 0;
