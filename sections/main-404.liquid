@@ -30,16 +30,14 @@
 
 
 </style>
-{%- liquid
-  assign image = 
--%}}
 
 <div class="template-404 page-width page-margin center">
     <img
-    src="{{ article.image.src | image_url: width: 533 }}"
+    src="{{ settings.image_404 | image_url: width: 533 }}"
     class="image-404"
-    width="{{ article.image.width }}"
-    height="{{ article.image.height }}"
+    loading="lazy"
+    width="{{ settings.image_404.width }}"
+    height="{{ settings.image_404.height }}"
   >
   <h1 class="code-message">
     {{ 'templates.404.title' | t }}
