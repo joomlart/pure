@@ -148,10 +148,6 @@
   padding-bottom: 56.25%;
 }
 
-.blog-layout-default .blog-articles__article:first-child .card__content {
-  padding: var(--grid-desktop-vertical-spacing) 0 ;
-}
-
 .blog-layout-default .blog-articles__article:nth-child(4), 
 .blog-layout-default .blog-articles__article:nth-child(5) {
   border-bottom: 0;
