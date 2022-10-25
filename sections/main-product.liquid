@@ -606,14 +606,13 @@
             {%- endif -%}
             {%- when 'wishlist' -%}
               {%- if settings.show_wishlist -%}
-                  <div class="productView-wishlist clearfix">
-                      <a data-wishlist href="#" data-wishlist-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
-                          <span class="visually-hidden">
-                              {{ 'wishlist.general.add' | t }}
-                          </span>
-                          {% render 'icon-heart' %}
-                      </a>
-                  </div>
+                <div class="productView-wishlist clearfix">
+                  <a data-wishlist href="#" data-wishlist-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
+                    <span class="wishlist-text">
+                        {{ 'wishlist.general.add' | t }}
+                    </span>
+                  </a>
+                </div>
               {%- endif -%}
           {%- endcase -%}
         {%- endfor -%}
