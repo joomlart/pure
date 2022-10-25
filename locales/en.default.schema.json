@@ -43,14 +43,6 @@
         }
       }
     },
-    "main-404": {
-      "name": "Main 404",
-      "settings": {
-        "pick__image": {
-          "label": "Load one image 404"
-        }
-      }
-    },
     "cards": {
       "name": "Cards",
       "settings": {
@@ -476,6 +468,14 @@
         "breadcrumb": {
           "title": "Breadcrumb",
           "label__1": "Show Breadcrumb"
+        }
+      }
+    },
+    "main-404": {
+      "name": "Main 404",
+      "settings": {
+        "pick__image": {
+          "label": "Load one image 404"
         }
       }
     },
