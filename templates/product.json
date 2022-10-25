@@ -171,8 +171,8 @@
         "template--14433849344046__09f69824-9360-4746-94be-83ecf523eb48-16666726084b28c8b3-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Check it Out",
+            "button_link": "shopify:\/\/collections",
             "button_style_secondary": false
           }
         }
