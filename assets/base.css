@@ -2635,8 +2635,8 @@ input[type='checkbox'] {
 }
 
 .page-width .page-width.header {
-    padding-left: var(--grid-desktop-horizontal-spacing);
-    padding-right: var(--grid-desktop-horizontal-spacing);
+    padding-left: var(--grid-mobile-horizontal-spacing);
+    padding-right: var(--grid-mobile-horizontal-spacing);
 }
 
 @media screen and (min-width: 990px) {
@@ -2680,6 +2680,11 @@ input[type='checkbox'] {
     .header > .header__heading,
     .header > .header__heading-link {
         width: 20%;
+    }
+
+    .page-width .page-width.header {
+        padding-left: var(--grid-desktop-horizontal-spacing);
+        padding-right: var(--grid-desktop-horizontal-spacing);
     }
 }
 
