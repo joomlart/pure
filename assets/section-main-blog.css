@@ -144,9 +144,9 @@
     border-right: 0;
 /*     border-bottom: 0; */
   }
-/*   .blog-layout-default .blog-articles__article:not(:first-child) {
-    border-bottom: 0;
-  } */
+  .blog-layout-default .blog-articles__article:not(:first-child) {
+    border-right: 1px solid rgb(var(--color-border));
+  }
 }
 
 /* Item Leading */
