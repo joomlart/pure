@@ -1190,6 +1190,12 @@
         },
         "margin_bottom": {
           "label": "Bottom margin"
+        },
+        "header_icons": {
+          "label__1": "Show Wish List",
+          "label__2": "Show Customer",
+          "label__3": "Show Search",
+          "label__4": "Show Cart"
         }
       }
     },
