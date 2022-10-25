@@ -15,7 +15,7 @@
           "settings": {
             "show_block": true,
             "heading": "Recent Articles",
-            "number": 3
+            "number": 5
           }
         },
         "489f6b45-7d0d-43e3-9ad0-f17269c5bca1": {
@@ -34,12 +34,14 @@
       ],
       "settings": {
         "show_breadcrumb": true,
-        "layout": "grid",
         "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+        "layout": "grid",
+        "number_article": 4,
         "show_image": true,
         "image_height": "medium",
         "show_date": true,
-        "show_author": false,
+        "show_author": true,
+        "show_excerpt": true,
         "show_sidebar": true,
         "show_collapse": true,
         "enable_sticky": true,

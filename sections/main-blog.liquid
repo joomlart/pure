@@ -4,17 +4,18 @@
 
 {%- liquid
   if blog_layout == "01" 
-  render 'blog-default' 
-  elsif blog_layout == "02" 
-    render 'blog-simple' 
-  elsif blog_layout == "03" 
-    render 'blog-full-width' 
-  elsif blog_layout == "04" 
-  render 'blog-masonry' 
-  elsif blog_layout == "05" 
-    render 'blog-list' 
+    render 'blog-default' 
   endif
 -%}
+
+{% comment %} elsif blog_layout == "02" 
+  render 'blog-simple' 
+elsif blog_layout == "03" 
+  render 'blog-full-width' 
+elsif blog_layout == "04" 
+render 'blog-masonry' 
+elsif blog_layout == "05" 
+  render 'blog-list'  {% endcomment %}
 
  
 
@@ -26,13 +27,23 @@
   "settings": [
     {
       "type": "header",
-      "content": "t:sections.main-blog.settings.header.content"
+      "content": "t:sections.main-blog.settings.header__1.content"
     },
     {
       "type": "checkbox",
       "id": "show_breadcrumb",
       "label": "t:sections.general.settings.breadcrumb.label__1",
       "default": true
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Description Masthead",
+      "info": "Add description below Masthead"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-blog.settings.header__2.content"
     },
     {
       "type": "select",
@@ -52,10 +63,13 @@
       "info": "t:sections.main-blog.settings.layout.info"
     },
     {
-      "type": "text",
-      "id": "description",
-      "label": "Description Masthead",
-      "info": "Add description below Masthead"
+    "type": "range",
+    "id": "number_article",
+    "label": "t:sections.main-blog.settings.number_article.label",
+    "min": 1,
+    "max": 10,
+    "step": 1,
+    "default": 3
     },
     {
       "type": "checkbox",
@@ -99,6 +113,12 @@
       "id": "show_author",
       "default": false,
       "label": "t:sections.main-blog.settings.show_author.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_excerpt",
+      "default": false,
+      "label": "t:sections.main-blog.settings.show_excerpt.label"
     },
     {
       "type":"header",
