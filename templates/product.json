@@ -150,11 +150,57 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "09f69824-9360-4746-94be-83ecf523eb48": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14433849344046__09f69824-9360-4746-94be-83ecf523eb48-16666726084b28c8b3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Up to 30% OFF Selected Brands",
+            "heading_size": "h1"
+          }
+        },
+        "template--14433849344046__09f69824-9360-4746-94be-83ecf523eb48-16666726084b28c8b3-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--14433849344046__09f69824-9360-4746-94be-83ecf523eb48-16666726084b28c8b3-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Check it Out",
+            "button_link": "shopify:\/\/collections",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--14433849344046__09f69824-9360-4746-94be-83ecf523eb48-16666726084b28c8b3-0",
+        "template--14433849344046__09f69824-9360-4746-94be-83ecf523eb48-16666726084b28c8b3-1",
+        "template--14433849344046__09f69824-9360-4746-94be-83ecf523eb48-16666726084b28c8b3-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/banner-1.jpg",
+        "height": "square",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "bottom",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "product-recommendations",
-    "166133172235095e06"
+    "166133172235095e06",
+    "09f69824-9360-4746-94be-83ecf523eb48"
   ]
 }

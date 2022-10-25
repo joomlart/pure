@@ -191,6 +191,17 @@
         "label": "t:settings_schema.general.settings.backtotop.label",
         "default": true,
         "info": "t:settings_schema.general.settings.backtotop.info"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.general.settings.header__3.content"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_wishlist",
+        "label": "t:settings_schema.general.settings.wishlist.label",
+        "default": true,
+        "info": "t:settings_schema.general.settings.wishlist.info"
       }
     ]
   },

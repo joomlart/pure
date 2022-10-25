@@ -581,6 +581,15 @@
         </a>
       {%- endif -%}
 
+      {%- if settings.show_wishlist and section.settings.show_wishlist -%}
+        <a href="{{ pages['wishlist'].url }}" class="header__icon header__icon--wishlist link link--text focus-inset">
+            {% render 'icon-heart-2' %}
+            <div class="wishlist-count-bubble">
+                <span class="text" aria-hidden="true" data-wishlist-count></span>
+            </div>
+        </a>
+      {%- endif -%}
+
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {%- liquid
           if cart == empty
@@ -854,6 +863,12 @@
       "default": true,
       "label": "t:sections.header.settings.enable_sticky_header.label",
       "info": "t:sections.header.settings.enable_sticky_header.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_wishlist",
+      "label": "t:sections.header.settings.header_icons.label__1",
+      "default": true
     },
     {
       "type": "header",

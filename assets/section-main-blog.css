@@ -115,7 +115,6 @@
 
 .blog-layout-default .blog-articles__article {
   border: 1px solid rgb(var(--color-border));
-  padding: 4.8rem;
 }
 
 @media screen and (max-width: 549px) {
@@ -147,10 +146,6 @@
 
 .blog-layout-default .blog-articles__article:first-child .card__inner::before {
   padding-bottom: 56.25%;
-}
-
-.blog-layout-default .blog-articles__article:first-child .card__content {
-  padding: var(--grid-desktop-vertical-spacing) 0 ;
 }
 
 .blog-layout-default .blog-articles__article:nth-child(4), 

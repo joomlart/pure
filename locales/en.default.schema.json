@@ -393,7 +393,10 @@
           "content": "Favicon"
         },
         "header__2": {
-          "content": "Back to top"
+          "content": "Back To Top"
+        },
+        "header__3": {
+          "content": "Wishlist"
         },
         "backtotop": {
           "label": "Back to top?",
@@ -402,6 +405,10 @@
         "favicon": {
           "label": "Favicon image",
           "info": "Will be scaled down to 32 x 32px"
+        },
+        "wishlist": {
+          "label": "Wishlist Feature?",
+          "info": "A wish list allows shoppers to create personalized collections of products they want to buy and send them to their mail for future reference"
         }
       }
     }
@@ -1183,6 +1190,12 @@
         },
         "margin_bottom": {
           "label": "Bottom margin"
+        },
+        "header_icons": {
+          "label__1": "Show Wish List",
+          "label__2": "Show Customer",
+          "label__3": "Show Search",
+          "label__4": "Show Cart"
         }
       }
     },
@@ -1626,7 +1639,7 @@
           },
           "info": "For best results, use an image with a 3:2 aspect ratio. [Learn more](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
-        "alignment_title": {
+        "alignment": {
           "label": "Alignment",
           "options__1": {
             "label": "Left"
@@ -3626,6 +3639,12 @@
       },
       "preset": {
         "name": "Custom section"
+      }
+    },
+    "main_wishlist": {
+      "name": "Wishlist",
+      "settings": {
+        "header__1": "Wishlist"
       }
     },
     "ja-marquee": {

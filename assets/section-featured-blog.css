@@ -92,6 +92,7 @@
 
 .blog__posts .card-wrapper {
   width: 100%;
+  padding: 0;
 }
 
 .blog__button {
