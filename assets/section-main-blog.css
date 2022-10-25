@@ -140,7 +140,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .blog-layout-default .blog-articles__article:nth-child(4n) {
+  .blog-layout-default .blog-articles__article:nth-child(3n+1) {
     border-right: 0 !important;
 /*     border-bottom: 0; */
   }
