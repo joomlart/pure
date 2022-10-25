@@ -3,6 +3,7 @@
     "main": {
       "type": "main-404",
       "settings": {
+        "image_404": "shopify:\/\/shop_images\/Scarecrow.png"
       }
     }
   },
