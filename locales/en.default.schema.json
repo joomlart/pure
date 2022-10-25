@@ -1626,7 +1626,7 @@
           },
           "info": "For best results, use an image with a 3:2 aspect ratio. [Learn more](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
-        "alignment_title": {
+        "alignment": {
           "label": "Alignment",
           "options__1": {
             "label": "Left"
