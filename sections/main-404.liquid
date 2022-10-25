@@ -32,13 +32,13 @@
 </style>
 
 <div class="template-404 page-width page-margin center">
-  <h1>{{ main.main-404.settings.image_404 }}</h1>
+  <h1>{{ sections.settings.image_404 }}</h1>
     <img
     src="{{ settings.image_404 | image_url: width: 533 }}"
     class="image-404"
     loading="lazy"
-    width="{{ settings.image_404.width }}"
-    height="{{ settings.image_404.height }}"
+    width="{{ sections.settings.image_404.width }}"
+    height="{{ sections.settings.image_404.height }}"
   >
   <h1 class="code-message">
     {{ 'templates.404.title' | t }}
