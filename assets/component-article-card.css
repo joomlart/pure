@@ -48,8 +48,8 @@
 
 /* Title Blog */
 .article-card .card__heading {
-  font-size: calc(var(--font-heading-scale) * 2rem);;
-  line-height: calc(1 + .25/var(--font-heading-scale));
+  font-size: calc(var(--font-heading-scale) * 2.4rem);;
+  line-height: calc(1 + .3/var(--font-heading-scale));
   margin-bottom: 1.6rem;
   letter-spacing: 0;
 }
@@ -65,9 +65,10 @@
 }
 
 .article-card__info {
-  color: #9e9e9e;
+  color: rgba(33, 33, 33, 0.5);
   margin-bottom: .8rem;
   font-size: calc(var(--font-heading-scale) * 1.2rem);
+  line-height: calc(1 + .6/var(--font-body-scale));
   text-transform: uppercase;
 }
 
@@ -88,8 +89,7 @@
 
 .article-card__excerpt {
   width: 100%;
-  margin-top: 1.2rem;
-  margin-bottom: 0;
+  margin: 1.2rem 0 0;
 }
 
 .article-card__link:not(:only-child) {
