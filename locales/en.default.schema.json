@@ -1591,6 +1591,9 @@
         "show_author": {
           "label": "Show author"
         },
+        "number_article": {
+          "label": "Maximum Article Per Page"
+        },
         "show_excerpt": {
           "label": "Show excerpt"
         },
