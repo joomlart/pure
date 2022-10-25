@@ -2799,7 +2799,7 @@ input[type='checkbox'] {
 .header__icon .icon {
     height: 2rem;
     width: 2rem;
-    fill: none;
+    fill: rgb(var(--color-foreground));
     vertical-align: middle;
 }
 
