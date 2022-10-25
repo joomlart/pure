@@ -435,5 +435,21 @@
       "copy_code_success": "Code copied successfully",
       "print_gift_card": "Print"
     }
+  },
+  "wishlist": {
+    "general": {
+      "wishlist": "Wish Lists",
+      "title": "My Wish List",
+      "added": "Added to wishlist",
+      "product_image": "Image",
+      "product_name": "Product Name",
+      "price": "Price",
+      "add_1": "Add",
+      "add": "Add to wishlist",
+      "remove": "Remove",
+      "share": "Share my Wish List via email",
+      "empty": "No product is added to your wishlist",
+      "continue_shopping": "Continue Shopping"
+    }
   }
 }

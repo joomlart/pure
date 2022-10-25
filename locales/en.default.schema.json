@@ -395,6 +395,9 @@
         "header__2": {
           "content": "Back to top"
         },
+        "header__2": {
+          "content": "Wishlist"
+        },
         "backtotop": {
           "label": "Back to top?",
           "info": "A back to top button"
@@ -402,6 +405,10 @@
         "favicon": {
           "label": "Favicon image",
           "info": "Will be scaled down to 32 x 32px"
+        },
+        "wishlist": {
+          "label": "Wishlist Feature?",
+          "info": "A wish list allows shoppers to create personalized collections of products they want to buy and send them to their mail for future reference"
         }
       }
     }
@@ -3626,6 +3633,12 @@
       },
       "preset": {
         "name": "Custom section"
+      }
+    },
+    "main_wishlist": {
+      "name": "Wishlist",
+      "settings": {
+        "header__1": "Wishlist"
       }
     },
     "ja-marquee": {
