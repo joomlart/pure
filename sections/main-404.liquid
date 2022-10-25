@@ -44,10 +44,13 @@
     height="auto"
     >
   {% else %}
-    <h1 class="code-message">
-    {{ 'templates.404.title' | t }}
-    </h1>
+  <p class="code-error">
+    {{ 'templates.404.subtext' | t }}
+  </p>
   {% endif %}
+  <h1 class="code-message">
+  {{ 'templates.404.title' | t }}
+  </h1>
   <a href="{{ routes.all_products_collection_url }}" class="button redirect-home">
     {{ 'general.continue_shopping' | t }}
   </a>
