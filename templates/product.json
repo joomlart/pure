@@ -167,7 +167,7 @@
           "settings": {
             "button_label": "Check it Out",
             "button_link": "shopify:\/\/collections",
-            "button_style_secondary": false
+            "button_style_secondary": true
           }
         }
       },
