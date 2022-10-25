@@ -19,7 +19,7 @@
 
 {%- liquid
   assign show_breadcrumb = section.settings.show_breadcrumb
-  assign alignment = section.settings.alignment_title
+  assign alignment = section.settings.alignment
   assign show_sidebar = section.settings.show_sidebar
   if show_sidebar
       assign show_collapse = section.settings.show_collapse
@@ -34,7 +34,6 @@
   assign show_author = section.settings.show_author
   assign show_date = section.settings.show_date
   assign show_excerpt = section.settings.show_excerpt
-  assign alignment_content = section.settings.alignment_content
 -%}
 
 <div data-section-id="{{ section.id }}" data-section-type="blog-layout-default" id="BlogSection-{{ section.id }}" data-section="{{ section.id }}" class="main-blog-block page-width blog-layout-default">
