@@ -44,10 +44,10 @@
         "show_author": true,
         "show_excerpt": true,
         "alignment_content": "left",
-        "show_sidebar": true,
+        "show_sidebar": false,
         "show_collapse": true,
         "enable_sticky": true,
-        "sidebar_position": "right",
+        "sidebar_position": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
