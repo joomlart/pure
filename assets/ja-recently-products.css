@@ -1,0 +1,49 @@
+.product-recommendations__heading.title-wrapper {
+    margin-bottom: 0;
+}
+
+..recently-viewed-wrap .title-wrapper--self-padded-tablet-down,
+..recently-viewed-wrap .title-wrapper--self-padded-mobile {
+    padding: 0;
+}
+
+.product-recommendations__heading .title:not(:only-child) {
+    margin-bottom: 1rem;
+}
+
+.product-recommendations__heading .inner .title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.product-recommendations__heading .inner .h4 {
+    font-size: calc(var(--font-heading-scale) * 1.8rem);
+}
+
+.product-recommendations__heading .inner {
+    /* border-bottom: 1px solid rgb(var(--color-border)); */
+    padding: var(--grid-desktop-vertical-spacing) var(--grid-desktop-horizontal-spacing);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.product-recommendations__heading .inner:not(:only-child) {
+    margin-bottom: 1rem;
+}
+
+.recently-viewed-wrap .card-information > .price {
+  font-size: 1.6rem;
+  color: rgb(var(--color-base-accent-1));
+  font-weight: 400;
+}
+
+.recently-viewed-wrap .card-information {
+  margin-top: .75rem;
+}
