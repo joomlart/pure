@@ -54,18 +54,6 @@
           {
             "value": "02",
             "label": "t:settings_schema.multilayout.settings.blog_layout.label__2"
-          },
-          {
-            "value": "03",
-            "label": "t:settings_schema.multilayout.settings.blog_layout.label__3"
-          },
-          {
-            "value": "04",
-            "label": "t:settings_schema.multilayout.settings.blog_layout.label__4"
-          },
-          {
-            "value": "05",
-            "label": "t:settings_schema.multilayout.settings.blog_layout.label__5"
           }
         ],
         "default": "01"
