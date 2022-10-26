@@ -56,35 +56,6 @@ let slideDown = (target, duration=500) => {
     target.style.removeProperty('transition-property');
   }, duration);
 }
-let slideToggle = (target, duration = 500) => {
-rotateIcon.classList.add("cate-btn-slide-up");
-if (window.getComputedStyle(target).display === 'none') {
-  rotateIcon.classList.remove("cate-btn-slide-up");
-  return slideDown(target, duration);
-} else {
-  return slideUp(target, duration);
-}
-}
-
-let slideToggle2 = (target, duration = 500) => {
-  rotateIcon2.classList.add("recent-btn-slide-up");
-  if (window.getComputedStyle(target).display === 'none') {
-    rotateIcon2.classList.remove("recent-btn-slide-up");
-    return slideDown(target, duration);
-  } else {
-    return slideUp(target, duration);
-  }
-}
-
-let slideToggle3 = (target, duration = 500) => {
-  rotateIcon3.classList.add("tags-btn-slide-up");
-  if (window.getComputedStyle(target).display === 'none') {
-    rotateIcon3.classList.remove("tags-btn-slide-up");
-    return slideDown(target, duration);
-  } else {
-    return slideUp(target, duration);
-  }
-}
 
 /////
 let speedAnimation = 400;
@@ -96,11 +67,17 @@ let rotateIcon = document.querySelector('.blog-categories .btn-slide-down');
 let rotateIcon2 = document.querySelector('.lastest-posts .btn-slide-down');
 let rotateIcon3 = document.querySelector('.list-tag .btn-slide-down');
 
-let slideBtnClick = (id, sl) => document.getElementById(id).addEventListener('click', () => sl(targetId, speedAnimation));
-let slideBtnClick2 = (id, sl) => document.getElementById(id).addEventListener('click', () => sl(targetId2, speedAnimation));
-let slideBtnClick3 = (id, sl) => document.getElementById(id).addEventListener('click', () => sl(targetId3, speedAnimation));
+var slideBtn = function(id, rotateIcon, target, classToAdd, duration = 500){
+	document.getElementById(id).addEventListener('click', function(){
+    rotateIcon.classList.add(classToAdd);
+    if (window.getComputedStyle(target).display === 'none') {
+      rotateIcon.classList.remove(classToAdd);
+      return slideDown(target, duration);
+    }
+    return slideUp(target, duration);
+	})
+}
 
-slideBtnClick('toggle-category', slideToggle);
-slideBtnClick2('toggle-recent-post', slideToggle2);
-slideBtnClick3('toggle-tags', slideToggle3);
-
+slideBtn('toggle-category', rotateIcon, targetId, 'cate-btn-slide-up');
+slideBtn('toggle-recent-post', rotateIcon2, targetId2, 'recent-btn-slide-up');
+slideBtn('toggle-tags', rotateIcon3, targetId3, 'tags-btn-slide-up');
