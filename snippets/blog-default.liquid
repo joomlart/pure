@@ -55,7 +55,7 @@
 
   {%- paginate blog.articles by number_article_per_page -%}
   <div class="main-blog">
-    <div class="wrap-inner{% if show_sidebar == "right" %}grid has-sidebar sidebar-right{% endif %} {% if show_sidebar == "left" %}grid has-sidebar sidebar-left{% endif %} {% if layout_article == "collapse" %}layout-collapse{% endif %}">
+    <div class="wrap-inner {% if show_sidebar %}grid has-sidebar{% endif %} {% if sidebar_position == "right" %}sidebar-right{% endif %} {% if sidebar_position == "left" %}sidebar-left{% endif %} {% if layout_article == "collapse" %}layout-collapse{% endif %}">
       {%- if blog.articles_count > 0 -%}
         <div class="list-blogs">
           <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}{% if section.settings.layout == 'grid' %}blog-articles--grid{% endif %}">
