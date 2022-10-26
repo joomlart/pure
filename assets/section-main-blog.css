@@ -176,7 +176,13 @@
 
 .main-blog .sidebar-right .pagination-wrapper {
   border-left: 0;
-  border-right: 1px solid rgb(var(--color-border))
+  border-right: 1px solid rgb(var(--color-border));
+}
+
+@media screen and (max-width: 1200px ) {
+  .main-blog .sidebar-right .pagination-wrapper {
+    border-right: 0;
+  }
 }
 
 
