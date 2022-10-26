@@ -89,7 +89,7 @@
 
 @media screen and (max-width: 750px) {
   .blog-articles--collage .article .card .card__content {
-    padding: var(--grid-desktop-vertical-spacing) 0;
+    padding: var(--grid-desktop-vertical-spacing)/2 0;
   }
 }
 
