@@ -1,6 +1,6 @@
 <div class="recently-viewed-wrap">
     <h2 class="product-recommendations__heading h2">{{ section.settings.heading | escape }}</h2>
-    <ul class="recently-viewed" role="list">
+    <ul class="recently-viewed grid product-grid contains-card contains-card--standard grid--gapless grid--4-col-desktop grid--2-col-tablet-down" role="list">
     <!-- Recently viewed products will appear here -->
     </ul>
 </div>
@@ -51,7 +51,7 @@ function getRecentlyViewedProducts() {
   const recentlyViewedHtml = [];
   productData.map(item => {
     recentlyViewedHtml.unshift(`
-    <li class="recently__item">
+    <li class="grid__item">
      <div class="card-wrapper underline-links-hover">
       <div class="card card--standard card--media " style="--ratio-percent: 100%;">
         <div class="card__inner color-background-2 gradient ratio" style="--ratio-percent: 100%;">
@@ -91,3 +91,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 </script>
+
+
+{% schema %}
+  {
+    "name": "Recent Products",
+    "settings": [
+      {
+      "type": "text",
+      "id": "heading",
+      "default": "Recently Viewed",
+      "label": "Title"
+    }
+    ]
+  }
+{% endschema %}
