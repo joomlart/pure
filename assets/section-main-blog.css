@@ -161,7 +161,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .blog-articles__article:nth-child(3n+1) {
+  .blog-layout-default .blog-articles__article:nth-child(3n+1) {
     border-right: 0 !important;
   }
   .blog-articles__article:not(:first-child) {
