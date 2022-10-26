@@ -3806,8 +3806,7 @@
         "label": "Enable \"View all\" button if blog includes more blog posts than shown"
       },
       "show_image": {
-        "label": "Show featured image",
-        "info": "For best results, use an image with a 3:2 aspect ratio. [Learn more](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+        "label": "Show featured image"
       },
       "image_height": {
         "label": "Featured image height",
