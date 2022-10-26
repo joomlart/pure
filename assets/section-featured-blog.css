@@ -153,12 +153,17 @@
   text-decoration: none;
 }
 
+.blog__view-all {
+  padding: var(--grid-desktop-vertical-spacing);
+  border-top: 1px solid rgb(var(--color-border));
+}
+
 .blog__view-all a span:first-child {
   float: left;
 }
 
 .blog__view-all a {
-  display: flex;
+  display: inline-block;
   align-items: center;
 }
 

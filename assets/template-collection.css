@@ -82,6 +82,7 @@
 
 .collection__view-all {
     padding: var(--grid-desktop-vertical-spacing);
+    border-top: 1px solid rgb(var(--color-border));
 }
 
 .collection__view-all a {}
