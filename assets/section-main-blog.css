@@ -164,7 +164,7 @@
   .blog-layout-default .blog-articles__article:nth-child(3n+1) {
     border-right: 0 !important;
   }
-  .blog-articles__article:not(:first-child) {
+  .blog-layout-default .blog-articles__article:not(:first-child) {
     border-right: 1px solid rgb(var(--color-border));
   }
 }
