@@ -155,7 +155,7 @@
 /* Blog Default Layout*/
 
 @media screen and (min-width: 550px) {
-  .blog-articles__article:nth-child(even) {
+  .blog-layout-default .blog-articles__article:nth-child(even) {
     border-right: 1px solid rgb(var(--color-border));
   }
 }
@@ -193,6 +193,13 @@
 }
 
 /* Blog Simple Layout*/
+.blog-layout-simple .blog-articles__article{
+  border-right: 1px solid rgb(var(--color-border));
+}
+
+.blog-layout-simple .blog-articles__article:nth-child(3n){
+  border-right: 0;
+}
 
 /* Pagination */
 
