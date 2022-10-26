@@ -87,6 +87,12 @@
   padding: var(--grid-desktop-vertical-spacing);
 }
 
+@media screen and (max-width: 550px) {
+  .blog-articles--collage .article .card .card__content {
+    padding: var(--grid-desktop-vertical-spacing) 0;
+  }
+}
+
 .blog-articles--collage .article .card {
   flex-direction: row;
 }
