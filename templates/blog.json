@@ -43,11 +43,11 @@
         "show_date": true,
         "show_author": true,
         "show_excerpt": true,
-        "alignment_content": "right",
+        "alignment_content": "left",
         "show_sidebar": true,
         "show_collapse": true,
         "enable_sticky": true,
-        "sidebar": "left",
+        "sidebar": "right",
         "padding_top": 36,
         "padding_bottom": 36
       }
