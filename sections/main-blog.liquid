@@ -4,12 +4,13 @@
 
 {%- liquid
   if blog_layout == "01" 
-    render 'blog-default' 
+    render 'blog-default'
+  elsif blog_layout == "02" 
+    render 'blog-simple'  
   endif
 -%}
 
-{% comment %} elsif blog_layout == "02" 
-  render 'blog-simple' 
+{% comment %} 
 elsif blog_layout == "03" 
   render 'blog-full-width' 
 elsif blog_layout == "04" 
