@@ -155,16 +155,16 @@
 /* Blog Default Layout*/
 
 @media screen and (min-width: 550px) {
-  .blog-layout-default .blog-articles__article:nth-child(even) {
+  .blog-articles__article:nth-child(even) {
     border-right: 1px solid rgb(var(--color-border));
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .blog-layout-default .blog-articles__article:nth-child(3n+1) {
+  .blog-articles__article:nth-child(3n+1) {
     border-right: 0 !important;
   }
-  .blog-layout-default .blog-articles__article:not(:first-child) {
+  .blog-articles__article:not(:first-child) {
     border-right: 1px solid rgb(var(--color-border));
   }
 }
