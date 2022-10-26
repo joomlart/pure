@@ -45,10 +45,6 @@
   } 
 }
 
-.sidebar-left .sidebar {
-  padding-left: 0;
-}
-
 .sidebar-left .pagination-wrapper {
   grid-column: 2/4
 }
