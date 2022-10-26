@@ -37,7 +37,7 @@
   assign alignment_content = section.settings.alignment_content
 -%}
 
-<div data-section-id="{{ section.id }}" data-section-type="blog-layout-default" id="BlogSection-{{ section.id }}" data-section="{{ section.id }}" class="main-blog-block page-width blog-layout-default">
+<div data-section-id="{{ section.id }}" data-section-type="blog-layout-simple" id="BlogSection-{{ section.id }}" data-section="{{ section.id }}" class="main-blog-block page-width blog-layout-simple">
 
   <div class="header-page {% if alignment_title != blank %}{{ alignment_title }}{% endif %}">
     {% if show_breadcrumb %}

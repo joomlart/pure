@@ -6,18 +6,14 @@
   top: 0;
 }
 
-.has-sidebar {
-  display: grid;
-  column-gap: 0;
-  row-gap: 0;
-}
-
 @media screen and (min-width: 1200px) {
   .sidebar-right {
+    display: grid;
     grid-template-columns: 3fr 1fr;
   }
 
   .sidebar-left {
+    display: grid;
     grid-template-columns: 1fr 3fr;
   }
 
@@ -39,14 +35,10 @@
   }
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1200px) {
   .sidebar-left .sidebar {
     order: -1;
   } 
-}
-
-.sidebar-left .sidebar {
-  padding-left: 0;
 }
 
 .sidebar-left .pagination-wrapper {
