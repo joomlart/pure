@@ -47,7 +47,7 @@
         "show_sidebar": true,
         "show_collapse": true,
         "enable_sticky": true,
-        "sidebar": "noSidebar",
+        "sidebar": "right",
         "padding_top": 36,
         "padding_bottom": 36
       }
