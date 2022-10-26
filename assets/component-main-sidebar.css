@@ -6,12 +6,9 @@
   top: 0;
 }
 
-.has-sidebar {
-  display: grid;
-}
-
 @media screen and (min-width: 1200px) {
   .sidebar-right {
+    display: grid;
     grid-template-columns: 3fr 1fr;
   }
 
