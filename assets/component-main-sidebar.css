@@ -12,10 +12,6 @@
   row-gap: 0;
 }
 
-.blog-articles--collage {
-  column-gap: 0;
-}
-
 @media screen and (min-width: 1200px) {
   .sidebar-right {
     grid-template-columns: 3fr 1fr;
