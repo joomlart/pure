@@ -43,7 +43,7 @@
         "show_date": true,
         "show_author": true,
         "show_excerpt": true,
-        "alignment_content": "left",
+        "alignment_content": "right",
         "show_sidebar": true,
         "show_collapse": true,
         "enable_sticky": true,
