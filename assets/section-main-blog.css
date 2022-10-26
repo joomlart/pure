@@ -135,12 +135,13 @@
 }
 
 
-/* Blog Default Layout*/
-
-/* Title */
-.blog-layout-default .header-page {
+/* Title Page */
+.header-page {
   padding: var(--grid-desktop-horizontal-spacing);
 }
+
+
+/* Blog Default Layout*/
 
 /* Common Article */
 .blog-articles__article {
