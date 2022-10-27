@@ -2134,6 +2134,9 @@
         "header__2": {
           "content": "Card and Sidebar"
         },
+        "header__4": {
+          "content": "Recently Products"
+        },
         "header__3": {
           "content": "Product card"
         },
@@ -2159,6 +2162,9 @@
           "options__2": {
             "label": "2 columns"
           }
+        },
+        "enable_recently_products": {
+          "label": "Enable Recently Products in Aside"
         }
       }
     },
@@ -5338,6 +5344,9 @@
       "header__3": {
         "content": "Product card"
       },
+      "header__4": {
+        "content": "Recently Products"
+      },
       "enable_tags": {
         "label": "Enable filtering",
         "info": "[Customize filters](\/admin\/menus)"
@@ -5360,6 +5369,9 @@
         "options__2": {
           "label": "2 columns"
         }
+      },
+      "enable_recently_products": {
+        "label": "Enable Recently Products in Aside"
       }
     }
   },

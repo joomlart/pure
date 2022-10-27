@@ -191,6 +191,10 @@
               })
             </script>
         {% endif %}
+
+        {%- if section.settings.enable_recently_products -%}
+          {% render 'ja-recent-products' %}
+        {% endif %}
       </aside>
     <div class="product-grid-container" id="ProductGridContainer">
       {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
@@ -667,6 +671,16 @@
       "unit": "s",
       "label": "t:sections.main-collection-product-grid.settings.change_slides_speed.label",
       "default": 5
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-collection-product-grid.settings.header__4.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_recently_products",
+      "default": true,
+      "label": "t:sections.main-collection-product-grid.settings.enable_recently_products.label"
     }
   ]
 }
