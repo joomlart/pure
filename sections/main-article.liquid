@@ -282,8 +282,6 @@
     {%- endif -%}
     </div>
     {%- if show_sidebar -%}
-
-    {%- endif -%}
     <div class="sidebar" >
       <div class="sidebar-wrapper {% if enable_sticky %}scroll-sidebar{% endif %}">
         {% render 'main-sidebar',
@@ -292,6 +290,7 @@
         %}
       </div>
     </div>
+    {%- endif -%}
     </div>
 </article>
 
