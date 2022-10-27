@@ -178,12 +178,20 @@
               "heading": "Quick links",
               "menu": "footer"
             }
+          },
+          "9bd762cf-9801-4cf3-a66f-1e6fd61f9519": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
           }
         },
         "block_order": [
           "footer-1",
           "d2d2e96b-3357-4d10-b4d2-a65c9178bc68",
-          "footer-0"
+          "footer-0",
+          "9bd762cf-9801-4cf3-a66f-1e6fd61f9519"
         ],
         "settings": {
           "color_scheme": "background-1",
