@@ -79,6 +79,16 @@
   max-width: 80rem;
 }
 
+.article-template .article-title.center {
+  margin: auto;
+  text-align: center;
+}
+
+.article-template .article-title.right {
+  margin: left;
+  text-align: right;
+}
+
 /* Title */
 .article-template__title {
   margin: 0;
