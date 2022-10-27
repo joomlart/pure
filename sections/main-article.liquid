@@ -1,7 +1,15 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 {{ 'component-sidebar.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign show_breadcrumb = section.settings.show_breadcrumb
+  assign alignment_breadcrumb = section.settings.alignment_breadcrumb
+-%}
 
-{%- render 'breadcrumb' -%}
+{% if show_breadcrumb %}
+  {%- render 'breadcrumb',
+      alignment_breadcrumb: alignment_breadcrumb
+  -%}
+{% endif %}
 <article class="article-template page-width  " itemscope itemtype="http://schema.org/BlogPosting">
 
     {%- for block in section.blocks -%}
@@ -400,6 +408,40 @@
   ],
   "settings": [
     {
+      "type": "header",
+      "content": "t:sections.main-article.settings.header__1.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_breadcrumb",
+      "label": "t:sections.general.settings.breadcrumb.label__1",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "alignment_breadcrumb",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.general.settings.alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.general.settings.alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.general.settings.alignment.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.general.settings.alignment.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-article.settings.header__2.content"
+    },
+    {
       "type": "checkbox",
       "id": "show_previous_next_buttons",
       "label": "Show previous and next buttons",
@@ -412,28 +454,42 @@
       "default": true
     },
     {
-      "type": "checkbox",
-      "id": "sidebar",
-      "label": "Show Sidebar",
-      "default": true
+      "type":"header",
+      "content":"t:sections.main-sidebar.settings.header__1.content"
     },
     {
       "type": "checkbox",
-      "id": "blog_show_tags",
-      "label": "Show Tags",
+      "id": "show_sidebar",
+      "label": "t:sections.main-sidebar.settings.general.label__1",
       "default": true
     },
     {
-      "type": "checkbox",
-      "id": "blog_show_lastest_post",
-      "label": "Show Lastest Posts",
-      "default": true
+        "type": "checkbox",
+        "id": "show_collapse",
+        "label": "t:sections.main-sidebar.settings.general.label__2",
+        "default": true
     },
     {
       "type": "checkbox",
-      "id": "blog_categories",
-      "label": "Show Blog Categories",
+      "id": "enable_sticky",
+      "label": "t:sections.main-sidebar.settings.general.label__5",
       "default": true
+    },
+    {
+      "type": "select",
+      "id": "sidebar_position",
+      "label": "Choose Position Sidebar",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
     }
   ]
 }

@@ -35,8 +35,14 @@
         "share"
       ],
       "settings": {
+        "show_breadcrumb": true,
+        "alignment_breadcrumb": "left",
         "show_previous_next_buttons": true,
-        "show_footer_article": true
+        "show_footer_article": true,
+        "show_sidebar": true,
+        "show_collapse": true,
+        "enable_sticky": true,
+        "sidebar_position": "right"
       }
     }
   },

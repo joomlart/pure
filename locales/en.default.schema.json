@@ -468,6 +468,18 @@
         "breadcrumb": {
           "title": "Breadcrumb",
           "label__1": "Show Breadcrumb"
+        },
+        "alignment": {
+          "options__1": {
+            "label": "Left"
+          },
+          "options__2": {
+            "label": "Center"
+          },
+          "options__3": {
+            "label": "Right"
+          },
+          "label": "Alignment Breadcrumb"
         }
       }
     },
@@ -1717,7 +1729,7 @@
           }
         }
       },
-      "setting": {
+      "settings": {
         "header__1": {
           "content": "Gereral"
         },
