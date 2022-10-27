@@ -78,6 +78,7 @@
       
         {% comment %} Tag Article {% endcomment %}
         {%- if show_tags -%} 
+        {%- endif -%}
         <div class="tag-article">
           <ul>
             <h5>Tags:</h5>
@@ -86,7 +87,6 @@
           {% endfor %}
         </ul>
         </div>
-        {%- endif -%}
       
         {% comment %} Share {% endcomment %}
         {%- if show_share -%}
