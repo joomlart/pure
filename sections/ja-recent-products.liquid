@@ -1,11 +1,31 @@
 {{ 'ja-recently-products.css' | asset_url | stylesheet_tag }}
-<div class="recently-viewed-wrap">
-    <div class="product-recommendations__heading title-wrapper title-wrapper--no-top-margin page-width">
-      <div class="inner"><h2 class="title h2">{{ section.settings.heading | escape }}</h2></div>
-    </div>
-    <ul class="recently-viewed grid product-grid contains-card contains-card--standard grid--gapless grid--4-col-desktop grid--2-col-tablet-down" role="list">
-    <!-- Recently viewed products will appear here -->
-    </ul>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+<div class="color-{{ section.settings.color_scheme }} isolate gradient">
+  <div class="recently-viewed-wrap section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
+      <div class="product-recommendations__heading title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
+        <div class="inner">
+          {%- if section.settings.title != blank -%}
+            <h2 class="title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</h2>
+          {%- endif -%}
+        </div>
+      </div>
+      <ul class="recently-viewed grid product-grid contains-card contains-card--standard grid--gapless grid--4-col-desktop grid--2-col-tablet-down" role="list">
+      <!-- Recently viewed products will appear here -->
+      </ul>
+  </div>
 </div>
 
 <script>
@@ -185,12 +205,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
       "default": false
     },
     {
-      "type": "checkbox",
-      "id": "enable_desktop_slider",
-      "label": "t:sections.recently-products.settings.enable_desktop_slider.label",
-      "default": false
-    },
-    {
       "type": "select",
       "id": "color_scheme",
       "options": [
@@ -309,12 +323,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
           "label": "t:sections.recently-products.settings.columns_mobile.options__2.label"
         }
       ]
-    },
-    {
-      "type": "checkbox",
-      "id": "swipe_on_mobile",
-      "default": false,
-      "label": "t:sections.recently-products.settings.swipe_on_mobile.label"
     },
     {
       "type": "header",
