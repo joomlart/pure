@@ -3,14 +3,14 @@
 {%- liquid
   assign show_breadcrumb = section.settings.show_breadcrumb
   assign alignment_breadcrumb = section.settings.alignment_breadcrumb
+  assign show_tags = section.settings.show_tags
+  assign show_share = section.settings.show_share
   assign show_sidebar = section.settings.show_sidebar
   if show_sidebar
     assign show_collapse = section.settings.show_collapse
     assign sidebar_position = section.settings.sidebar_position
     assign enable_sticky = section.settings.enable_sticky
   endif
-  assign show_tags = section.settings.show_tags
-  assign show_share = section.settings.show_share
 -%}
 
 {% if show_breadcrumb %}
@@ -73,7 +73,6 @@
       {%- endcase -%}
     {%- endfor -%}
 
-    {%- if section.settings.show_footer_article -%}
       <div class="footer-article">
       
         {%- if show_tags -%} 
@@ -117,8 +116,6 @@
         </div>
       </div>
       {%- endif -%}
-    {%- endif -%}
-
     
     {%- if section.settings.show_previous_next_buttons -%}
       <div class="previous_next_buttons">
