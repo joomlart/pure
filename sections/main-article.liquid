@@ -1,7 +1,12 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 {{ 'component-sidebar.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign show_breadcrumb = sections.settings.show_breadcrumb
+-%}
 
-{%- render 'breadcrumb' -%}
+{% if show_breadcrumb %}
+  {%- render 'breadcrumb' -%}
+{% endif %}
 <article class="article-template page-width  " itemscope itemtype="http://schema.org/BlogPosting">
 
     {%- for block in section.blocks -%}
