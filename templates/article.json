@@ -63,8 +63,8 @@
       "settings": {
         "show_breadcrumb": true,
         "alignment_breadcrumb": "center",
-        "show_tags": true,
-        "show_share": true,
+        "show_tags": false,
+        "show_share": false,
         "show_previous_next_buttons": true,
         "show_sidebar": true,
         "show_collapse": true,
