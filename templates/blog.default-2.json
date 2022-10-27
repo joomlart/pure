@@ -1,0 +1,59 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "blocks": {
+        "ab5e87e8-dcfa-4989-b80b-391c1f9f7fe9": {
+          "type": "category",
+          "settings": {
+            "show_block": true,
+            "heading": "Categories"
+          }
+        },
+        "db9ecf03-2a58-4f91-a68d-5ef5234ba3b2": {
+          "type": "recent_post",
+          "settings": {
+            "show_block": true,
+            "heading": "Recent Articles",
+            "number": 5
+          }
+        },
+        "489f6b45-7d0d-43e3-9ad0-f17269c5bca1": {
+          "type": "recent-tags",
+          "settings": {
+            "show_block": true,
+            "heading": "Blog Tags",
+            "number": 4
+          }
+        }
+      },
+      "block_order": [
+        "ab5e87e8-dcfa-4989-b80b-391c1f9f7fe9",
+        "db9ecf03-2a58-4f91-a68d-5ef5234ba3b2",
+        "489f6b45-7d0d-43e3-9ad0-f17269c5bca1"
+      ],
+      "settings": {
+        "show_breadcrumb": true,
+        "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+        "alignment_title": "center",
+        "layout": "collage",
+        "number_article": 7,
+        "show_image": true,
+        "image_height": "adapt",
+        "show_date": true,
+        "show_author": true,
+        "show_excerpt": true,
+        "alignment_content": "left",
+        "show_sidebar": true,
+        "show_collapse": true,
+        "enable_sticky": true,
+        "sidebar_position": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
