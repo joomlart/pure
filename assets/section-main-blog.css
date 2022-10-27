@@ -194,7 +194,7 @@
 }
 
 .blog-layout-default .blog-articles--collage .article:first-child .card .card__content {
-  padding: var(--grid-desktop-vertical-spacing) 0;
+  padding: var(--grid-desktop-vertical-spacing) 0 0;
 }
 
 /* Blog Simple Layout*/
