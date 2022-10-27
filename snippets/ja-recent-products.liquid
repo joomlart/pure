@@ -1,7 +1,9 @@
 {{ 'ja-recently-products.css' | asset_url | stylesheet_tag }}
 
-<div class="recently-viewed-wrap">
-    <h2 class="product-recommendations__heading h2">{{ section.settings.heading | escape }}</h2>
+<div class="recently-viewed-inner">
+    <div class="active-facets">
+      <h2 class="product-recommendations__heading facets__heading facets__heading--vertical caption-large text-body">Recently Products</h2>
+    </div>
     <ul class="recently-viewed" role="list">
     <!-- Recently viewed products will appear here -->
     </ul>

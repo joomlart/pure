@@ -193,7 +193,9 @@
         {% endif %}
 
         {%- if section.settings.enable_recently_products -%}
-          {% render 'ja-recent-products' %}
+          <div class="facets-container recently-viewed-wrap">
+            {% render 'ja-recent-products' %}
+          </div>
         {% endif %}
       </aside>
     <div class="product-grid-container" id="ProductGridContainer">
