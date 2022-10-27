@@ -423,8 +423,11 @@
 
   function getCurrentCollection() {
     const crumb_list = document.querySelector('ol.breadcrumbs__list');
-    const crumb_links = crumb_list.querySelectorAll('a.breadcrumbs__link');
     var currCollect = '';
+    
+    if (crumb_list == null || crumb_list.length === 0) return currCollect;
+    
+    const crumb_links = crumb_list.querySelectorAll('a.breadcrumbs__link');
     crumb_links.forEach(function (el, idx, obj) {
       if (el.href.includes('collections')){
         currCollect = el.href.split('collections/')[1];
