@@ -73,49 +73,49 @@
       {%- endcase -%}
     {%- endfor -%}
 
-      <div class="footer-article">
-      
-        {%- if show_tags -%} 
-        <div class="tag-article">
-          <ul>
-            <h5>Tags:</h5>
-          {% for tag in article.tags %}
-            <li>#{{ tag }}</li>
-          {% endfor %}
-          </ul>
-        </div>
-        {%- endif -%}
-        {%- if show_share -%}
-        <div class="social-media">
-        {% if settings.social_facebook_link != blank or settings.social_twitter_link != blank or settings.social_instagram_link != blank %}
-          <span>Share:</span>
-        {% endif %}
-        {%- if settings.social_facebook_link != blank -%}
-          <li>
-            <a class="social-icons__link" href="{{ settings.social_facebook_link | escape }}" aria-describedby="a11y-external-message">
-              <span class="icon-svg">{%- render 'icon-facebook' -%}</span>
-            </a>
-          </li>
-        {%- endif -%}
-
-        {%- if settings.social_twitter_link != blank -%}
-          <li>
-            <a class="social-icons__link" href="{{ settings.social_twitter_link | escape }}" aria-describedby="a11y-external-message">
-              <span class="icon-svg">{%- render 'icon-twitter' -%}</span>
-            </a>
-          </li>
-        {%- endif -%}
-
-        {%- if settings.social_instagram_link != blank -%}
-          <li>
-            <a class="social-icons__link" href="{{ settings.social_instagram_link | escape }}" aria-describedby="a11y-external-message">
-              <span class="icon-svg">{%- render 'icon-instagram' -%}</span>
-            </a>
-          </li>
-        {%- endif -%}
-        </div>
+    <div class="footer-article">
+    
+      {%- if show_tags -%} 
+      <div class="tag-article">
+        <ul>
+          <h5>Tags:</h5>
+        {% for tag in article.tags %}
+          <li>#{{ tag }}</li>
+        {% endfor %}
+        </ul>
       </div>
       {%- endif -%}
+      {%- if show_share -%}
+      <div class="social-media">
+      {% if settings.social_facebook_link != blank or settings.social_twitter_link != blank or settings.social_instagram_link != blank %}
+        <span>Share:</span>
+      {% endif %}
+      {%- if settings.social_facebook_link != blank -%}
+        <li>
+          <a class="social-icons__link" href="{{ settings.social_facebook_link | escape }}" aria-describedby="a11y-external-message">
+            <span class="icon-svg">{%- render 'icon-facebook' -%}</span>
+          </a>
+        </li>
+      {%- endif -%}
+
+      {%- if settings.social_twitter_link != blank -%}
+        <li>
+          <a class="social-icons__link" href="{{ settings.social_twitter_link | escape }}" aria-describedby="a11y-external-message">
+            <span class="icon-svg">{%- render 'icon-twitter' -%}</span>
+          </a>
+        </li>
+      {%- endif -%}
+
+      {%- if settings.social_instagram_link != blank -%}
+        <li>
+          <a class="social-icons__link" href="{{ settings.social_instagram_link | escape }}" aria-describedby="a11y-external-message">
+            <span class="icon-svg">{%- render 'icon-instagram' -%}</span>
+          </a>
+        </li>
+      {%- endif -%}
+      </div>
+    </div>
+    {%- endif -%}
     
     {%- if section.settings.show_previous_next_buttons -%}
       <div class="previous_next_buttons">
