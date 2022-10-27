@@ -33,7 +33,7 @@
               </span>
             {%- endif -%}
           </header>
-        <div class="{% if section.settings.sidebar %} has-sidebar sidebar-right sidebar-article{% endif %}">
+        <div class="wrap-content{% if show_sidebar %} has-sidebar sidebar-right sidebar-article{% endif %}">
         <div class="article-content">
         {%- when 'featured_image'-%}
           {%- if article.image -%}
