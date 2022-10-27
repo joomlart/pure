@@ -15,14 +15,18 @@
 {%- endstyle -%}
 <div class="color-{{ section.settings.color_scheme }} isolate gradient">
   <div class="recently-viewed-wrap section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
-      <div class="product-recommendations__heading title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
+      <div class="product-recommendations__heading title-wrapper title-wrapper--no-top-margin page-width">
         <div class="inner">
           {%- if section.settings.title != blank -%}
             <h2 class="title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</h2>
           {%- endif -%}
         </div>
       </div>
-      <ul class="recently-viewed grid product-grid contains-card contains-card--standard grid--gapless grid--4-col-desktop grid--2-col-tablet-down" role="list">
+      {%-liquid
+        assign columns_desktop = section.settings.columns_desktop
+        assign columns_mobile = section.settings.columns_mobile
+      -%}
+      <ul class="recently-viewed grid product-grid contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--gapless grid--{{ columns_desktop }}-col-desktop grid--{{ columns_mobile }}-col-tablet-down" role="list">
       <!-- Recently viewed products will appear here -->
       </ul>
   </div>
@@ -41,7 +45,7 @@ function setRecentlyViewedProducts() {
   };
   const productList = [];
   let jsonResp, jsonRespArr, jsonRespArrStr;
-  const numberOfProducts = 4;
+  const numberOfProducts = {{ section.settings.products_to_show }};
   productList.push(productData);
   const currProductPageTitle = productData.productTitle;
   const productDataString = JSON.stringify(productList);
@@ -148,31 +152,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
-    },
-    {
-      "type": "richtext",
-      "id": "description",
-      "label": "t:sections.recently-products.settings.description.label"
-    },
-    {
-      "type": "select",
-      "id": "description_style",
-      "label": "t:sections.recently-products.settings.description_style.label",
-      "options": [
-        {
-          "value": "body",
-          "label": "t:sections.recently-products.settings.description_style.options__1.label"
-        },
-        {
-          "value": "subtitle",
-          "label": "t:sections.recently-products.settings.description_style.options__2.label"
-        },
-        {
-          "value": "uppercase",
-          "label": "t:sections.recently-products.settings.description_style.options__3.label"
-        }
-      ],
-      "default": "body"
     },
     {
       "type": "range",
