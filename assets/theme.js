@@ -85,3 +85,16 @@ var slideBtn = function(id, rotateIcon, target, classToAdd, duration = 500){
 slideBtn('toggle-category', rotateIcon, targetId, 'cate-btn-slide-up');
 slideBtn('toggle-recent-post', rotateIcon2, targetId2, 'recent-btn-slide-up');
 slideBtn('toggle-tags', rotateIcon3, targetId3, 'tags-btn-slide-up');
+
+
+
+//  Categories Blog 
+let getCategory =  document.querySelectorAll(".category-item > a");
+let arr_Cat = [...getCategory];
+arr_Cat.map((item) => {
+  let cutstring = item.innerHTML;
+  cutstring = cutstring.replace('/blogs/', '');
+  cutstring = cutstring.split('-').join(' ');
+  item.innerHTML = cutstring;
+}
+);
