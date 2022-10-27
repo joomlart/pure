@@ -62,13 +62,14 @@
       ],
       "settings": {
         "show_breadcrumb": true,
-        "alignment_breadcrumb": "left",
+        "alignment_breadcrumb": "center",
+        "show_tags": true,
+        "show_share": true,
         "show_previous_next_buttons": true,
-        "show_footer_article": true,
         "show_sidebar": true,
         "show_collapse": true,
         "enable_sticky": true,
-        "sidebar_position": "right"
+        "sidebar_position": "left"
       }
     }
   },

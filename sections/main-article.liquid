@@ -3,6 +3,8 @@
 {%- liquid
   assign show_breadcrumb = section.settings.show_breadcrumb
   assign alignment_breadcrumb = section.settings.alignment_breadcrumb
+  assign show_tags = section.settings.show_tags
+  assign show_share = section.settings.show_share
   assign show_sidebar = section.settings.show_sidebar
   if show_sidebar
     assign show_collapse = section.settings.show_collapse
@@ -25,7 +27,7 @@
             {% render block %}
           </div>
         {%- when 'title'-%}
-          <header class="article-title" {{ block.shopify_attributes }}>
+          <header class="article-title {% if alignment_breadcrumb == "center" %} center {% endif %} {% if alignment_breadcrumb == "right" %} right {% endif %}" {{ block.shopify_attributes }}>
             <h1 class="article-template__title h1" itemprop="headline">{{ article.title | escape }}</h1>
             {%- if block.settings.blog_show_date -%}
               <span class="circle-divider" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
@@ -71,18 +73,18 @@
       {%- endcase -%}
     {%- endfor -%}
 
-    {%- if section.settings.show_footer_article -%}
       <div class="footer-article">
-        {% comment %} Tag Article {% endcomment %}
-        <div class="tag-article ">
+        {%- if show_tags -%} 
+        <div class="tag-article">
           <ul>
             <h5>Tags:</h5>
           {% for tag in article.tags %}
             <li>#{{ tag }}</li>
           {% endfor %}
-        </ul>
+          </ul>
         </div>
-        {% comment %} Share {% endcomment %}
+        {%- endif -%}
+        {%- if show_share -%}
         <div class="social-media">
         {% if settings.social_facebook_link != blank or settings.social_twitter_link != blank or settings.social_instagram_link != blank %}
           <span>Share:</span>
@@ -94,7 +96,6 @@
             </a>
           </li>
         {%- endif -%}
-
         {%- if settings.social_twitter_link != blank -%}
           <li>
             <a class="social-icons__link" href="{{ settings.social_twitter_link | escape }}" aria-describedby="a11y-external-message">
@@ -102,7 +103,6 @@
             </a>
           </li>
         {%- endif -%}
-
         {%- if settings.social_instagram_link != blank -%}
           <li>
             <a class="social-icons__link" href="{{ settings.social_instagram_link | escape }}" aria-describedby="a11y-external-message">
@@ -111,10 +111,10 @@
           </li>
         {%- endif -%}
         </div>
+        {%- endif -%}
       </div>
-    {%- endif -%}
+      
 
-    
     {%- if section.settings.show_previous_next_buttons -%}
       <div class="previous_next_buttons">
         <a href="{{ blog.previous_article }}" class="btn">
@@ -542,14 +542,20 @@
     },
     {
       "type": "checkbox",
-      "id": "show_previous_next_buttons",
-      "label": "Show previous and next buttons",
+      "id": "show_tags",
+      "label": "t:sections.main-article.settings.tags.content",
       "default": true
     },
     {
       "type": "checkbox",
-      "id": "show_footer_article",
-      "label": "Show footer article",
+      "id": "show_share",
+      "label": "t:sections.main-article.settings.share.content",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_previous_next_buttons",
+      "label": "Show previous and next buttons",
       "default": true
     },
     {

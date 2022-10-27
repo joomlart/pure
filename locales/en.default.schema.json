@@ -479,7 +479,7 @@
           "options__3": {
             "label": "Right"
           },
-          "label": "Alignment Breadcrumb"
+          "label": "Alignment"
         }
       }
     },
@@ -1735,6 +1735,12 @@
         },
         "header__2": {
           "content": "Content"
+        },
+        "tags": {
+          "content": "Show Tag"
+        },
+        "share": {
+          "content": "Show Share"
         }
       }
     },
