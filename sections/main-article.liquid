@@ -76,7 +76,6 @@
     {%- if section.settings.show_footer_article -%}
       <div class="footer-article">
       
-        {% comment %} Tag Article {% endcomment %}
         {%- if show_tags -%} 
         {%- endif -%}
         <div class="tag-article">
@@ -88,7 +87,6 @@
         </ul>
         </div>
       
-        {% comment %} Share {% endcomment %}
         {%- if show_share -%}
         <div class="social-media">
         {% if settings.social_facebook_link != blank or settings.social_twitter_link != blank or settings.social_instagram_link != blank %}
