@@ -1,8 +1,11 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
-{{ 'component-sidebar.css' | asset_url | stylesheet_tag }}
+{{ 'component-main-sidebar.css' | asset_url | stylesheet_tag }}
 {%- liquid
   assign show_breadcrumb = section.settings.show_breadcrumb
   assign alignment_breadcrumb = section.settings.alignment_breadcrumb
+  assign show_sidebar = section.settings.show_sidebar
+  assign show_collapse = section.settings.show_collapse
+  assign enable_sticky = section.settings.enable_sticky
 -%}
 
 {% if show_breadcrumb %}
@@ -275,7 +278,17 @@
     </div>
     {%- endif -%}
     </div>
-    {% render 'sidebar-blog' %}
+    {%- if show_sidebar -%}
+
+    {%- endif -%}
+    <div class="sidebar" >
+      <div class="sidebar-wrapper {% if enable_sticky %}scroll-sidebar{% endif %}">
+        {% render 'main-sidebar',
+          section: section,
+          show_collapse: show_collapse
+        %}
+      </div>
+    </div>
     </div>
 </article>
 
@@ -403,6 +416,90 @@
           "type": "paragraph",
           "content": "t:sections.main-article.blocks.share.settings.title_info.content"
         }
+      ]
+    },
+    {
+      "type": "recent_post",
+      "name": "t:sections.main-sidebar.blocks.recent-post.name",
+      "settings": [
+          {
+              "type":"header",
+              "content":"t:sections.main-sidebar.blocks.recent-post.settings.header__1.content"
+          },
+          {
+              "type": "checkbox",
+              "id": "show_block",
+              "label": "t:sections.main-sidebar.blocks.recent-post.settings.general.label__1",
+              "default": true
+          },
+          {
+              "type": "text",
+              "id": "heading",
+              "label": "t:sections.main-sidebar.blocks.recent-post.settings.general.label__2",
+              "default": "Recent Post"
+          },
+          {
+              "type": "range",
+              "id": "number",
+              "label": "t:sections.main-sidebar.blocks.recent-post.settings.general.label__3",
+              "min": 1,
+              "max": 10,
+              "step": 1,
+              "default": 3
+          }
+      ]
+    },
+    {
+      "type": "category",
+      "name": "t:sections.main-sidebar.blocks.category.name",
+      "settings": [
+          {
+              "type":"header",
+              "content":"t:sections.main-sidebar.blocks.category.settings.header__1.content"
+          },
+          {
+              "type": "checkbox",
+              "id": "show_block",
+              "label": "t:sections.main-sidebar.blocks.category.settings.general.label__1",
+              "default": true
+          },
+          {
+              "type": "text",
+              "id": "heading",
+              "label": "t:sections.main-sidebar.blocks.recent-post.settings.general.label__2",
+              "default": "Blog Categories"
+          }
+      ]
+    },
+    {
+      "type": "recent-tags",
+      "name": "t:sections.main-sidebar.blocks.recent-tags.name",
+      "settings": [
+          {
+              "type":"header",
+              "content":"t:sections.main-sidebar.blocks.recent-tags.settings.header__1.content"
+          },
+          {
+              "type": "checkbox",
+              "id": "show_block",
+              "label": "t:sections.main-sidebar.blocks.recent-tags.settings.general.label__1",
+              "default": true
+          },
+          {
+              "type": "text",
+              "id": "heading",
+              "label": "t:sections.main-sidebar.blocks.recent-tags.settings.general.label__2",
+              "default": "Recent Tag"
+          },
+          {
+              "type": "range",
+              "id": "number",
+              "label": "t:sections.main-sidebar.blocks.recent-tags.settings.general.label__3",
+              "min": 1,
+              "max": 10,
+              "step": 1,
+              "default": 3
+          }
       ]
     }
   ],
