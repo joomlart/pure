@@ -4,8 +4,11 @@
   assign show_breadcrumb = section.settings.show_breadcrumb
   assign alignment_breadcrumb = section.settings.alignment_breadcrumb
   assign show_sidebar = section.settings.show_sidebar
-  assign show_collapse = section.settings.show_collapse
-  assign enable_sticky = section.settings.enable_sticky
+  if show_sidebar
+    assign show_collapse = section.settings.show_collapse
+    assign sidebar_position = section.settings.sidebar_position
+    assign enable_sticky = section.settings.enable_sticky
+  endif
 -%}
 
 {% if show_breadcrumb %}
@@ -33,7 +36,7 @@
               </span>
             {%- endif -%}
           </header>
-        <div class="wrap-content{% if show_sidebar %} has-sidebar sidebar-right sidebar-article{% endif %}">
+        <div class="wrap-content{% if show_sidebar %} has-sidebar sidebar-article {% if sidebar_position == "right" %}sidebar-right{% endif %} {% if sidebar_position == "left" %}sidebar-left{% endif %}{% endif %}">
         <div class="article-content">
         {%- when 'featured_image'-%}
           {%- if article.image -%}
