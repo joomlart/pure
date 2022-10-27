@@ -62,7 +62,7 @@
       ],
       "settings": {
         "show_breadcrumb": true,
-        "alignment_breadcrumb": "left",
+        "alignment_breadcrumb": "right",
         "show_previous_next_buttons": true,
         "show_footer_article": true,
         "show_sidebar": true,
