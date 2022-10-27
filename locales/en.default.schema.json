@@ -1716,6 +1716,14 @@
             }
           }
         }
+      },
+      "setting": {
+        "header__1": {
+          "content": "Gereral"
+        },
+        "header__2": {
+          "content": "Content"
+        }
       }
     },
     "main-blog": {
