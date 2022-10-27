@@ -454,28 +454,42 @@
       "default": true
     },
     {
-      "type": "checkbox",
-      "id": "sidebar",
-      "label": "Show Sidebar",
-      "default": true
+      "type":"header",
+      "content":"t:sections.main-sidebar.settings.header__1.content"
     },
     {
       "type": "checkbox",
-      "id": "blog_show_tags",
-      "label": "Show Tags",
+      "id": "show_sidebar",
+      "label": "t:sections.main-sidebar.settings.general.label__1",
       "default": true
     },
     {
-      "type": "checkbox",
-      "id": "blog_show_lastest_post",
-      "label": "Show Lastest Posts",
-      "default": true
+        "type": "checkbox",
+        "id": "show_collapse",
+        "label": "t:sections.main-sidebar.settings.general.label__2",
+        "default": true
     },
     {
       "type": "checkbox",
-      "id": "blog_categories",
-      "label": "Show Blog Categories",
+      "id": "enable_sticky",
+      "label": "t:sections.main-sidebar.settings.general.label__5",
       "default": true
+    },
+    {
+      "type": "select",
+      "id": "sidebar_position",
+      "label": "Choose Position Sidebar",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
     }
   ]
 }
