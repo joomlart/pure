@@ -9,8 +9,11 @@
   padding: 4.8rem;
 }
 @media screen and (min-width: 1200px) {
-  .article-template .article-content {
+  .article-template .sidebar-right .article-content {
     border-right: 1px solid rgb(var(--color-border));
+  }
+  .article-template .sidebar-left .article-content {
+    border-left: 1px solid rgb(var(--color-border));
   }
 }
 
