@@ -35,8 +35,13 @@
         "share"
       ],
       "settings": {
+        "show_breadcrumb": true,
         "show_previous_next_buttons": true,
-        "show_footer_article": true
+        "show_footer_article": true,
+        "sidebar": true,
+        "blog_show_tags": true,
+        "blog_show_lastest_post": true,
+        "blog_categories": true
       }
     }
   },
