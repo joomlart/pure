@@ -67,15 +67,19 @@ let rotateIcon = document.querySelector('.blog-categories .btn-slide-down');
 let rotateIcon2 = document.querySelector('.lastest-posts .btn-slide-down');
 let rotateIcon3 = document.querySelector('.list-tag .btn-slide-down');
 
+
 var slideBtn = function(id, rotateIcon, target, classToAdd, duration = 500){
-	document.getElementById(id).addEventListener('click', function(){
-    rotateIcon.classList.add(classToAdd);
-    if (window.getComputedStyle(target).display === 'none') {
-      rotateIcon.classList.remove(classToAdd);
-      return slideDown(target, duration);
-    }
-    return slideUp(target, duration);
-	})
+  let eventClick = document.getElementById(id);
+  if(eventClick) {
+    eventClick.addEventListener('click', function(){
+      rotateIcon.classList.add(classToAdd);
+      if (window.getComputedStyle(target).display === 'none') {
+        rotateIcon.classList.remove(classToAdd);
+        return slideDown(target, duration);
+      }
+      return slideUp(target, duration);
+    })
+  }
 }
 
 slideBtn('toggle-category', rotateIcon, targetId, 'cate-btn-slide-up');
