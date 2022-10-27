@@ -344,6 +344,10 @@
     document.querySelectorAll('span.active-facets__button-inner').forEach(function (el, idx, arr) {
       filterEl.push(el);
     })
+	  var removeFilter = document.querySelector('a.active-facets__button-remove');
+	  if( removeFilter.length !== 0){
+		  filterEl.push(removeFilter);
+	  }
 
     if (filterEl.length !== 0){
       filterEl.forEach(function (el, idx) {
