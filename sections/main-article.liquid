@@ -2,10 +2,13 @@
 {{ 'component-sidebar.css' | asset_url | stylesheet_tag }}
 {%- liquid
   assign show_breadcrumb = section.settings.show_breadcrumb
+  assign alignment_breadcrumb = section.settings.alignment_breadcrumb
 -%}
 
 {% if show_breadcrumb %}
-  {%- render 'breadcrumb' -%}
+  {%- render 'breadcrumb',
+      alignment_breadcrumb: alignment_breadcrumb
+  -%}
 {% endif %}
 <article class="article-template page-width  " itemscope itemtype="http://schema.org/BlogPosting">
 
