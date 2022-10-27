@@ -85,7 +85,7 @@
 }
 
 .article-template .article-title.right {
-  margin: left;
+  margin-left: auto;
   text-align: right;
 }
 
