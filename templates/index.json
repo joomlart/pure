@@ -99,7 +99,7 @@
       "settings": {
         "marquee_text": "<p>FREE SHIPPING OVER $60 \/ 30-DAYS FREE RETURN POLICY \/ 100% SECURE PAYMENTS \/ FREE SHIPPING OVER $60 \/ 30-DAYS FREE RETURN POLICY \/ 100% SECURE PAYMENTS \/ FREE SHIPPING OVER $60 \/ 30-DAYS FREE RETURN POLICY \/ 100% SECURE PAYMENTS<\/p>",
         "direction": "left",
-        "behavior": "slide",
+        "behavior": "scroll",
         "color_scheme": "background-2",
         "padding_top": 0,
         "padding_bottom": 0
