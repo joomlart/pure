@@ -35,7 +35,7 @@
         "share"
       ],
       "settings": {
-        "show_breadcrumb": true,
+        "show_breadcrumb": false,
         "show_previous_next_buttons": true,
         "show_footer_article": true,
         "sidebar": true,
