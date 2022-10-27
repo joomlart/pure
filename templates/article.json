@@ -68,7 +68,7 @@
         "show_sidebar": true,
         "show_collapse": true,
         "enable_sticky": true,
-        "sidebar_position": "right"
+        "sidebar_position": "left"
       }
     }
   },
