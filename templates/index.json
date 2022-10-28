@@ -273,7 +273,7 @@
       "type": "featured-blog",
       "settings": {
         "heading": "Latest News",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "blog": "beauty-aficionado",
         "post_limit": 4,
         "columns_desktop": 4,
