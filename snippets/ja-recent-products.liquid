@@ -48,6 +48,9 @@ function setRecentlyViewedProducts() {
         localStorage.setItem("recentlyViewedProduct", jsonRespArr);
       }
     }
+  } else {
+    var div = document.querySelector('div.recently-viewed-inner');
+    div.closest('.recently-viewed-wrap').style.display = 'none';
   }
 }
 
