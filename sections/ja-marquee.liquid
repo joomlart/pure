@@ -15,7 +15,7 @@
   <div class="section-{{ section.id }}-padding">
     <marquee behavior="{{ section.settings.behavior }}" scrollamount="{{ section.settings.scrollamount }}" direction="{{ section.settings.direction }}" >
       {%- for i in (1..section.settings.copy) -%}
-        {{ 'section.settings.marquee_text' | t }} &nbsp
+        {{ section.settings.marquee_text }} &nbsp
       {%- endfor -%}
     </marquee>
   </div>
