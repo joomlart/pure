@@ -720,7 +720,6 @@ h6:empty {
     text-underline-offset: 0.3rem;
     color: rgb(var(--color-link));
     background-color: transparent;
-    font-size: 1.4rem;
     font-family: inherit;
 }
 
@@ -2690,7 +2689,6 @@ input[type='checkbox'] {
         grid-template-areas: 'left-icon heading icons''navigation navigation navigation';
     }
     .header:not(.header--middle-left) .header__inline-menu {
-        margin-top: 1.05rem;
     }
 }
 
@@ -3060,8 +3058,7 @@ details[open]>.header__submenu {
     padding: 0.8rem 1.6rem;
     text-decoration: none;
     color: rgb(var(--color-base-accent-1));
-    text-transform: uppercase;
-    font-weight: bold;
+    font-size: 1.6rem;
 }
 
 .header__menu-item:hover {
