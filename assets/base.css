@@ -1784,6 +1784,11 @@ button.shopify-payment-button__button--unbranded {
     border: 0;
 }
 
+.button span[class^="icon-"],
+.button span[class*=" icon-"] {
+    margin-left: .8rem;
+}
+
 .button--tertiary {
     font-size: 1.2rem;
     padding: 1rem 1.5rem;
