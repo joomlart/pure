@@ -97,7 +97,7 @@
     "5375a694-809f-4304-8820-764de639612b": {
       "type": "ja-marquee",
       "settings": {
-        "marquee_text": "<p>FREE SHIPPING OVER $60 \/ 30-DAYS FREE RETURN POLICY \/ 100% SECURE PAYMENTS \/ FREE SHIPPING OVER $60 \/ 30-DAYS FREE RETURN POLICY \/ 100% SECURE PAYMENTS \/ FREE SHIPPING OVER $60 \/ 30-DAYS FREE RETURN POLICY \/ 100% SECURE PAYMENTS<\/p>",
+        "marquee_text": "<p>FREE SHIPPING OVER $60 \/ 30-DAYS FREE RETURN POLICY \/ 100% SECURE PAYMENTS<\/p>",
         "direction": "left",
         "behavior": "scroll",
         "color_scheme": "background-1",
