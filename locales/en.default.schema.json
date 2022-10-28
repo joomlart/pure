@@ -3846,6 +3846,10 @@
           "behavior_3": {
             "label": "Alternate"
           }
+        },
+        "scrollamount": {
+          "label": "Speed",
+          "info": "Sets the amount of scrolling at each interval in pixels. The default value is 6."
         }
       },
       "presets": {
@@ -7047,6 +7051,10 @@
         "behavior_3": {
           "label": "Alternate"
         }
+      },
+      "scrollamount": {
+        "label": "Speed",
+        "info": "Sets the amount of scrolling at each interval in pixels. The default value is 6."
       }
     },
     "presets": {
