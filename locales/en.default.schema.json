@@ -3850,6 +3850,10 @@
         "scrollamount": {
           "label": "Speed",
           "info": "Sets the amount of scrolling at each interval in pixels. The default value is 6."
+        },
+        "copy": {
+          "label": "Copy Text",
+          "info": "Sets the amount of text. The default value is 6."
         }
       },
       "presets": {
@@ -7055,6 +7059,10 @@
       "scrollamount": {
         "label": "Speed",
         "info": "Sets the amount of scrolling at each interval in pixels. The default value is 6."
+      },
+      "copy": {
+        "label": "Copy Text",
+        "info": "Sets the amount of text. The default value is 6."
       }
     },
     "presets": {
