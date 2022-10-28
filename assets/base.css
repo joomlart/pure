@@ -710,6 +710,10 @@ h6:empty {
     display: none;
 }
 
+marquee p {
+    display: inline-block;
+}
+
 .link,
 .customer a {
     cursor: pointer;
