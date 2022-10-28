@@ -1771,7 +1771,7 @@ button.shopify-payment-button__button--unbranded {
     line-height: 1.714;
     padding: 1.6rem 3.2rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .button:hover {
