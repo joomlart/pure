@@ -8,6 +8,11 @@
   row-gap: var(--grid-mobile-vertical-spacing);
 }
 
+.page-width .page-width.contact {
+  padding-left: var(--grid-mobile-horizontal-spacing);
+  padding-right: var(--grid-mobile-horizontal-spacing);
+}
+
 .page-width.contact-heading {
   padding: var(--grid-mobile-vertical-spacing) var(--grid-mobile-horizontal-spacing);
 }
@@ -20,6 +25,11 @@
   .contact {
     column-gap: var(--grid-desktop-horizontal-spacing);
     row-gap: var(--grid-desktop-vertical-spacing);
+  }
+
+  .page-width .page-width.contact {
+    padding-left: var(--grid-desktop-horizontal-spacing);
+    padding-right: var(--grid-desktop-horizontal-spacing);
   }
 
   .page-width.contact-heading {
