@@ -63,6 +63,7 @@
       "settings": {
         "show_breadcrumb": true,
         "alignment_breadcrumb": "center",
+        "alignment_title": "center",
         "show_tags": true,
         "show_share": true,
         "show_previous_next_buttons": true,
