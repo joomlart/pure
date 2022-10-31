@@ -3869,6 +3869,9 @@
         "copy": {
           "label": "Copy Text",
           "info": "Sets the amount of text. The default value is 6."
+        },
+        "full_width": {
+          "label": "Make section full width"
         }
       },
       "presets": {
@@ -3887,6 +3890,9 @@
         },
         "zoom": {
           "label": "Zoom"
+        },
+        "full_width": {
+          "label": "Make section full width"
         }
       },
       "presets": {
@@ -7096,6 +7102,9 @@
       "copy": {
         "label": "Copy Text",
         "info": "Sets the amount of text. The default value is 6."
+      },
+      "full_width": {
+        "label": "Make section full width"
       }
     },
     "presets": {
@@ -7114,6 +7123,9 @@
       },
       "zoom": {
         "label": "Zoom"
+      },
+      "full_width": {
+        "label": "Make section full width"
       }
     },
     "presets": {
