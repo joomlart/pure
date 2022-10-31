@@ -43,13 +43,18 @@
 }
 
 .contact-information + .contact-form {
-  margin-top: calc(var(--grid-desktop-vertical-spacing)*2);
+  margin-top: var(--grid-mobile-vertical-spacing);
 }
 
 @media screen and (min-width: 990px){
   .contact-container {
     width: 66.66%;
   }
+
+  .contact-information + .contact-form {
+    margin-top: var(--grid-desktop-vertical-spacing);
+  }
+
 }
 
 /* Image */

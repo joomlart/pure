@@ -418,9 +418,7 @@
       "padding": {
         "section_padding_heading": "Section padding",
         "padding_top": "Top padding",
-        "padding_right": "Right padding",
-        "padding_bottom": "Bottom padding",
-        "padding_left": "Left padding"
+        "padding_bottom": "Bottom padding"
       },
       "spacing": "Spacing",
       "colors": {
@@ -3022,6 +3020,9 @@
         "paragraph": {
           "content": "Each email subscription creates a customer account. [Learn more](https:\/\/help.shopify.com\/manual\/customers)"
         },
+        "background-color": {
+          "label": "Background color"
+        },
         "image": {
           "label": "Background image"
         },
@@ -3868,10 +3869,34 @@
         "copy": {
           "label": "Copy Text",
           "info": "Sets the amount of text. The default value is 6."
+        },
+        "full_width": {
+          "label": "Make section full width"
         }
       },
       "presets": {
         "name": "Marquee"
+      }
+    },
+    "ja-map": {
+      "name": "Map",
+      "settings": {
+        "title": {
+          "label": "Heading"
+        },
+        "address": {
+          "label": "Address",
+          "info": "eg. London, UK"
+        },
+        "zoom": {
+          "label": "Zoom"
+        },
+        "full_width": {
+          "label": "Make section full width"
+        }
+      },
+      "presets": {
+        "name": "Map"
       }
     }
   },
@@ -7077,10 +7102,34 @@
       "copy": {
         "label": "Copy Text",
         "info": "Sets the amount of text. The default value is 6."
+      },
+      "full_width": {
+        "label": "Make section full width"
       }
     },
     "presets": {
       "name": "Marquee"
+    }
+  },
+  "ja-map": {
+    "name": "Map",
+    "settings": {
+      "title": {
+        "label": "Heading"
+      },
+      "address": {
+        "label": "Address",
+        "info": "eg. London, UK"
+      },
+      "zoom": {
+        "label": "Zoom"
+      },
+      "full_width": {
+        "label": "Make section full width"
+      }
+    },
+    "presets": {
+      "name": "Map"
     }
   }
 }
