@@ -27,7 +27,7 @@
             {% render block %}
           </div>
         {%- when 'title'-%}
-          <header class="article-title {% if alignment_breadcrumb == "center" %} center {% endif %} {% if alignment_breadcrumb == "right" %} right {% endif %}" {{ block.shopify_attributes }}>
+          <header class="article-title {% if alignment_title == "center" %} center {% endif %} {% if alignment_title == "right" %} right {% endif %}" {{ block.shopify_attributes }}>
             <h1 class="article-template__title h1" itemprop="headline">{{ article.title | escape }}</h1>
             {%- if block.settings.blog_show_date -%}
               <span class="circle-divider" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
@@ -522,19 +522,39 @@
       "options": [
         {
           "value": "left",
-          "label": "t:sections.general.settings.alignment.options__1.label"
+          "label": "t:sections.general.settings.alignment_breadcrumb.options__1.label"
         },
         {
           "value": "center",
-          "label": "t:sections.general.settings.alignment.options__2.label"
+          "label": "t:sections.general.settings.alignment_breadcrumb.options__2.label"
         },
         {
           "value": "right",
-          "label": "t:sections.general.settings.alignment.options__3.label"
+          "label": "t:sections.general.settings.alignment_breadcrumb.options__3.label"
         }
       ],
       "default": "left",
-      "label": "t:sections.general.settings.alignment.label"
+      "label": "t:sections.general.settings.alignment_breadcrumb.label"
+    },
+    {
+      "type": "select",
+      "id": "alignment_title",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.general.settings.alignment_title.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.general.settings.alignment_title.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.general.settings.alignment_title.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.general.settings.alignment_title.label"
     },
     {
       "type": "header",
