@@ -3015,7 +3015,7 @@
       }
     },
     "email-signup-banner": {
-      "name": "Email signup banner",
+      "name": "Password Page",
       "settings": {
         "paragraph": {
           "content": "Each email subscription creates a customer account. [Learn more](https:\/\/help.shopify.com\/manual\/customers)"

@@ -10,6 +10,11 @@
         "hero_align_content": "left"
       }
     },
+    "285fdabc-8b91-4c0f-b1af-5ecf2fe7e7a9": {
+      "type": "breadcrumb",
+      "settings": {
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -31,12 +36,14 @@
         "carousels_total_products": 3,
         "auto_rotate": false,
         "slider_visual": "dots",
-        "change_slides_speed": 5
+        "change_slides_speed": 5,
+        "enable_recently_products": true
       }
     }
   },
   "order": [
     "banner",
+    "285fdabc-8b91-4c0f-b1af-5ecf2fe7e7a9",
     "product-grid"
   ]
 }
