@@ -112,17 +112,6 @@
   }
 }
 
-/* Placeholder */
-
-.main-blog .item-placeholder {
-  max-width: 33.3%;
-  text-align: center;
-}
-.main-blog .has-sidebar .item-placeholder {
-  max-width: 50%;
-}
-
-
 /* Title Page */
 .header-page {
   padding: var(--grid-desktop-horizontal-spacing);
