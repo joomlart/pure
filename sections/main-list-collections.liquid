@@ -15,12 +15,26 @@
       assign collections = collections | reverse
     endif
   -%}
-  <ul class="collection-list grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--1-col-mobile-down" role="list">
+  <ul class="collection-list product-grid grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--1-col-mobile-down" role="list">
+    {% assign i = 0 %}
     {%- for collection in collections -%}
+      {% assign i = i | plus:1 %}
       <li class="collection-list__item grid__item">
         {% render 'card-collection', card_collection: collection, media_aspect_ratio: section.settings.image_ratio, columns: 3 %}
       </li>
+      {% if i == section.settings.columns_desktop %}
+        {% assign i = 0 %}
+        </ul>
+        <ul class="collection-list product-grid grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--1-col-mobile-down" role="list">
+      {% endif %}
+      {%- else -%}
+        {%- for i in (1..columns_desktop) -%}
+        <li class="grid__item">
+          {% render 'card-collection', card_collection: collection, media_aspect_ratio: section.settings.image_ratio, columns: 3 %}
+        </li>
+      {%- endfor -%}
     {%- endfor -%}
+
   </ul>
 </div>
 {% schema %}
