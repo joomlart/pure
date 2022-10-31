@@ -469,7 +469,7 @@
           "title": "Breadcrumb",
           "label__1": "Show Breadcrumb"
         },
-        "alignment": {
+        "alignment_breacrumb": {
           "options__1": {
             "label": "Left"
           },
@@ -479,7 +479,19 @@
           "options__3": {
             "label": "Right"
           },
-          "label": "Alignment"
+          "label": "Alignment Breadcrumb"
+        },
+        "alignment_title": {
+          "options__1": {
+            "label": "Left"
+          },
+          "options__2": {
+            "label": "Center"
+          },
+          "options__3": {
+            "label": "Right"
+          },
+          "label": "Alignment Title"
         }
       }
     },
