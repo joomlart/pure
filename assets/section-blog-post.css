@@ -205,7 +205,6 @@ header > span {
 }
 .previous_next_buttons .btn {
   background-color: transparent;
-  border: 1px solid rgba(var(--color-border));
   color: var(--color-base-accent-1);
   text-decoration: none;
   padding: 1.6rem 3.2rem;
