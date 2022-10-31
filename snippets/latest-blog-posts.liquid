@@ -32,8 +32,7 @@
                 height="64"
                 alt="{{ article.image.alt | escape }}">
             </div>
-            {{ article.title | link_to: article.url }}</br>
-            {{ article.published_at }}
+            {{ article.title | link_to: article.url }}
         {% endfor %}
       {%- elsif blog.articles.size == 0 -%}
         <div class="blog-placeholder">
