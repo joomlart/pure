@@ -469,7 +469,7 @@
           "title": "Breadcrumb",
           "label__1": "Show Breadcrumb"
         },
-        "alignment_breacrumb": {
+        "alignment_breadcrumb": {
           "options__1": {
             "label": "Left"
           },
