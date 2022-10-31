@@ -15,7 +15,7 @@
     }
   }
 {%- endstyle -%}
-<div class="page-width{% if alignment_breadcrumb %} {{ alignment_breadcrumb }} {% endif %} section-{{ section.id }}-padding">
+<div class="{% if alignment_breadcrumb %} {{ alignment_breadcrumb }} {% endif %}section-{{ section.id }}-padding">
   <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
     {% render 'breadcrumb' %}
   </nav>
