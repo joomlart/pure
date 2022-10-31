@@ -22,9 +22,9 @@
       "settings": {
         "title": "Google Map",
         "heading_size": "h1",
-        "address": "Hà Nội",
+        "address": "Newyork",
         "zoom": 4,
-        "full_width": false,
+        "full_width": true,
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
