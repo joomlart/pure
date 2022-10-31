@@ -116,10 +116,6 @@
   }
 }
 
-.blog-articles--collage .article:first-child .card .card__content {
-  padding: var(--grid-desktop-vertical-spacing);
-}
-
 /* Placeholder */
 
 .main-blog .item-placeholder {
