@@ -1,29 +1,10 @@
 .email-signup-banner {
   color: rgb(var(--color-foreground));
-  height: 100vh;
 }
 .email-signup-banner .newsletter-form,
 .email-signup-banner .newsletter-form__field-wrapper {
   display: inline-block;
 }
-
-.email-signup-banner .banner__content, .email-signup-banner .banner__media {
-  width: 50%;
-}
-
-.email-signup-banner .banner__content {
-  margin: 0;
-}
-
-.email-signup-banner .banner__media {
-  left: auto;
-  right: 0;
-}
-
-.email-signup-banner::after, .email-signup-banner .banner__media::after {
-  background-color: transparent;
-}
-
 
 @media only screen and (min-width: 750px) {
   .email-signup-banner:not(.banner--desktop-transparent) .email-signup-banner__box {
