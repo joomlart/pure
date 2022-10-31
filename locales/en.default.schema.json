@@ -411,14 +411,6 @@
           "info": "A wish list allows shoppers to create personalized collections of products they want to buy and send them to their mail for future reference"
         }
       }
-    },
-    "password_page": {
-      "name": "Password Page",
-      "settings": {
-        "background_color": {
-          "label": "Background color"
-        }
-      }
     }
   },
   "sections": {
