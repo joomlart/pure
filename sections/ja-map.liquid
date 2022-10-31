@@ -13,7 +13,7 @@
     }
   }
 {%- endstyle -%}
-<div id="ja-map" class="color-{{ section.settings.color_scheme }} isolate gradient">
+<div id="ja-map-{{ section.id }}" class="color-{{ section.settings.color_scheme }} isolate gradient">
   <div class="ja-map-wrap section-{{ section.id }}-padding{% if section.settings.full_width %} ja-map--full-width{% endif %}">
     <iframe src="https://maps.google.com/maps?&q={{ section.settings.address }}&z={{ section.settings.zoom }}&t=q&output=embed"></iframe>
   </div>
@@ -67,12 +67,6 @@
       "label": "t:sections.ja-map.settings.zoom.label"
     },
     {
-      "type": "checkbox",
-      "id": "full_width",
-      "label": "t:sections.ja-map.settings.full_width.label",
-      "default": false
-    },
-    {
       "type": "select",
       "id": "color_scheme",
       "options": [
@@ -113,7 +107,7 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
-      "default": 36
+      "default": 0
     },
     {
       "type": "range",
@@ -123,7 +117,7 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
+      "default": 0
     }
   ],
   "presets": [
