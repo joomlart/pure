@@ -152,7 +152,7 @@
   padding: 0;
 }
 
-/* Blog Default Layout*/
+/* Blog Default Layout Grid*/
 
 @media screen and (min-width: 550px) {
   .blog-articles--grid .blog-articles__article:not(:nth-child(2n)) {
@@ -171,13 +171,7 @@
 }
 
 /* Blog Simple Layout*/
-/* .blog-layout-simple .blog-articles__article{
-  border-right: 1px solid rgb(var(--color-border));
-}
 
-.blog-layout-simple .blog-articles__article:nth-child(3n){
-  border-right: 0;
-} */
 
 /* Pagination */
 
