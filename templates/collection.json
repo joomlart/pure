@@ -13,6 +13,10 @@
     "285fdabc-8b91-4c0f-b1af-5ecf2fe7e7a9": {
       "type": "breadcrumb",
       "settings": {
+        "padding_top": 24,
+        "padding_right": 48,
+        "padding_bottom": 24,
+        "padding_left": 48
       }
     },
     "product-grid": {

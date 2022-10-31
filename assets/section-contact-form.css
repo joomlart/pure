@@ -8,11 +8,22 @@
   row-gap: var(--grid-mobile-vertical-spacing);
 }
 
+.page-width.contact-heading {
+  padding: var(--grid-mobile-vertical-spacing) var(--grid-mobile-horizontal-spacing);
+}
+
+.page-width.contact-heading .page-title {
+  padding-top: 0;
+}
 
 @media screen and (min-width: 750px) {
   .contact {
     column-gap: var(--grid-desktop-horizontal-spacing);
     row-gap: var(--grid-desktop-vertical-spacing);
+  }
+
+  .page-width.contact-heading {
+    padding: var(--grid-desktop-vertical-spacing) var(--grid-desktop-horizontal-spacing);
   }
 }
 
