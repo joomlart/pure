@@ -1,16 +1,20 @@
 {
   "sections": {
-    "1663821762badf5565": {
-      "type": "breadcrumb",
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-page",
       "settings": {
         "padding_top": 0,
         "padding_bottom": 0,
         "suffix-class": "contact-heading"
+      }
+    },
+    "1663821762badf5565": {
+      "type": "breadcrumb",
+      "settings": {
+        "padding_top": 24,
+        "padding_right": 48,
+        "padding_bottom": 24,
+        "padding_left": 48
       }
     },
     "form": {
@@ -40,8 +44,8 @@
     }
   },
   "order": [
-    "1663821762badf5565",
     "main",
+    "1663821762badf5565",
     "form"
   ]
 }
