@@ -155,17 +155,17 @@
 /* Blog Default Layout*/
 
 @media screen and (min-width: 550px) {
-  .blog-articles__article:not(:nth-child(2n)) {
+  .blog-articles--grid .blog-articles__article:not(:nth-child(2n)) {
     border-right: 1px solid rgb(var(--color-border));
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .blog-articles__article {
+  .blog-articles--grid .blog-articles__article {
     border-right: 1px solid rgb(var(--color-border));
   }
 
-  .blog-articles__article:nth-child(3n) {
+  .blog-articles--grid .blog-articles__article:nth-child(3n) {
     border-right: 0;
   } 
 }
