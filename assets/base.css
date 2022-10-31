@@ -2563,6 +2563,7 @@ input[type='checkbox'] {
 /* section-announcement-bar */
 
 #shopify-section-announcement-bar {
+    --gradient-base-background-2: #FECDAB;
     z-index: 4;
     border-bottom: 1px solid rgb(var(--color-border));
 }
@@ -2710,12 +2711,13 @@ input[type='checkbox'] {
     line-height: 0;
 }
 
-.header>.header__heading {
+.header > .header__heading,
+.header > .header__heading-link {
     order: 2;
     text-align: center;
 }
 
-.header>.header__heading-link {
+.header > .header__heading-link {
     line-height: 0;
 }
 
