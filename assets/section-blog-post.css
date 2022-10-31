@@ -204,7 +204,7 @@ header > span {
   justify-content: space-between;
 }
 .previous_next_buttons .btn {
-  border: 1px solid rgba(--color-border);
+  border: 1px solid rgba(var(--color-border));
   color: var(--color-base-accent-1);
   text-decoration: none;
   padding: 1.6rem 3.2rem;
