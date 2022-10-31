@@ -26,22 +26,51 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "e305aba9-2125-4ace-a473-168f51c60071": {
+          "type": "recent_post",
+          "settings": {
+            "show_block": true,
+            "heading": "Recent Post",
+            "number": 3
+          }
+        },
+        "bad7884d-9bca-4394-80b4-18c0b8206d97": {
+          "type": "category",
+          "settings": {
+            "show_block": true,
+            "heading": "Blog Categories"
+          }
+        },
+        "50c50f57-f33d-45d6-8290-bbb3a63a55c2": {
+          "type": "recent-tags",
+          "settings": {
+            "show_block": true,
+            "heading": "Recent Tag",
+            "number": 3
+          }
         }
       },
       "block_order": [
         "bb646369-fa26-4a54-9523-51fa8da87946",
         "featured_image",
         "content",
-        "share"
+        "share",
+        "e305aba9-2125-4ace-a473-168f51c60071",
+        "bad7884d-9bca-4394-80b4-18c0b8206d97",
+        "50c50f57-f33d-45d6-8290-bbb3a63a55c2"
       ],
       "settings": {
         "show_breadcrumb": true,
+        "alignment_breadcrumb": "center",
+        "alignment_title": "center",
+        "show_tags": true,
+        "show_share": true,
         "show_previous_next_buttons": true,
-        "show_footer_article": true,
-        "sidebar": true,
-        "blog_show_tags": true,
-        "blog_show_lastest_post": true,
-        "blog_categories": true
+        "show_sidebar": true,
+        "show_collapse": true,
+        "enable_sticky": true,
+        "sidebar_position": "left"
       }
     }
   },

@@ -1,8 +1,17 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
-{{ 'component-sidebar.css' | asset_url | stylesheet_tag }}
+{{ 'component-main-sidebar.css' | asset_url | stylesheet_tag }}
 {%- liquid
   assign show_breadcrumb = section.settings.show_breadcrumb
   assign alignment_breadcrumb = section.settings.alignment_breadcrumb
+  assign alignment_title = section.settings.alignment_title
+  assign show_tags = section.settings.show_tags
+  assign show_share = section.settings.show_share
+  assign show_sidebar = section.settings.show_sidebar
+  if show_sidebar
+    assign show_collapse = section.settings.show_collapse
+    assign sidebar_position = section.settings.sidebar_position
+    assign enable_sticky = section.settings.enable_sticky
+  endif
 -%}
 
 {% if show_breadcrumb %}
@@ -19,7 +28,7 @@
             {% render block %}
           </div>
         {%- when 'title'-%}
-          <header class="article-title" {{ block.shopify_attributes }}>
+          <header class="article-title {% if alignment_title == "center" %} center {% endif %} {% if alignment_title == "right" %} right {% endif %}" {{ block.shopify_attributes }}>
             <h1 class="article-template__title h1" itemprop="headline">{{ article.title | escape }}</h1>
             {%- if block.settings.blog_show_date -%}
               <span class="circle-divider" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
@@ -30,7 +39,7 @@
               </span>
             {%- endif -%}
           </header>
-        <div class="{% if section.settings.sidebar %} has-sidebar sidebar-right sidebar-article{% endif %}">
+        <div class="wrap-content{% if show_sidebar %} has-sidebar sidebar-article {% if sidebar_position == "right" %}sidebar-right{% endif %} {% if sidebar_position == "left" %}sidebar-left{% endif %}{% endif %}">
         <div class="article-content">
         {%- when 'featured_image'-%}
           {%- if article.image -%}
@@ -65,18 +74,18 @@
       {%- endcase -%}
     {%- endfor -%}
 
-    {%- if section.settings.show_footer_article -%}
       <div class="footer-article">
-        {% comment %} Tag Article {% endcomment %}
-        <div class="tag-article ">
+        {%- if show_tags -%} 
+        <div class="tag-article">
           <ul>
             <h5>Tags:</h5>
           {% for tag in article.tags %}
             <li>#{{ tag }}</li>
           {% endfor %}
-        </ul>
+          </ul>
         </div>
-        {% comment %} Share {% endcomment %}
+        {%- endif -%}
+        {%- if show_share -%}
         <div class="social-media">
         {% if settings.social_facebook_link != blank or settings.social_twitter_link != blank or settings.social_instagram_link != blank %}
           <span>Share:</span>
@@ -88,7 +97,6 @@
             </a>
           </li>
         {%- endif -%}
-
         {%- if settings.social_twitter_link != blank -%}
           <li>
             <a class="social-icons__link" href="{{ settings.social_twitter_link | escape }}" aria-describedby="a11y-external-message">
@@ -96,7 +104,6 @@
             </a>
           </li>
         {%- endif -%}
-
         {%- if settings.social_instagram_link != blank -%}
           <li>
             <a class="social-icons__link" href="{{ settings.social_instagram_link | escape }}" aria-describedby="a11y-external-message">
@@ -105,16 +112,16 @@
           </li>
         {%- endif -%}
         </div>
+        {%- endif -%}
       </div>
-    {%- endif -%}
+      
 
-    
     {%- if section.settings.show_previous_next_buttons -%}
       <div class="previous_next_buttons">
-        <a href="{{ blog.previous_article }}" class="btn">
+        <a href="{{ blog.previous_article }}" class="btn button">
           Previous Post     
         </a>
-        <a href="{{ blog.next_article }}" class="btn">
+        <a href="{{ blog.next_article }}" class="btn button">
           Next Post   
         </a>
       </div>
@@ -275,7 +282,16 @@
     </div>
     {%- endif -%}
     </div>
-    {% render 'sidebar-blog' %}
+    {%- if show_sidebar -%}
+    <div class="sidebar" >
+      <div class="sidebar-wrapper {% if enable_sticky %}scroll-sidebar{% endif %}">
+        {% render 'main-sidebar',
+          section: section,
+          show_collapse: show_collapse
+        %}
+      </div>
+    </div>
+    {%- endif -%}
     </div>
 </article>
 
@@ -404,6 +420,90 @@
           "content": "t:sections.main-article.blocks.share.settings.title_info.content"
         }
       ]
+    },
+    {
+      "type": "recent_post",
+      "name": "t:sections.main-sidebar.blocks.recent-post.name",
+      "settings": [
+          {
+              "type":"header",
+              "content":"t:sections.main-sidebar.blocks.recent-post.settings.header__1.content"
+          },
+          {
+              "type": "checkbox",
+              "id": "show_block",
+              "label": "t:sections.main-sidebar.blocks.recent-post.settings.general.label__1",
+              "default": true
+          },
+          {
+              "type": "text",
+              "id": "heading",
+              "label": "t:sections.main-sidebar.blocks.recent-post.settings.general.label__2",
+              "default": "Recent Post"
+          },
+          {
+              "type": "range",
+              "id": "number",
+              "label": "t:sections.main-sidebar.blocks.recent-post.settings.general.label__3",
+              "min": 1,
+              "max": 10,
+              "step": 1,
+              "default": 3
+          }
+      ]
+    },
+    {
+      "type": "category",
+      "name": "t:sections.main-sidebar.blocks.category.name",
+      "settings": [
+          {
+              "type":"header",
+              "content":"t:sections.main-sidebar.blocks.category.settings.header__1.content"
+          },
+          {
+              "type": "checkbox",
+              "id": "show_block",
+              "label": "t:sections.main-sidebar.blocks.category.settings.general.label__1",
+              "default": true
+          },
+          {
+              "type": "text",
+              "id": "heading",
+              "label": "t:sections.main-sidebar.blocks.recent-post.settings.general.label__2",
+              "default": "Blog Categories"
+          }
+      ]
+    },
+    {
+      "type": "recent-tags",
+      "name": "t:sections.main-sidebar.blocks.recent-tags.name",
+      "settings": [
+          {
+              "type":"header",
+              "content":"t:sections.main-sidebar.blocks.recent-tags.settings.header__1.content"
+          },
+          {
+              "type": "checkbox",
+              "id": "show_block",
+              "label": "t:sections.main-sidebar.blocks.recent-tags.settings.general.label__1",
+              "default": true
+          },
+          {
+              "type": "text",
+              "id": "heading",
+              "label": "t:sections.main-sidebar.blocks.recent-tags.settings.general.label__2",
+              "default": "Recent Tag"
+          },
+          {
+              "type": "range",
+              "id": "number",
+              "label": "t:sections.main-sidebar.blocks.recent-tags.settings.general.label__3",
+              "min": 1,
+              "max": 10,
+              "step": 1,
+              "default": 3
+          }
+      ]
     }
   ],
   "settings": [
@@ -423,23 +523,55 @@
       "options": [
         {
           "value": "left",
-          "label": "t:sections.general.settings.alignment.options__1.label"
+          "label": "t:sections.general.settings.alignment_breadcrumb.options__1.label"
         },
         {
           "value": "center",
-          "label": "t:sections.general.settings.alignment.options__2.label"
+          "label": "t:sections.general.settings.alignment_breadcrumb.options__2.label"
         },
         {
           "value": "right",
-          "label": "t:sections.general.settings.alignment.options__3.label"
+          "label": "t:sections.general.settings.alignment_breadcrumb.options__3.label"
         }
       ],
       "default": "left",
-      "label": "t:sections.general.settings.alignment.label"
+      "label": "t:sections.general.settings.alignment_breadcrumb.label"
+    },
+    {
+      "type": "select",
+      "id": "alignment_title",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.general.settings.alignment_title.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.general.settings.alignment_title.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.general.settings.alignment_title.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.general.settings.alignment_title.label"
     },
     {
       "type": "header",
       "content": "t:sections.main-article.settings.header__2.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tags",
+      "label": "t:sections.main-article.settings.tags.content",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_share",
+      "label": "t:sections.main-article.settings.share.content",
+      "default": true
     },
     {
       "type": "checkbox",
@@ -448,34 +580,42 @@
       "default": true
     },
     {
-      "type": "checkbox",
-      "id": "show_footer_article",
-      "label": "Show footer article",
-      "default": true
+      "type":"header",
+      "content":"t:sections.main-sidebar.settings.header__1.content"
     },
     {
       "type": "checkbox",
-      "id": "sidebar",
-      "label": "Show Sidebar",
+      "id": "show_sidebar",
+      "label": "t:sections.main-sidebar.settings.general.label__1",
       "default": true
     },
     {
-      "type": "checkbox",
-      "id": "blog_show_tags",
-      "label": "Show Tags",
-      "default": true
+        "type": "checkbox",
+        "id": "show_collapse",
+        "label": "t:sections.main-sidebar.settings.general.label__2",
+        "default": true
     },
     {
       "type": "checkbox",
-      "id": "blog_show_lastest_post",
-      "label": "Show Lastest Posts",
+      "id": "enable_sticky",
+      "label": "t:sections.main-sidebar.settings.general.label__5",
       "default": true
     },
     {
-      "type": "checkbox",
-      "id": "blog_categories",
-      "label": "Show Blog Categories",
-      "default": true
+      "type": "select",
+      "id": "sidebar_position",
+      "label": "Choose Position Sidebar",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
     }
   ]
 }

@@ -469,7 +469,7 @@
           "title": "Breadcrumb",
           "label__1": "Show Breadcrumb"
         },
-        "alignment": {
+        "alignment_breadcrumb": {
           "options__1": {
             "label": "Left"
           },
@@ -480,6 +480,18 @@
             "label": "Right"
           },
           "label": "Alignment Breadcrumb"
+        },
+        "alignment_title": {
+          "options__1": {
+            "label": "Left"
+          },
+          "options__2": {
+            "label": "Center"
+          },
+          "options__3": {
+            "label": "Right"
+          },
+          "label": "Alignment Title"
         }
       }
     },
@@ -1735,6 +1747,12 @@
         },
         "header__2": {
           "content": "Content"
+        },
+        "tags": {
+          "content": "Show Tag"
+        },
+        "share": {
+          "content": "Show Share"
         }
       }
     },
@@ -2146,6 +2164,9 @@
         "header__2": {
           "content": "Card and Sidebar"
         },
+        "header__4": {
+          "content": "Recently Products"
+        },
         "header__3": {
           "content": "Product card"
         },
@@ -2171,6 +2192,9 @@
           "options__2": {
             "label": "2 columns"
           }
+        },
+        "enable_recently_products": {
+          "label": "Enable Recently Products in Aside"
         }
       }
     },
@@ -2991,7 +3015,7 @@
       }
     },
     "email-signup-banner": {
-      "name": "Email signup banner",
+      "name": "Password Page",
       "settings": {
         "paragraph": {
           "content": "Each email subscription creates a customer account. [Learn more](https:\/\/help.shopify.com\/manual\/customers)"
@@ -3834,6 +3858,14 @@
           "behavior_3": {
             "label": "Alternate"
           }
+        },
+        "scrollamount": {
+          "label": "Speed",
+          "info": "Sets the amount of scrolling at each interval in pixels. The default value is 6."
+        },
+        "copy": {
+          "label": "Copy Text",
+          "info": "Sets the amount of text. The default value is 6."
         }
       },
       "presets": {
@@ -5350,6 +5382,9 @@
       "header__3": {
         "content": "Product card"
       },
+      "header__4": {
+        "content": "Recently Products"
+      },
       "enable_tags": {
         "label": "Enable filtering",
         "info": "[Customize filters](\/admin\/menus)"
@@ -5372,6 +5407,9 @@
         "options__2": {
           "label": "2 columns"
         }
+      },
+      "enable_recently_products": {
+        "label": "Enable Recently Products in Aside"
       }
     }
   },
@@ -7029,6 +7067,14 @@
         "behavior_3": {
           "label": "Alternate"
         }
+      },
+      "scrollamount": {
+        "label": "Speed",
+        "info": "Sets the amount of scrolling at each interval in pixels. The default value is 6."
+      },
+      "copy": {
+        "label": "Copy Text",
+        "info": "Sets the amount of text. The default value is 6."
       }
     },
     "presets": {

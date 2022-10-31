@@ -21,7 +21,6 @@
       {% if title_link == "blogs" %}
         {% for categories in link.links %}
           <li class="category-item">
-            <span class="icon-svg"> {% render 'icon-chevron-right' %}</span>
           {{ categories.url | link_to: categories.url }}
           </li>
         {% endfor %}

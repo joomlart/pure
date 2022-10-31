@@ -1,5 +1,9 @@
-<div class="recently-viewed-wrap">
-    <h2 class="product-recommendations__heading h2">{{ section.settings.heading | escape }}</h2>
+{{ 'ja-recently-products.css' | asset_url | stylesheet_tag }}
+
+<div class="recently-viewed-inner">
+    <div class="active-facets">
+      <h2 class="product-recommendations__heading facets__heading facets__heading--vertical caption-large text-body">Recently Products</h2>
+    </div>
     <ul class="recently-viewed" role="list">
     <!-- Recently viewed products will appear here -->
     </ul>
@@ -7,40 +11,46 @@
 
 <script>
 function setRecentlyViewedProducts() {
-  const productData = {
-    productTitle: "{{ product.title }}",
-    productImg: "{{ product.featured_media | image_url: width: 533 }}",
-    imgWidth:"{{ product.featured_media.width }}",
-    imgHeight:"{{ product.featured_media.height }}",
-    productPrice: "{{ product.price | money_with_currency }}",
-    productUrl: "{{ product.url }}",
-    productImageAltText: "{{product.featured_media.alt | escape }}"
-  };
-  const productList = [];
-  let jsonResp, jsonRespArr, jsonRespArrStr;
-  const numberOfProducts = 4;
-  productList.push(productData);
-  const currProductPageTitle = productData.productTitle;
-  const productDataString = JSON.stringify(productList);
-  const localData = localStorage.getItem("recentlyViewedProduct");
-  if (localData === null) {
-    localStorage.setItem("recentlyViewedProduct", productDataString);
-  } else if (localData) {
-    const oldProductData = localStorage.getItem("recentlyViewedProduct");
-    const countProductData = (oldProductData.match(/productTitle/g) || []).length;
-    const sameProduct = oldProductData.includes(currProductPageTitle);
-    if (countProductData < numberOfProducts && sameProduct == false) {
-      jsonResp = JSON.parse(oldProductData);
-      jsonRespArr = jsonResp.concat(productList);
-      jsonRespArrStr = JSON.stringify(jsonRespArr);
-      localStorage.setItem("recentlyViewedProduct", jsonRespArrStr);
-    } else if (countProductData >= numberOfProducts && sameProduct == false) {
-      jsonResp = JSON.parse(oldProductData);
-      jsonResp.shift();
-      jsonRespArr = jsonResp.concat(productList);
-      jsonRespArr = JSON.stringify(jsonRespArr);
-      localStorage.setItem("recentlyViewedProduct", jsonRespArr);
+  var _product = [{{ product }}];
+  if(_product.length > 0) {
+    const productData = {
+      productTitle: "{{ product.title }}",
+      productImg: "{{ product.featured_media | image_url: width: 533 }}",
+      imgWidth: "{{ product.featured_media.width }}",
+      imgHeight: "{{ product.featured_media.height }}",
+      productPrice: "{{ product.price | money_with_currency }}",
+      productUrl: "{{ product.url }}",
+      productImageAltText: "{{ product.featured_media.alt | escape }}"
+    };
+    const productList = [];
+    let jsonResp, jsonRespArr, jsonRespArrStr;
+    const numberOfProducts = 4;
+    productList.push(productData);
+    const currProductPageTitle = productData.productTitle;
+    const productDataString = JSON.stringify(productList);
+    const localData = localStorage.getItem("recentlyViewedProduct");
+    if (localData === null) {
+      localStorage.setItem("recentlyViewedProduct", productDataString);
+    } else if (localData) {
+      const oldProductData = localStorage.getItem("recentlyViewedProduct");
+      const countProductData = (oldProductData.match(/productTitle/g) || []).length;
+      const sameProduct = oldProductData.includes(currProductPageTitle);
+      if (countProductData < numberOfProducts && sameProduct == false) {
+        jsonResp = JSON.parse(oldProductData);
+        jsonRespArr = jsonResp.concat(productList);
+        jsonRespArrStr = JSON.stringify(jsonRespArr);
+        localStorage.setItem("recentlyViewedProduct", jsonRespArrStr);
+      } else if (countProductData >= numberOfProducts && sameProduct == false) {
+        jsonResp = JSON.parse(oldProductData);
+        jsonResp.shift();
+        jsonRespArr = jsonResp.concat(productList);
+        jsonRespArr = JSON.stringify(jsonRespArr);
+        localStorage.setItem("recentlyViewedProduct", jsonRespArr);
+      }
     }
+  } else {
+    var div = document.querySelector('div.recently-viewed-inner');
+    div.closest('.recently-viewed-wrap').style.display = 'none';
   }
 }
 
@@ -48,13 +58,14 @@ setRecentlyViewedProducts();
 const localViewed = localStorage.recentlyViewedProduct;
 function getRecentlyViewedProducts() {
   const productData = JSON.parse(localStorage.getItem("recentlyViewedProduct"));
-  const recentlyViewedHtml = [];
-  productData.map(item => {
-    recentlyViewedHtml.unshift(`
+  if (productData != null) {
+    const recentlyViewedHtml = [];
+    productData.map(item => {
+      recentlyViewedHtml.unshift(`
     <li class="recently__item">
      <div class="card-wrapper underline-links-hover">
-      <div class="card card--standard card--media " style="--ratio-percent: 100%;">
-        <div class="card__inner color-background-2 gradient ratio" style="--ratio-percent: 100%;">
+      <div class="card card--standard card--media " style="--ratio-percent: 75.0909090909091%;">
+        <div class="card__inner color-background-2 gradient ratio" style="--ratio-percent: 75.0909090909091%;">
          <div class="card__media">
          <div class="media media--transparent media--hover-effect">
     		  <img class="motion-reduce" src="${item.productImg}" width="${item.imgWidth}" height="${item.imgHeight}"  loading="lazy" alt="${item.productImageAltText}"/>
@@ -80,10 +91,11 @@ function getRecentlyViewedProducts() {
        </div>
     </li>
    `);
-  });
-  const newProductData = `${recentlyViewedHtml.join("")}`;
-  const fullContent = document.getElementsByClassName("recently-viewed");
-  fullContent[0].innerHTML = newProductData;
+    });
+    const newProductData = `${recentlyViewedHtml.join("")}`;
+    const fullContent = document.getElementsByClassName("recently-viewed");
+    fullContent[0].innerHTML = newProductData;
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function (event) {

@@ -40,13 +40,67 @@
         "padding_bottom": 0
       }
     },
+    "335ce830-11e9-40eb-9031-a89bfe8773bc": {
+      "type": "image-with-text-grid",
+      "disabled": true,
+      "blocks": {
+        "template--14433849245742__335ce830-11e9-40eb-9031-a89bfe8773bc-1666879476adeb423d-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
+          }
+        },
+        "template--14433849245742__335ce830-11e9-40eb-9031-a89bfe8773bc-1666879476adeb423d-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
+          }
+        },
+        "e0f50e34-5ca7-4bb0-8258-983534dc0ce1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14433849245742__335ce830-11e9-40eb-9031-a89bfe8773bc-1666879476adeb423d-0",
+        "template--14433849245742__335ce830-11e9-40eb-9031-a89bfe8773bc-1666879476adeb423d-1",
+        "e0f50e34-5ca7-4bb0-8258-983534dc0ce1"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "item_ratio": "169",
+        "columns_desktop": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "5375a694-809f-4304-8820-764de639612b": {
       "type": "ja-marquee",
       "settings": {
-        "marquee_text": "<p>FREE SHIPPING OVER $60 \/ 30-DAYS FREE RETURN POLICY \/ 100% SECURE PAYMENTS \/ FREE SHIPPING OVER $60 \/ 30-DAYS FREE RETURN POLICY \/ 100% SECURE PAYMENTS \/ FREE SHIPPING OVER $60 \/ 30-DAYS FREE RETURN POLICY \/ 100% SECURE PAYMENTS<\/p>",
+        "marquee_text": "<p>FREE SHIPPING OVER $60 \/ 30-DAYS FREE RETURN POLICY \/ 100% SECURE PAYMENTS<\/p>",
         "direction": "left",
-        "behavior": "alternate",
-        "color_scheme": "background-2",
+        "behavior": "scroll",
+        "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -136,8 +190,8 @@
         "description_style": "body",
         "collection": "new-arrivals",
         "show_card_collection": false,
-        "products_to_show": 4,
-        "columns_desktop": 4,
+        "products_to_show": 5,
+        "columns_desktop": 5,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "outline",
@@ -206,20 +260,10 @@
       "settings": {
         "title": "Recent Product",
         "heading_size": "h1",
-        "description": "<p>Test<\/p>",
-        "show_description": false,
-        "description_style": "body",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
         "color_scheme": "background-1",
-        "desktop_layout": "left",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "show_product_description": false,
-        "enable_quick_add": false,
         "columns_mobile": "2",
         "padding_top": 0,
         "padding_bottom": 0
@@ -229,7 +273,7 @@
       "type": "featured-blog",
       "settings": {
         "heading": "Latest News",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "blog": "beauty-aficionado",
         "post_limit": 4,
         "columns_desktop": 4,
@@ -353,7 +397,7 @@
       "settings": {
         "marquee_text": "<p>FREE SHIPPING OVER $60 \/ 30-DAYS FREE RETURN POLICY \/ 100% SECURE PAYMENTS \/ FREE SHIPPING OVER $60 \/ 30-DAYS FREE RETURN POLICY \/ 100% SECURE PAYMENTS \/ FREE SHIPPING OVER $60 \/ 30-DAYS FREE RETURN POLICY \/ 100% SECURE PAYMENTS<\/p>",
         "direction": "left",
-        "behavior": "alternate",
+        "behavior": "slide",
         "color_scheme": "background-2",
         "padding_top": 0,
         "padding_bottom": 0
@@ -362,6 +406,7 @@
   },
   "order": [
     "6da8ff78-5fad-4ca5-ac2f-25ad57f7a6ac",
+    "335ce830-11e9-40eb-9031-a89bfe8773bc",
     "5375a694-809f-4304-8820-764de639612b",
     "7d74d942-5181-422a-b09c-d4100be846c8",
     "7485359a-b730-48ca-bdb1-922ef886db3e",

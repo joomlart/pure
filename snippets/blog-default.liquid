@@ -19,6 +19,7 @@
 
 {%- liquid
   assign show_breadcrumb = section.settings.show_breadcrumb
+  assign alignment_breadcrumb = section.settings.alignment_breadcrumb
   assign alignment_title = section.settings.alignment_title
   assign show_sidebar = section.settings.show_sidebar
   if show_sidebar
@@ -39,12 +40,14 @@
 
 <div data-section-id="{{ section.id }}" data-section-type="blog-layout-default" id="BlogSection-{{ section.id }}" data-section="{{ section.id }}" class="main-blog-block page-width blog-layout-default">
 
-  <div class="header-page {% if alignment_title != blank %}{{ alignment_title }}{% endif %}">
+  <div class="header-page">
     {% if show_breadcrumb %}
-      {% render 'breadcrumb' %}
+      {% render 'breadcrumb'
+         alignment_breadcrumb: alignment_breadcrumb
+      %}
     {% endif %}
 
-    <h1 class="page--title">
+    <h1 class="page--title {% if alignment_title != blank %}{{ alignment_title }}{% endif %}">
       {{ blog.title | escape }}
     </h1>
 

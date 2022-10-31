@@ -709,6 +709,10 @@ h6:empty {
   display: none;
 }
 
+marquee p {
+    display: inline-block;
+}
+
 .link,
 .customer a {
   cursor: pointer;
@@ -1775,12 +1779,12 @@ button.shopify-payment-button__button--unbranded {
 .button-label,
 .shopify-challenge__button,
 .customer button {
-  font-size: 1.4rem;
-  letter-spacing: normal;
-  line-height: 1.714;
-  padding: 1.6rem 3.2rem;
-  text-transform: uppercase;
-  font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: normal;
+    line-height: 1.714;
+    padding: 1.6rem 3.2rem;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 .button:hover {
@@ -1788,6 +1792,11 @@ button.shopify-payment-button__button--unbranded {
   outline: none;
   box-shadow: none;
   border: 0;
+}
+
+.button span[class^="icon-"],
+.button span[class*=" icon-"] {
+    margin-left: .8rem;
 }
 
 .button--tertiary {
@@ -2688,22 +2697,21 @@ input[type="checkbox"] {
 }
 
 @media screen and (min-width: 990px) {
-  .header--top-left,
-  .header--middle-left:not(.header--has-menu) {
-    grid-template-areas: "heading icons" "navigation navigation";
-    grid-template-columns: 1fr auto;
-  }
-  .header--middle-left {
-    grid-template-areas: "heading navigation icons";
-    grid-template-columns: auto auto 1fr;
-    column-gap: 2rem;
-  }
-  .header--top-center {
-    grid-template-areas: "left-icon heading icons" "navigation navigation navigation";
-  }
-  .header:not(.header--middle-left) .header__inline-menu {
-    margin-top: 1.05rem;
-  }
+    .header--top-left,
+    .header--middle-left:not(.header--has-menu) {
+        grid-template-areas: 'heading icons''navigation navigation';
+        grid-template-columns: 1fr auto;
+    }
+    .header--middle-left {
+        grid-template-areas: 'heading navigation icons';
+        grid-template-columns: auto auto 1fr;
+        column-gap: 2rem;
+    }
+    .header--top-center {
+        grid-template-areas: 'left-icon heading icons''navigation navigation navigation';
+    }
+    .header:not(.header--middle-left) .header__inline-menu {
+    }
 }
 
 .header *[tabindex="-1"]:focus {
@@ -3069,11 +3077,10 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
-  padding: 0.8rem 1.6rem;
-  text-decoration: none;
-  color: rgb(var(--color-base-accent-1));
-  text-transform: uppercase;
-  font-weight: bold;
+    padding: 0.8rem 1.6rem;
+    text-decoration: none;
+    color: rgb(var(--color-base-accent-1));
+    font-size: 1.6rem;
 }
 
 .header__menu-item:hover {

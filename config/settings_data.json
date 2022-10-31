@@ -17,9 +17,9 @@
     "gradient_background_2": "",
     "favicon": "shopify:\/\/shop_images\/favicon.png",
     "show_backtotop": true,
-    "type_header_font": "cormorant_n4",
-    "heading_scale": 100,
-    "type_body_font": "ibm_plex_sans_n4",
+    "type_header_font": "itc_franklin_gothic_n4",
+    "heading_scale": 105,
+    "type_body_font": "itc_franklin_gothic_n4",
     "body_scale": 100,
     "page_width": 1600,
     "spacing_sections": 0,
@@ -178,12 +178,20 @@
               "heading": "Quick links",
               "menu": "footer"
             }
+          },
+          "9bd762cf-9801-4cf3-a66f-1e6fd61f9519": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
           }
         },
         "block_order": [
           "footer-1",
           "d2d2e96b-3357-4d10-b4d2-a65c9178bc68",
-          "footer-0"
+          "footer-0",
+          "9bd762cf-9801-4cf3-a66f-1e6fd61f9519"
         ],
         "settings": {
           "color_scheme": "background-1",

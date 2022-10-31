@@ -421,7 +421,6 @@
 }
 
 .banner__heading {
-  font-weight: var(--font-body-weight-bold);
   margin-bottom: 32px;
   margin-top: 0;
 }
