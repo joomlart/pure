@@ -15,7 +15,7 @@
     }
   }
 {%- endstyle -%}
-<div class="page-width{% if alignment_breadcrumb %} {{ alignment_breadcrumb }} {% endif %}">
+<div class="page-width{% if alignment_breadcrumb %} {{ alignment_breadcrumb }} {% endif %} section-{{ section.id }}-padding">
   <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
     {% render 'breadcrumb' %}
   </nav>
@@ -34,7 +34,7 @@
         "step": 4,
         "unit": "px",
         "label": "t:sections.all.padding.padding_top",
-        "default": 36
+        "default": 0
       }, {
         "type": "range",
         "id": "padding_right",
@@ -43,7 +43,7 @@
         "step": 4,
         "unit": "px",
         "label": "t:sections.all.padding.padding_right",
-        "default": 36
+        "default": 0
       }, {
         "type": "range",
         "id": "padding_bottom",
@@ -52,7 +52,7 @@
         "step": 4,
         "unit": "px",
         "label": "t:sections.all.padding.padding_bottom",
-        "default": 36
+        "default": 0
       }, {
         "type": "range",
         "id": "padding_left",
@@ -61,7 +61,7 @@
         "step": 4,
         "unit": "px",
         "label": "t:sections.all.padding.padding_left",
-        "default": 36
+        "default": 0
       }
     ],
     "presets": [
