@@ -3874,6 +3874,24 @@
       "presets": {
         "name": "Marquee"
       }
+    },
+    "ja-map": {
+      "name": "Map",
+      "settings": {
+        "title": {
+          "label": "Heading"
+        },
+        "address": {
+          "label": "Address",
+          "info": "eg. London, UK"
+        },
+        "zoom": {
+          "label": "Zoom"
+        }
+      },
+      "presets": {
+        "name": "Map"
+      }
     }
   },
   "presets": {
@@ -7082,6 +7100,24 @@
     },
     "presets": {
       "name": "Marquee"
+    }
+  },
+  "ja-map": {
+    "name": "Map",
+    "settings": {
+      "title": {
+        "label": "Heading"
+      },
+      "address": {
+        "label": "Address",
+        "info": "eg. London, UK"
+      },
+      "zoom": {
+        "label": "Zoom"
+      }
+    },
+    "presets": {
+      "name": "Map"
     }
   }
 }
