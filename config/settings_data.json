@@ -111,6 +111,7 @@
     "cart_type": "drawer",
     "show_vendor": true,
     "show_cart_note": false,
+    "background_color": "#ff0000",
     "checkout_logo_image": "shopify:\/\/shop_images\/atoms-logo_ab356fac-ace1-43d8-8c8a-369c6f83533b.png",
     "checkout_body_background_color": "#ffffff",
     "checkout_sidebar_background_color": "#fafafa",
@@ -202,7 +203,6 @@
       "main-password-header": {
         "type": "main-password-header",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/atoms-logo_ab356fac-ace1-43d8-8c8a-369c6f83533b.png",
           "logo_max_width": 100,
           "color_scheme": "background-1"
         }
