@@ -87,10 +87,6 @@
 }
 
 @media screen and (max-width: 750px) {
-  /* .blog-layout-default .blog-articles--collage .blog-articles__article:first-child {
-    grid-column: 1/2;
-  } */
-
   .blog-articles--collage {
     grid-template-columns: 1fr;
   }
@@ -142,10 +138,6 @@
   .blog-articles__article {
     padding: 2.4rem;
   } 
-}
-
-.blog-articles--collage .blog-articles__article .card__information {
-  padding: 0;
 }
 
 /* Blog Default Layout Grid*/
