@@ -413,7 +413,7 @@
       }
     },
     "password_page": {
-      "name": "Background color",
+      "name": "Password Page",
       "settings": {
         "background_color": {
           "label": "Background color"
