@@ -1391,6 +1391,12 @@
         "id": "background_color",
         "label": "Background color",
         "default": "#fff"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_background_image",
+        "label": "Show Background Image",
+        "default": true
       }
     ]
   }
