@@ -27,10 +27,14 @@
   right: 0;
 }
 
-#password-page-has-image .email-signup-banner::after{
-  right: 0;
-  width: 50%;
+@media screen and (min-width: 990px) {
+  #password-page-has-image .email-signup-banner::after{
+    right: 0;
+    width: 50%;
+  }
 }
+
+
 
 .email-signup-banner .newsletter-form,
 .email-signup-banner .newsletter-form__field-wrapper {
