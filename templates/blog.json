@@ -34,7 +34,7 @@
       ],
       "settings": {
         "show_breadcrumb": true,
-        "alignment_breadcrumb": "center",
+        "alignment_breadcrumb": "left",
         "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
         "alignment_title": "left",
         "layout": "grid",
