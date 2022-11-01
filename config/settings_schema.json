@@ -1389,7 +1389,7 @@
       {
         "type": "color",
         "id": "background_color",
-        "content": "Background color",
+        "label": "Background color",
         "default": "#fff"
       }
     ]
