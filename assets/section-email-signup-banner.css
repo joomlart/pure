@@ -3,7 +3,7 @@
   height: 100vh;
 }
 
-.email-signup-banner .banner__content, .email-signup-banner .banner__media {
+#password-page-has-image .email-signup-banner .banner__content, .email-signup-banner .banner__media {
   width: 50%;
 }
 
