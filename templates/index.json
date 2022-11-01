@@ -53,6 +53,49 @@
         "padding_bottom": 0
       }
     },
+    "bf6df5e3-29b3-459e-b411-5d390ec562ec": {
+      "type": "image-with-text-grid",
+      "blocks": {
+        "template--14433849245742__bf6df5e3-29b3-459e-b411-5d390ec562ec-16673202845ad27632-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cosmetic-containers.jpg",
+            "title": "Column",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
+          }
+        },
+        "template--14433849245742__bf6df5e3-29b3-459e-b411-5d390ec562ec-16673202845ad27632-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/flatlay-of-makeup-on-a-round-white-plate.jpg",
+            "title": "Column",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14433849245742__bf6df5e3-29b3-459e-b411-5d390ec562ec-16673202845ad27632-0",
+        "template--14433849245742__bf6df5e3-29b3-459e-b411-5d390ec562ec-16673202845ad27632-1"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "item_ratio": "169",
+        "columns_desktop": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "7d74d942-5181-422a-b09c-d4100be846c8": {
       "type": "featured-collection",
       "settings": {
@@ -357,6 +400,7 @@
   "order": [
     "6da8ff78-5fad-4ca5-ac2f-25ad57f7a6ac",
     "5375a694-809f-4304-8820-764de639612b",
+    "bf6df5e3-29b3-459e-b411-5d390ec562ec",
     "7d74d942-5181-422a-b09c-d4100be846c8",
     "7485359a-b730-48ca-bdb1-922ef886db3e",
     "dbc66c8e-f043-4eef-a9f3-0ef21d8f8c1e",
