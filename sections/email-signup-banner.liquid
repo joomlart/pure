@@ -5,7 +5,7 @@
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  #Banner-{{ section.id }}::after {
+  #Banner-{{ section.id }} {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 
