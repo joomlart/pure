@@ -42,8 +42,10 @@
 
   <div class="header-page">
     {% if show_breadcrumb %}
-      {% render 'breadcrumb' %},
-      alignment_breadcrumb: alignment_breadcrumb
+      {% render 'breadcrumb',
+        alignment_breadcrumb: alignment_breadcrumb
+      %}
+      
     {% endif %}
 
     <h1 class="page--title {% if alignment_title != blank %}{{ alignment_title }}{% endif %}">
