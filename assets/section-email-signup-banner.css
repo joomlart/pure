@@ -7,11 +7,11 @@
   width: 50%;
 }
 
-.email-signup-banner .banner__content {
+#password-page-has-image .email-signup-banner .banner__content {
   margin: 0;
 }
 
-.email-signup-banner .banner__media {
+#password-page-has-image .email-signup-banner .banner__media {
   left: auto;
   right: 0;
 }
@@ -19,6 +19,7 @@
 .email-signup-banner::after, .email-signup-banner .banner__media::after {
   background-color: transparent;
 }
+
 .email-signup-banner .newsletter-form,
 .email-signup-banner .newsletter-form__field-wrapper {
   display: inline-block;
