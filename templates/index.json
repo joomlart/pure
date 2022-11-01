@@ -79,11 +79,24 @@
             "desktop_content_position": "middle-center",
             "desktop_content_alignment": "center"
           }
+        },
+        "df3f228f-813d-4a44-9b6e-d919b0919000": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/blush-makeup-and-candles.jpg",
+            "title": "Column",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
+          }
         }
       },
       "block_order": [
         "template--14433849245742__bf6df5e3-29b3-459e-b411-5d390ec562ec-16673202845ad27632-0",
-        "template--14433849245742__bf6df5e3-29b3-459e-b411-5d390ec562ec-16673202845ad27632-1"
+        "template--14433849245742__bf6df5e3-29b3-459e-b411-5d390ec562ec-16673202845ad27632-1",
+        "df3f228f-813d-4a44-9b6e-d919b0919000"
       ],
       "settings": {
         "title": "",
