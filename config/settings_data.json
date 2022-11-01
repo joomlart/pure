@@ -112,6 +112,7 @@
     "show_vendor": true,
     "show_cart_note": false,
     "background_color": "#fef2e7",
+    "show_background_image": true,
     "checkout_logo_image": "shopify:\/\/shop_images\/atoms-logo_ab356fac-ace1-43d8-8c8a-369c6f83533b.png",
     "checkout_body_background_color": "#ffffff",
     "checkout_sidebar_background_color": "#fafafa",
