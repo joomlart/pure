@@ -1,5 +1,7 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
-{%- render 'breadcrumb' -%}
+<div class="wrap-breadcrumb">
+  {%- render 'breadcrumb' -%}
+</div>
 <div class="customer account">
   {% comment %} Title {% endcomment %}
   <div>
