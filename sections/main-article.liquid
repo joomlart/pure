@@ -15,7 +15,7 @@
 -%}
 
 {% if show_breadcrumb %}
-  <div class="{% if alignment_breadcrumb == "center" %}center {% endif %}{% if alignment_breadcrumb == "right" %}right{% endif %}">
+  <div class="article-breadcrumb {% if alignment_breadcrumb == "center" %}center {% endif %}{% if alignment_breadcrumb == "right" %}right{% endif %}">
     {% render 'breadcrumb'%}
   </div>
 {% endif %}
