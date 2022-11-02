@@ -117,6 +117,10 @@
   }
 }
 
+.header-page > *:first-child {
+  border-bottom: 1px solid rgb(var(--color-border));
+}
+
 /* Common Article */
 .blog-articles__article {
   border-bottom: 1px solid rgb(var(--color-border));
