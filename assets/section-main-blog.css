@@ -114,7 +114,13 @@
 
 /* Title Page */
 .header-page {
-  padding: var(--grid-desktop-horizontal-spacing);
+  padding: var(--grid-desktop-horizontal-spacing)/2;
+}
+
+@media screen and (min-width: 750px) {
+  .header-page {
+    padding: var(--grid-desktop-horizontal-spacing);
+  }
 }
 
 /* Common Article */
