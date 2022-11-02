@@ -1884,7 +1884,8 @@
             "general": {
               "label__1": "Show Recent Post?",
               "label__2": "Heading",
-              "label__3": "Maximum Posts To Show"
+              "label__3": "Maximum Posts To Show",
+              "label__4": "Show date"
             }
           }
         },

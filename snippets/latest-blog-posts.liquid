@@ -2,6 +2,7 @@
   assign how_many_articles_to_show = block.settings.number
   assign title = block.settings.heading
   assign show = block.settings.show_block
+  assign show_date = block.settings.show_date
 -%}
 
 {%- if show -%}
@@ -32,7 +33,10 @@
                 height="64"
                 alt="{{ article.image.alt | escape }}">
             </div>
-            {{ article.title | link_to: article.url }}
+            <div class="information-article">
+              {{ article.title | link_to: article.url }}
+              {% if show_date %}<p class="date">{{ article.created_at | date: "%b, %d. 20%y" }}</p>{% endif %}
+            </div>
           </div>
         {% endfor %}
       {%- elsif blog.articles.size == 0 -%}

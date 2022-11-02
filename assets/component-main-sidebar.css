@@ -169,6 +169,12 @@
   display: inline-block;
   margin-right: 1.6rem;
 }
+.latest-blog-posts-list .information-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
 
 .latest-blog-posts-list .post-item a{
   color: rgb(var(--color-base-accent-1));
@@ -180,6 +186,12 @@
 
 .latest-blog-posts-list .post-item a:hover{
   text-decoration: underline;
+}
+
+.latest-blog-posts-list .date {
+  margin: 0;
+  font-size: 1.2rem;
+  opacity: .6;
 }
 
 .sidebar-image {
