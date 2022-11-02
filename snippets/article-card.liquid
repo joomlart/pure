@@ -20,9 +20,7 @@
   {%- liquid
     assign ratio = 1
     if media_aspect_ratio == 'portrait'
-      assign ratio = 0.8
-    elsif media_aspect_ratio == 'adapt'
-      assign ratio = media_aspect_ratio
+    assign ratio = 0.8
     endif
     if ratio == 0 or ratio == nil
       assign ratio = 1
