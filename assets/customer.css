@@ -555,7 +555,7 @@
   margin-right: 1rem;
 }
 
-.account + div {
+.account div:first-child {
   border-bottom: 1px solid rgb(var(--color-border));
 }
 
