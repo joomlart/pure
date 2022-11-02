@@ -113,12 +113,12 @@
 }
 
 /* Title Page */
-.header-page {
+.header-page > * {
   padding: calc(var(--grid-desktop-horizontal-spacing)/2);
 }
 
 @media screen and (min-width: 750px) {
-  .header-page {
+  .header-page > * {
     padding: var(--grid-desktop-horizontal-spacing);
   }
 }
