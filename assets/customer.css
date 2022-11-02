@@ -757,7 +757,7 @@
 /* ===== Addresses
 ======================== */
 
-.addresses {
+/* .addresses {
   padding: 2.4rem;
 }
 
@@ -765,7 +765,7 @@
   .addresses {
     padding: 4.8rem;
   }
-}
+} */
 
 .addresses li > button {
   margin-left: 0.5rem;
