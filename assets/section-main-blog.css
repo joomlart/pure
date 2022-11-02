@@ -109,19 +109,28 @@
 }
 
 /* Title Page */
-.header-page > * {
+.header-page > div:first-child {
   padding: calc(var(--grid-desktop-horizontal-spacing)/2);
+  border-bottom: 1px solid rgb(var(--color-border));
 }
 
 @media screen and (min-width: 750px) {
-  .header-page > * {
+  .header-page > div:first-child {
     padding: calc(var(--grid-desktop-horizontal-spacing)/2) var(--grid-desktop-horizontal-spacing);
   }
 }
 
-.header-page > *:first-child {
-  border-bottom: 1px solid rgb(var(--color-border));
+.header-page .title-wrap {
+  padding: calc(var(--grid-desktop-horizontal-spacing)/2);
 }
+
+@media screen and (min-width: 750px) {
+  .header-page .title-wrap {
+    padding: var(--grid-desktop-horizontal-spacing);
+  }
+}
+
+
 
 /* Common Article */
 .blog-articles__article {
