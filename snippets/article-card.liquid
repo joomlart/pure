@@ -22,7 +22,7 @@
     if media_aspect_ratio == 'portrait'
       assign ratio = 0.8
     elsif media_aspect_ratio == 'adapt'
-      assign ratio = article.image.aspect_ratio
+      assign ratio = media_aspect_ratio
     endif
     if ratio == 0 or ratio == nil
       assign ratio = 1
