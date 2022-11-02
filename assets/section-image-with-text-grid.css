@@ -6,6 +6,12 @@
     position: relative;
     background-color: rgba(var(--color-base-accent-1));
 }
+.image-with-text-grid .no-gap { 
+    gap: 0;
+}
+.image-with-text-grid .no-gap .grid__item:not(:last-of-type){  
+    border-right: 1px solid rgb(var(--color-border));
+}
 
 .image-with-text-grid .grid__item img {
     max-width: 100%;
