@@ -5,11 +5,15 @@
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+
   #Banner-{{ section.id }}:after {
-    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
     position: relative;
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
+  }
+
+  #Banner-{{ section.id }}:after {
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 
   {%- if section.settings.image_height == 'adapt-image' and section.settings.image != blank -%}
