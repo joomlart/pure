@@ -762,7 +762,9 @@
 }
 
 @media screen and (min-width: 750px) {
+  .customer .addresses {
   padding: 4.8rem;
+  }
 }
 
 .addresses li > button {
