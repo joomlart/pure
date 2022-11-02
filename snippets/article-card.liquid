@@ -19,6 +19,9 @@
 {%- if article and article != empty -%}
   {%- liquid
     assign ratio = media_aspect_ratio
+    if media_height != "adapt"
+     assign ratio = 1
+    endif
   -%}
 
   <div class="card-wrapper underline-links-hover">
