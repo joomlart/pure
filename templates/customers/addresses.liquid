@@ -3,7 +3,7 @@
 <script src="{{ 'customer.js' | asset_url }}" defer></script>
 
 {%- paginate customer.addresses by 5 -%}
-<div class="wrap-breadcrumb center">
+<div class="wrap-breadcrumb">
   {%- render 'breadcrumb' -%}
 </div>
 <div class="customer addresses" data-customer-addresses>
