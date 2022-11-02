@@ -15,9 +15,9 @@
 -%}
 
 {% if show_breadcrumb %}
-  {%- render 'breadcrumb',
-      alignment_breadcrumb: alignment_breadcrumb
-  -%}
+  <div class="article-breadcrumb {% if alignment_breadcrumb == "center" %}center {% endif %}{% if alignment_breadcrumb == "right" %}right{% endif %}">
+    {% render 'breadcrumb'%}
+  </div>
 {% endif %}
 <article class="article-template page-width  " itemscope itemtype="http://schema.org/BlogPosting">
 
