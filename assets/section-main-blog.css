@@ -114,7 +114,7 @@
 
 /* Title Page */
 .header-page {
-  padding: var(--grid-desktop-horizontal-spacing)/2;
+  padding: calc(var(--grid-desktop-horizontal-spacing)/2);
 }
 
 @media screen and (min-width: 750px) {
