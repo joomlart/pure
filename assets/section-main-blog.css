@@ -11,12 +11,6 @@
   margin: 0;
 }
 
-@media screen and (min-width: 990px) {
-  .page--title{
-    padding-top: 2.4rem;
-  }
-}
-
 /* Sub Description Title */
 .description {
   max-width: 55rem;
