@@ -70,7 +70,7 @@
         "show_sidebar": true,
         "show_collapse": true,
         "enable_sticky": true,
-        "sidebar_position": "left"
+        "sidebar_position": "right"
       }
     }
   },
