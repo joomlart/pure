@@ -2952,7 +2952,7 @@
         "swipe_on_mobile": {
           "label": "Enable swipe on mobile"
         },
-        "banner_heading_other": {
+        "heading_other": {
           "content": "Other"
         },
         "addition_class": {
