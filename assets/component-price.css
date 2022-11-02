@@ -1,6 +1,6 @@
 .price {
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 400;
     line-height: calc(2 + 0/ var(--font-body-scale));
 }
 
