@@ -519,7 +519,7 @@
 }
 
 :is(.account, .order) h2 {
-  margin: 4rem auto 1rem;
+  margin: 0 auto 1rem;
 }
 
 @media screen and (min-width: 990px) {
