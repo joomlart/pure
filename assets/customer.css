@@ -772,6 +772,10 @@
   margin-right: 0.5rem;
 }
 
+.addresses li > button:first-child {
+  margin-left: 0;
+}
+
 .addresses li > button + button,
 .addresses form button + button {
   margin-top: 0rem;
