@@ -102,6 +102,22 @@
   text-decoration-thickness: 0.2rem;
 }
 
+.mega-menu__condensed {
+  left: auto;
+  right: auto;
+  padding: 2.4rem;
+  border-left-color: rgba(var(--color-foreground), var(--popup-border-opacity));
+  border-left-style: solid;
+  border-left-width: var(--popup-border-width);
+  border-right-color: rgba(var(--color-foreground), var(--popup-border-opacity));
+  border-right-style: solid;
+  border-right-width: var(--popup-border-width);
+}
+
+.mega-menu__condensed .mega-menu__list {
+  padding-left: 0;
+}
+
 .mega-menu .mega-menu__list--condensed {
   display: block;
 }
