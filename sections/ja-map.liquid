@@ -11,6 +11,11 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+
+    .section-{{ section.id }}-padding iframe {
+      width: {{ section.settings.width }};
+      height: {{ section.settings.height }};
+    }
   }
 {%- endstyle -%}
 <div id="ja-map-{{ section.id }}" class="color-{{ section.settings.color_scheme }} isolate gradient">
@@ -94,6 +99,18 @@
       "default": "background-1",
       "label": "t:sections.all.colors.label",
       "info": "t:sections.all.colors.has_cards_info"
+    },
+    {
+      "type": "text",
+      "id": "width",
+      "default": "100%",
+      "label": "t:sections.ja-map.settings.width.label"
+    },
+    {
+      "type": "text",
+      "id": "height",
+      "default": "600px",
+      "label": "t:sections.ja-map.settings.height.label"
     },
     {
       "type": "header",

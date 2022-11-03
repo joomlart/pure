@@ -11,10 +11,19 @@
   overflow-y: auto;
   padding-bottom: 2.4rem;
   padding-top: 2.4rem;
+  padding-left: var(--grid-mobile-horizontal-spacing);
+  padding-right: var(--grid-mobile-horizontal-spacing);
   position: absolute;
   right: 0;
   top: 100%;
   z-index: -1;
+}
+
+@media screen and (min-width: 990px) {
+  .mega-menu__content {
+    padding-left: var(--grid-desktop-horizontal-spacing);
+    padding-right: var(--grid-desktop-horizontal-spacing);
+  }
 }
 
 .shopify-section-header-sticky .mega-menu__content {
@@ -22,7 +31,9 @@
 }
 
 .header-wrapper--border-bottom .mega-menu__content {
-  border-top: 0;
+  border-bottom-color: rgba(var(--color-foreground), var(--popup-border-opacity));
+  border-bottom-style: solid;
+  border-bottom-width: var(--popup-border-width);
 }
 
 .js .mega-menu__content {
@@ -40,6 +51,10 @@
   gap: 2.4rem 4rem;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   list-style: none;
+}
+
+.mega-menu__list > li {
+  
 }
 
 .mega-menu__link {
@@ -60,6 +75,9 @@
 
 .mega-menu__link--level-2:not(:only-child) {
   margin-bottom: 0.8rem;
+  padding-top: 0;
+  font-size: 1.6rem;
+  color: rgba(var(--color-foreground));
 }
 
 .header--top-center .mega-menu__list {
