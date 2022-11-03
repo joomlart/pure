@@ -460,7 +460,7 @@
                         <ul class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %} grid grid--3-col-desktop" role="list">
                           {%- for childlink in link.links -%}
                             <li class="grid__item">
-                              {%- if childlink.levels > 0 and childlink.url contains '/collections/' -%}
+                              {%- if childlink.url contains '/collections/' -%}
                                 {%- if collections[childlink.object.handle].image != blank -%}
                                   <a
                                     href="{{ childlink.url }}"
