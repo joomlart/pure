@@ -447,27 +447,6 @@
       {%- else -%}
         <nav class="header__inline-menu">
           <ul class="list-menu list-menu--inline" role="list">
-            {%- if section.settings.banner != blank -%}
-              <li>
-                <div class="banner__media media{% if section.settings.banner == blank %} placeholder{% endif %}">
-                  {%-liquid
-                    assign image_height = section.settings.banner.width | divided_by: section.settings.banner.aspect_ratio
-
-                    assign sizes = "100vw"
-                  -%}
-                  {{ section.settings.banner | image_url: width: 1500 | image_tag:
-                    loading: 'lazy',
-                    width: section.settings.banner.width,
-                    height: image_height,
-                    class: image_class,
-                    sizes: sizes,
-                    widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
-                    alt: section.settings.banner.alt | escape
-                  }}
-                </div>
-              </li>
-            {%- endif -%}
-
             {%- for link in section.settings.menu.links -%}
               <li>
                 {%- if link.links != blank -%}
@@ -481,6 +460,15 @@
                         <ul class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
                           {%- for childlink in link.links -%}
                             <li>
+                              {%- if childlink.levels > 0 and childlink.url contains '/collections/' -%}
+                                {%- if collections[childlink.object.handle].image != blank -%}
+                                  <a
+                                    href="{{ childlink.url }}"
+                                    class="megamenu__colection-image"
+                                    aria-label="{{collections[childlink.object.handle].title}}"
+                                    style="background-image: url({{ collections[childlink.object.handle].image | img_url: '400x' }})"></a>
+                                {%- endif -%}
+                              {%- endif -%}
                               <a href="{{ childlink.url }}" class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                                 {{ childlink.title | escape }}
                               </a>
@@ -890,15 +878,6 @@
       "id": "show_wishlist",
       "label": "t:sections.header.settings.header_icons.label__1",
       "default": true
-    },
-    {
-      "type": "header",
-      "content": "t:sections.header.settings.header_01"
-    },
-    {
-      "type": "image_picker",
-      "id": "banner",
-      "label": "t:sections.header.settings.banner.label"
     },
     {
       "type": "header",

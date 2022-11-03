@@ -109,3 +109,9 @@
 .mega-menu__list--condensed .mega-menu__link {
   font-weight: normal;
 }
+
+.megamenu__colection-image:empty {
+  padding-bottom: 66.66%;
+  margin-bottom: 2.4rem;
+  display: block;
+}
