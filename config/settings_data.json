@@ -157,7 +157,7 @@
           "logo_width": 100,
           "logo_position": "top-left",
           "menu": "main-menu",
-          "menu_type_desktop": "dropdown",
+          "menu_type_desktop": "mega",
           "show_line_separator": true,
           "enable_sticky_header": false,
           "show_wishlist": true,
