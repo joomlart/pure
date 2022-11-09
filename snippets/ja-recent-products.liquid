@@ -54,7 +54,7 @@
           };
           const productList = [];
           let jsonResp, jsonRespArr, jsonRespArrStr;
-          const numberOfProducts = {{ section.settings.products_to_show }};
+          const numberOfProducts = 4;
           productList.push(productData);
           const currProductPageTitle = productData.productTitle;
           const productDataString = JSON.stringify(productList);
@@ -112,7 +112,7 @@
        `);
         });
         const newProductData = `${recentlyViewedHtml.join("")}`;
-        const fullContent = document.getElementById('recently-viewed').querySelector("ul.recently-viewed");
+        const fullContent = document.querySelector('div.recently-viewed-inner').querySelector("ul.recently-viewed");
         fullContent.innerHTML = newProductData;
       }
     }
